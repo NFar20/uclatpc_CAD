@@ -1040,6 +1040,7 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: \
  /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4Transportation.icc \
  /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4TransportationLogger.hh \
  /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4ProcessVector.hh \
+ /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4OpticalParameters.hh \
  /home/nickfar20/uclatpc_CAD/include/action.hh \
  /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4VUserActionInitialization.hh \
  /home/nickfar20/uclatpc_CAD/include/run.hh \
@@ -1053,11 +1054,11 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: \
  /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4Neutron.hh \
  /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4Gamma.hh \
  /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4Electron.hh \
+ /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4StackManager.hh \
  /home/nickfar20/nest/include/Detectors/VDetector.hh \
  /home/nickfar20/uclatpc_CAD/include/construction.hh \
  /home/nickfar20/uclatpc_CAD/include/tracking.hh \
  /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4UserTrackingAction.hh \
  /home/nickfar20/nest/G4integration/NESTStackingAction.hh \
  /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4ClassificationOfNewTrack.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4StackManager.hh \
  /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4UserStackingAction.hh

@@ -17,6 +17,16 @@ MyPhysicsList::MyPhysicsList()
 	//RegisterPhysics (new G4EmExtraPhysics());
 	//RegisterPhysics (new G4HadronPhysicsQGSP_BERT());
 	//RegisterPhysics (new DarkMatterPhysics());
+
+	auto* opt = new G4OpticalPhysics();
+  	RegisterPhysics(opt);
+
+  	// Turn OFF Geant4 scintillation so NEST (or your custom process) is the sole photon source
+  	auto* opticalParams = G4OpticalParameters::Instance();
+  	opticalParams->SetProcessActivation("Scintillation", false);
+	opticalParams->SetProcessActivation("Cerenkov", false);
+  	// Optional: also ensure Geant4 doesn’t try to stack scint photons
+  	opticalParams->SetScintStackPhotons(false);
 }
 
 MyPhysicsList::~MyPhysicsList()
@@ -94,14 +104,23 @@ void MyPhysicsList::ConstructProcess()
     		}
 		}
 
-  	}
+		if (p == NEST::NESTThermalElectron::Definition()) {
+            auto* nestS2 = new NEST::NESTProc("S2", fElectromagnetic, calc, det);
+            if (nestS2->IsApplicable(*p)) {
+                // Discrete process that converts drifted electrons to EL (S2) light in gas
+                pm->AddProcess(nestS2, ordDefault+1, ordInActive, ordDefault+1);
+            } else {
+                delete nestS2;
+            }
+  		}
 	
-	//NEST::NESTProc* theNEST2ScintillationProcess = new NEST::NESTProc("S1", fElectromagnetic, calc, det);
-	//if (theNEST2ScintillationProcess->IsApplicable(*particle)) {
-   	//	pmanager->AddProcess(theNEST2ScintillationProcess, ordDefault + 1, ordInActive, ordDefault + 1);
-	//}
+		//NEST::NESTProc* theNEST2ScintillationProcess = new NEST::NESTProc("S1", fElectromagnetic, calc, det);
+		//if (theNEST2ScintillationProcess->IsApplicable(*particle)) {
+   		//	pmanager->AddProcess(theNEST2ScintillationProcess, ordDefault + 1, ordInActive, ordDefault + 1);
+		//}
 
 	
+	}
 }
 
 void MyPhysicsList::SetCuts() { SetCutsWithDefault(); }

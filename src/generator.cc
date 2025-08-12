@@ -20,7 +20,7 @@ MyPrimaryGenerator::MyPrimaryGenerator()
 	
 	G4cout << "[Messenger] Bound to instance ID = " << instanceID << G4endl;
 	
-	momMagnitude = 1.5*MeV;
+	momMagnitude = 0.8*MeV;
 	n = 1;
 	
 	fParticleGun = new G4ParticleGun(n);

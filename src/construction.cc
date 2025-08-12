@@ -37,7 +37,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	G4Material *LXe = nist->FindOrBuildMaterial("G4_lXe");
 	
 	G4MaterialPropertiesTable *LXeMPT = new G4MaterialPropertiesTable();
-	G4double LXeRIndex[2] = {1.7, 1.7};
+	G4double LXeRIndex[2] = {1.3, 1.3};
 	G4double photonEnergy[2] = {1.55*eV, 10.*eV};
 	LXeMPT->AddProperty("RINDEX", photonEnergy, LXeRIndex, 2);
 	
@@ -45,7 +45,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	G4double scintYield[2] = {1.0, 1.0};
 	
 	//LXeMPT->AddProperty("SCINTILLATIONCOMPONENT1", scintPhotonEnergy, scintYield, 2);
-	//LXeMPT->AddConstProperty("SCINTILLATIONYIELD", 1000./MeV);
+	//LXeMPT->AddConstProperty("SCINTILLATIONYIELD", 0);
 	//LXeMPT->AddConstProperty("RESOLUTIONSCALE", 1.);
 	//LXeMPT->AddConstProperty("SCINTILLATIONTIMECONSTANT1", 27.*ns, true);
 	//LXeMPT->AddConstProperty("SCINTILLATIONYIELD1", 1.);

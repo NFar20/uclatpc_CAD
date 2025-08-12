@@ -14,6 +14,8 @@
 #include <map>
 #include <cmath>
 
+#include "G4StackManager.hh"
+
 #include "NEST.hh"
 #include "Detectors/VDetector.hh"
 

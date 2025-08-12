@@ -8,6 +8,6 @@
 /vis/scene/add/eventID
 /vis/scene/endOfEventAction accumulate
 /vis/modeling/trajectories/create/drawByParticleID
-/vis/modeling/trajectories/drawByParticleID-0/set opticalphoton invisible
+/vis/modeling/trajectories/drawByParticleID-0/set opticalphoton cyan
 /vis/viewer/refresh
 /tracking/verbose 1

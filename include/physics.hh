@@ -28,6 +28,7 @@
 #include "G4ParticleTable.hh"
 #include "G4Transportation.hh"
 #include "G4ProcessVector.hh"
+#include "G4OpticalParameters.hh"
 
 class VDetector;
 namespace NEST { class NESTcalc; class NESTProc; }

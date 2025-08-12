@@ -70,20 +70,20 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 	bool isNR = pd == G4Neutron::Definition();
 	bool isER = pd == G4Electron::Definition();
 
-	double edep1 = static_cast<double>(edep / keV);
+	double edep1 = static_cast<double>(edep + 10 / keV);
 
 	if(isER)
 	{
 		auto yields = calc->GetYields(NEST::ion, edep1, 100., 3., 132., 54.);
-    	nPhotons = G4Poisson(floor(yields.PhotonYield / 1000));
-    	nElectrons = G4Poisson(floor(yields.ElectronYield / 1000));
+    	nPhotons = G4Poisson(yields.PhotonYield);
+    	nElectrons = G4Poisson(yields.ElectronYield);
 		G4cout << "ER, number of photons: " << nPhotons << G4endl;
 	}
 	if(isNR)
 	{
 		auto yields = calc->GetYields(NEST::NR, edep1, 100. /* field in V/cm */, 3., 132., 54.);
-        nPhotons = G4Poisson(floor(yields.PhotonYield / 1000));
-        nElectrons = G4Poisson(floor(yields.ElectronYield / 1000));
+        nPhotons = G4Poisson(yields.PhotonYield);
+        nElectrons = G4Poisson(yields.ElectronYield);
 		G4cout << "NR, number of photons: " << nPhotons << G4endl;
 	}
 
@@ -98,16 +98,32 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 
     	// Create optical photon
     	G4ParticleDefinition* opticalPhoton = G4OpticalPhoton::Definition();
-    	G4DynamicParticle* dynParticle = new G4DynamicParticle(opticalPhoton, dir, 1.0 * eV);  // example 1 eV
+    	G4DynamicParticle* dynParticle = new G4DynamicParticle(opticalPhoton, dir, 7.0 * eV);  // example 1 eV
 
     	// Create primary vertex
-    	G4PrimaryParticle* primaryPhoton = new G4PrimaryParticle(dynParticle->GetDefinition());
-    	G4PrimaryVertex* vertex = new G4PrimaryVertex(pos, 0.0);
-    	vertex->SetPrimary(primaryPhoton);
+    	//G4PrimaryParticle* primaryPhoton = new G4PrimaryParticle(dynParticle->GetDefinition());
+    	//G4PrimaryVertex* vertex = new G4PrimaryVertex(pos, 0.0);
+    	//vertex->SetPrimary(primaryPhoton);
 
-    	G4EventManager::GetEventManager()->GetNonconstCurrentEvent()->AddPrimaryVertex(vertex);
+    	//G4EventManager::GetEventManager()->GetNonconstCurrentEvent()->AddPrimaryVertex(vertex);
+
+		// Make an optical-photon secondary track (NOT a new primary vertex)
+		G4double t0 = step->GetPreStepPoint()->GetGlobalTime();
+		auto* secTrack = new G4Track(dynParticle, t0, step->GetPostStepPoint()->GetPosition());
+
+		// (optional) set polarization perpendicular to dir
+		G4ThreeVector pol = dir.orthogonal().unit();
+		pol.rotate(dir, CLHEP::twopi * G4UniformRand());
+		secTrack->SetPolarization(pol);
+
+		secTrack->SetParentID(step->GetTrack()->GetTrackID());
+
+    	// queue it for transport
+    	auto* stackMgr = G4EventManager::GetEventManager()->GetStackManager();
+    	stackMgr->PushOneTrack(secTrack);
 	}
-		//spawn electrons
+	
+	//spawn electrons
 	for (int i = 0; i < nElectrons; ++i) {
 		G4ThreeVector pos = step->GetPostStepPoint()->GetPosition();
 		G4ThreeVector dir(0, 0, 1);  // assume drift upward in +z
