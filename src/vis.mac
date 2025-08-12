@@ -1,0 +1,10 @@
+/vis/open
+/vis/drawVolume
+/vis/viewer/set/autoRefresh true
+/vis/scene/add/trajectories smooth
+/vis/scene/add/scale 10 cm
+/vis/viewer/set/viewpointVector 0.5 0.5 1
+/vis/scene/add/axes
+/vis/scene/add/eventID
+/vis/scene/endOfEventAction accumulate
+/vis/viewer/refresh
