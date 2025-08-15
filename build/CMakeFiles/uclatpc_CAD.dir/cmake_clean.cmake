@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/uclatpc_CAD.dir/src/event.cc.o.d"
   "CMakeFiles/uclatpc_CAD.dir/src/generator.cc.o"
   "CMakeFiles/uclatpc_CAD.dir/src/generator.cc.o.d"
+  "CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o"
+  "CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o.d"
   "CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o"
   "CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o.d"
   "CMakeFiles/uclatpc_CAD.dir/src/run.cc.o"

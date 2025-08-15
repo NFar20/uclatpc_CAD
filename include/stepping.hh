@@ -17,7 +17,9 @@
 #include "G4StackManager.hh"
 
 #include "NEST.hh"
+#include "NESTProc.hh"
 #include "Detectors/VDetector.hh"
+#include "MyDetector.hh"
 
 #include "construction.hh"
 #include "event.hh"

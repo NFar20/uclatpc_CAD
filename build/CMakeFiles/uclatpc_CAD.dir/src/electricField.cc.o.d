@@ -2,10 +2,10 @@ CMakeFiles/uclatpc_CAD.dir/src/electricField.cc.o: \
  /home/nickfar20/uclatpc_CAD/src/electricField.cc \
  /usr/include/stdc-predef.h \
  /home/nickfar20/uclatpc_CAD/include/electricField.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4ElectroMagneticField.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4Field.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4Types.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4GlobalConfig.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElectroMagneticField.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Field.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Types.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GlobalConfig.hh \
  /usr/include/c++/13/complex \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -179,9 +179,9 @@ CMakeFiles/uclatpc_CAD.dir/src/electricField.cc.o: \
  /usr/include/c++/13/bits/ostream.tcc \
  /usr/include/c++/13/bits/istream.tcc \
  /usr/include/c++/13/bits/sstream.tcc \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tls.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/globals.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4ios.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tls.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/globals.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ios.hh \
  /usr/include/c++/13/iostream /usr/include/c++/13/algorithm \
  /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
@@ -190,10 +190,10 @@ CMakeFiles/uclatpc_CAD.dir/src/electricField.cc.o: \
  /usr/include/c++/13/bits/stl_tempbuf.h \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4String.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4String.hh \
  /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4String.icc \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/templates.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4String.icc \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/templates.hh \
  /usr/include/c++/13/climits \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
@@ -203,9 +203,9 @@ CMakeFiles/uclatpc_CAD.dir/src/electricField.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4Exception.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4ExceptionSeverity.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4EnvironmentUtils.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exception.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ExceptionSeverity.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EnvironmentUtils.hh \
  /usr/include/c++/13/iomanip /usr/include/c++/13/locale \
  /usr/include/c++/13/bits/locale_facets_nonio.h /usr/include/c++/13/ctime \
  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
@@ -228,10 +228,10 @@ CMakeFiles/uclatpc_CAD.dir/src/electricField.cc.o: \
  /usr/include/c++/13/bits/parse_numbers.h \
  /usr/include/c++/13/bits/std_mutex.h \
  /usr/include/c++/13/bits/unique_lock.h \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4ThreeVector.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/CLHEP/Vector/ThreeVector.h \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/CLHEP/Utility/defs.h \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4SystemOfUnits.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4ios.hh
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ThreeVector.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/ThreeVector.h \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Utility/defs.h \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SystemOfUnits.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ios.hh

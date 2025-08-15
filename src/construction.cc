@@ -261,7 +261,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	
 	G4VPhysicalVolume *physLXe = new G4PVPlacement(0, G4ThreeVector(0., 0., 78.4*mm), logicLXe, "physLXe", logicWorld, false, 0, true);
 	
-	fScoringVolume = logicPMT;
+	fScoringVolume = logicLXe;
 	
 	//constructing electric field
 	G4ThreeVector electricFieldVector(0., 0., 100.*kilovolt/um);

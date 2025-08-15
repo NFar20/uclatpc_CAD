@@ -310,6 +310,30 @@ src/generator.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uclatpc_CAD.dir/build.make CMakeFiles/uclatpc_CAD.dir/src/generator.cc.s
 .PHONY : src/generator.cc.s
 
+src/nestPart.o: src/nestPart.cc.o
+.PHONY : src/nestPart.o
+
+# target to build an object file
+src/nestPart.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uclatpc_CAD.dir/build.make CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o
+.PHONY : src/nestPart.cc.o
+
+src/nestPart.i: src/nestPart.cc.i
+.PHONY : src/nestPart.i
+
+# target to preprocess a source file
+src/nestPart.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uclatpc_CAD.dir/build.make CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.i
+.PHONY : src/nestPart.cc.i
+
+src/nestPart.s: src/nestPart.cc.s
+.PHONY : src/nestPart.s
+
+# target to generate assembly for a file
+src/nestPart.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uclatpc_CAD.dir/build.make CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.s
+.PHONY : src/nestPart.cc.s
+
 src/physics.o: src/physics.cc.o
 .PHONY : src/physics.o
 
@@ -461,6 +485,9 @@ help:
 	@echo "... src/generator.o"
 	@echo "... src/generator.i"
 	@echo "... src/generator.s"
+	@echo "... src/nestPart.o"
+	@echo "... src/nestPart.i"
+	@echo "... src/nestPart.s"
 	@echo "... src/physics.o"
 	@echo "... src/physics.i"
 	@echo "... src/physics.s"

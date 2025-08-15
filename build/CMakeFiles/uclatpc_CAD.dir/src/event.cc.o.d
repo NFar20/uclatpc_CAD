@@ -1,8 +1,8 @@
 CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: \
  /home/nickfar20/uclatpc_CAD/src/event.cc /usr/include/stdc-predef.h \
  /home/nickfar20/uclatpc_CAD/include/event.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4UserEventAction.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4Event.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserEventAction.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Event.hh \
  /usr/include/c++/13/set /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -54,10 +54,10 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: \
  /usr/include/c++/13/bits/invoke.h /usr/include/c++/13/map \
  /usr/include/c++/13/bits/stl_map.h \
  /usr/include/c++/13/bits/stl_multimap.h \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/globals.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4ios.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4Types.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4GlobalConfig.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/globals.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ios.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Types.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GlobalConfig.hh \
  /usr/include/c++/13/complex /usr/include/c++/13/cmath \
  /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
@@ -189,7 +189,7 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: \
  /usr/include/c++/13/bits/ostream.tcc \
  /usr/include/c++/13/bits/istream.tcc \
  /usr/include/c++/13/bits/sstream.tcc \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tls.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tls.hh \
  /usr/include/c++/13/iostream /usr/include/c++/13/algorithm \
  /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
@@ -198,10 +198,10 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: \
  /usr/include/c++/13/bits/stl_tempbuf.h \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4String.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4String.hh \
  /usr/include/c++/13/cstring /usr/include/string.h /usr/include/strings.h \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4String.icc \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/templates.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4String.icc \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/templates.hh \
  /usr/include/c++/13/climits \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h \
@@ -211,9 +211,9 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4Exception.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4ExceptionSeverity.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4EnvironmentUtils.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exception.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ExceptionSeverity.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EnvironmentUtils.hh \
  /usr/include/c++/13/iomanip /usr/include/c++/13/locale \
  /usr/include/c++/13/bits/locale_facets_nonio.h /usr/include/c++/13/ctime \
  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
@@ -230,35 +230,35 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: \
  /usr/include/c++/13/bits/parse_numbers.h \
  /usr/include/c++/13/bits/std_mutex.h \
  /usr/include/c++/13/bits/unique_lock.h \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/evtdefs.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4Allocator.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4AllocatorPool.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4PrimaryVertex.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4PrimaryParticle.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4ThreeVector.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/CLHEP/Vector/ThreeVector.h \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/CLHEP/Utility/defs.h \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/pwdefs.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4HCofThisEvent.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4VHitsCollection.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/evtdefs.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Allocator.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AllocatorPool.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PrimaryVertex.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PrimaryParticle.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ThreeVector.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/ThreeVector.h \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Utility/defs.h \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/pwdefs.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HCofThisEvent.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VHitsCollection.hh \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4DCofThisEvent.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4VDigiCollection.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4TrajectoryContainer.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4VTrajectory.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4VUserEventInformation.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4AnalysisManager.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4GenericAnalysisManager.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4ToolsAnalysisManager.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4VAnalysisManager.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4AnalysisManagerState.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4AnalysisVerbose.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DCofThisEvent.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VDigiCollection.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrajectoryContainer.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTrajectory.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserEventInformation.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericAnalysisManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ToolsAnalysisManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VAnalysisManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisManagerState.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisVerbose.hh \
  /usr/include/c++/13/array /usr/include/c++/13/compare \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4Threading.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Threading.hh \
  /usr/include/c++/13/chrono /usr/include/c++/13/condition_variable \
  /usr/include/c++/13/bits/shared_ptr.h \
  /usr/include/c++/13/bits/shared_ptr_base.h \
@@ -271,7 +271,7 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: \
  /usr/include/c++/13/bits/std_function.h \
  /usr/include/c++/13/bits/std_thread.h /usr/include/c++/13/thread \
  /usr/include/c++/13/bits/this_thread_sleep.h \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4AnalysisUtilities.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisUtilities.hh \
  /usr/include/c++/13/memory \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
  /usr/include/c++/13/bits/align.h \
@@ -281,66 +281,66 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: \
  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4VTBaseHnManager.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4HnInformation.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4BinScheme.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4Fcn.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTBaseHnManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HnInformation.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BinScheme.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Fcn.hh \
  /usr/include/c++/13/utility /usr/include/c++/13/bits/stl_relops.h \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4VAnalysisManager.icc \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4HnManager.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4BaseAnalysisManager.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4NtupleBookingManager.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/ntuple_booking \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/cids \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/cid \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/typedefs \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/forit \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4NtupleBookingManager.icc \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4VNtupleManager.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4VFileManager.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4BaseFileManager.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4VTHnFileManager.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4TH1ToolsManager.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4THnToolsManager.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4THnManager.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4THnManager.icc \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4AutoLock.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4THnMessenger.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4UImessenger.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4UIdirectory.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4UIcommand.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4ApplicationState.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4UIparameter.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4THnToolsManager.icc \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4THnMessenger.icc \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4Tokenizer.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4TH2ToolsManager.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4TH3ToolsManager.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4TP1ToolsManager.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4TP2ToolsManager.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/histo/h1d \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/histo/h1 \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/histo/b1 \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/histo/base_histo \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/histo/histo_data \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/histo/axes \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/histo/axis \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/eqT \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/histo/h2d \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/histo/h2 \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/histo/b2 \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/histo/h3d \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/histo/h3 \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/histo/b3 \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/histo/p1d \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/histo/p1 \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/histo/profile_data \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/histo/p2d \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/tools/histo/p2 \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4ToolsAnalysisManager.icc \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4GenericAnalysisManager.icc \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4GenericFileManager.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4GenericFileManager.icc \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VAnalysisManager.icc \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HnManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BaseAnalysisManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NtupleBookingManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/ntuple_booking \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/cids \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/cid \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/typedefs \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/forit \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NtupleBookingManager.icc \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VNtupleManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFileManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BaseFileManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTHnFileManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH1ToolsManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnToolsManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnManager.icc \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AutoLock.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnMessenger.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UImessenger.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIdirectory.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcommand.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ApplicationState.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIparameter.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnToolsManager.icc \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnMessenger.icc \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tokenizer.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH2ToolsManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH3ToolsManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TP1ToolsManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TP2ToolsManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h1d \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h1 \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/b1 \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/base_histo \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/histo_data \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/axes \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/axis \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/eqT \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h2d \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h2 \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/b2 \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h3d \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h3 \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/b3 \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p1d \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p1 \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/profile_data \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p2d \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p2 \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ToolsAnalysisManager.icc \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericAnalysisManager.icc \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericFileManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericFileManager.icc \
  /home/nickfar20/uclatpc_CAD/include/run.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4UserRunAction.hh \
- /home/nickfar20/GEANT4/geant4-v11.3.2-install/include/Geant4/G4Run.hh
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserRunAction.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Run.hh

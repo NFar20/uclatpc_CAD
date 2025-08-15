@@ -30,6 +30,12 @@
 #include "G4ProcessVector.hh"
 #include "G4OpticalParameters.hh"
 
+#include "G4EmParameters.hh"
+#include "G4eMultipleScattering.hh"
+#include "G4UrbanMscModel.hh"
+#include "G4Electron.hh"
+#include "G4OpticalParameters.hh"
+
 class VDetector;
 namespace NEST { class NESTcalc; class NESTProc; }
 
@@ -41,10 +47,12 @@ public:
 
 	//VDetector *LXeDet;
 	//NEST::NESTcalc *calc;
+	MyDetector*     GetNESTDetector() const { return static_cast<MyDetector*>(det); }
+  	NEST::NESTcalc* GetNESTcalc()     const { return calc; }
 	
 	void ConstructParticle() override;
 	void ConstructProcess() override;
-	void SetCuts() override;
+	//void SetCuts() override;
 
 private:
 	VDetector* det = nullptr;

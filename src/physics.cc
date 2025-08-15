@@ -2,7 +2,7 @@
 
 MyPhysicsList::MyPhysicsList()
 {
-	defaultCutValue = 0.001*CLHEP::mm;
+	//defaultCutValue = 0.01*CLHEP::mm;
 	
 	//RegisterPhysics (new G4EmStandardPhysics());
 	RegisterPhysics (new G4OpticalPhysics());
@@ -14,19 +14,19 @@ MyPhysicsList::MyPhysicsList()
 	RegisterPhysics (new G4IonPhysics());
 	RegisterPhysics (new G4StoppingPhysics());
 	RegisterPhysics (new G4EmLowEPPhysics());
+	RegisterPhysics (new G4StepLimiterPhysics());
 	//RegisterPhysics (new G4EmExtraPhysics());
 	//RegisterPhysics (new G4HadronPhysicsQGSP_BERT());
 	//RegisterPhysics (new DarkMatterPhysics());
 
-	auto* opt = new G4OpticalPhysics();
-  	RegisterPhysics(opt);
-
   	// Turn OFF Geant4 scintillation so NEST (or your custom process) is the sole photon source
   	auto* opticalParams = G4OpticalParameters::Instance();
-  	opticalParams->SetProcessActivation("Scintillation", false);
-	opticalParams->SetProcessActivation("Cerenkov", false);
+  	//opticalParams->SetProcessActivation("Scintillation", false);
+	//opticalParams->SetProcessActivation("Cerenkov", false);
   	// Optional: also ensure Geant4 doesn’t try to stack scint photons
-  	opticalParams->SetScintStackPhotons(false);
+  	//opticalParams->SetScintStackPhotons(false);
+
+	G4ProductionCutsTable::GetProductionCutsTable()->SetEnergyRange(.1*eV, 1.*GeV);
 }
 
 MyPhysicsList::~MyPhysicsList()
@@ -57,7 +57,7 @@ void MyPhysicsList::ConstructProcess()
 	if (!det)  det  = new MyDetector();
   	if (!calc) calc = new NEST::NESTcalc(det);
 
-	G4ParticleDefinition *p;
+	G4ParticleDefinition *particle;
 	//auto *particle = it->value();
 	//G4ProcessManager *pmanager = particle->GetProcessManager();
 
@@ -69,31 +69,49 @@ void MyPhysicsList::ConstructProcess()
 
 	while((*it)()){
 		G4cout << "[DEBUG] While loop is running" << G4endl;
-    	p = it->value();
-    	pm = p->GetProcessManager();
+    	particle = it->value();
+    	pm = particle->GetProcessManager();
 
-		if(p->GetParticleName() == "e-" || p == G4Electron::ElectronDefinition())
+		if (particle->GetParticleName() == "e-") 
+        {
+            G4ProcessManager* pManager = particle->GetProcessManager();
+            G4ProcessVector* processVector = pManager->GetProcessList();
+            for (int i = 0; i < processVector->size(); ++i) 
+            {
+                G4VProcess* proc = (*processVector)[i];
+                if (proc->GetProcessName() == "eIoni") 
+                {
+                    pManager->RemoveProcess(proc);
+                    G4cout << "Removed ionization!!!!!!" << G4endl;
+                    break;
+                }
+                if (proc->GetProcessName() == "msc")
+                {
+                    pManager->RemoveProcess(proc);
+                    G4cout << "Removed msc!!!!!!" << G4endl;
+                    // // Construct and configure a new MSC process
+                    // auto* msc = new G4eMultipleScattering();
+                    // auto* model = new G4UrbanMscModel();  // Or try G4GoudsmitSaundersonMscModel()
+
+                    // model->SetStepLimitType(fMinimal);
+                    // //model->SetRangeFactor(0.01);
+                    // //model->SetLateralDisplacement(true);
+                    // model->SetGeomFactor(3.0);
+
+                    // msc->AddEmModel(0, model);
+                    // msc->SetStepLimitType(fMinimal);
+                    // //msc->SetRangeFactor(0.01);
+
+                    // // Add the new MSC back
+                    // pManager->AddProcess(msc, -1, 1, 1);  // ordering: -1 init, 1 along step, 1 post step
+                    // G4cout << "Added custom MSC!" << G4endl;
+                    
+                }
+            }
+        }
+		
+		/*if(p == G4Electron::ElectronDefinition() || p == G4Neutron::Definition())
 		{
-			pm = p->GetProcessManager();
-			G4ProcessVector *processVector = pm->GetProcessList();
-			for(int i = 0; i < processVector->size(); i++)
-			{
-				
-				G4VProcess* proc = (*processVector)[i];
-				if(proc->GetProcessName() == "eIoni")
-				{
-					pm->RemoveProcess(proc);
-					G4cout << "==============================Removed Ionization==============================" << G4endl;
-					break;
-				}
-				if(proc->GetProcessName() == "msc")
-				{
-					pm->RemoveProcess(proc);
-					G4cout << "==============================Removed msc Process==============================" << G4endl;
-				}
-				
-			}
-
 			auto* nestS1 = new NEST::NESTProc("S1", fElectromagnetic, calc, det);
 			if (nestS1->IsApplicable(*p)) {
     			// Place after standard EM ionization; typical ordering:
@@ -112,7 +130,7 @@ void MyPhysicsList::ConstructProcess()
             } else {
                 delete nestS2;
             }
-  		}
+  		}*/
 	
 		//NEST::NESTProc* theNEST2ScintillationProcess = new NEST::NESTProc("S1", fElectromagnetic, calc, det);
 		//if (theNEST2ScintillationProcess->IsApplicable(*particle)) {
@@ -123,4 +141,4 @@ void MyPhysicsList::ConstructProcess()
 	}
 }
 
-void MyPhysicsList::SetCuts() { SetCutsWithDefault(); }
+//void MyPhysicsList::SetCuts() { SetCutsWithDefault(); }

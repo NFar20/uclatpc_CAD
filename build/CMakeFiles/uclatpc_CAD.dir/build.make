@@ -181,10 +181,24 @@ CMakeFiles/uclatpc_CAD.dir/src/generator.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/uclatpc_CAD.dir/src/generator.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nickfar20/uclatpc_CAD/src/generator.cc -o CMakeFiles/uclatpc_CAD.dir/src/generator.cc.s
 
+CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o: CMakeFiles/uclatpc_CAD.dir/flags.make
+CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o: /home/nickfar20/uclatpc_CAD/src/nestPart.cc
+CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o: CMakeFiles/uclatpc_CAD.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o -MF CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o.d -o CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o -c /home/nickfar20/uclatpc_CAD/src/nestPart.cc
+
+CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nickfar20/uclatpc_CAD/src/nestPart.cc > CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.i
+
+CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nickfar20/uclatpc_CAD/src/nestPart.cc -o CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.s
+
 CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: CMakeFiles/uclatpc_CAD.dir/flags.make
 CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: /home/nickfar20/uclatpc_CAD/src/physics.cc
 CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: CMakeFiles/uclatpc_CAD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o -MF CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o.d -o CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o -c /home/nickfar20/uclatpc_CAD/src/physics.cc
 
 CMakeFiles/uclatpc_CAD.dir/src/physics.cc.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/uclatpc_CAD.dir/src/physics.cc.s: cmake_force
 CMakeFiles/uclatpc_CAD.dir/src/run.cc.o: CMakeFiles/uclatpc_CAD.dir/flags.make
 CMakeFiles/uclatpc_CAD.dir/src/run.cc.o: /home/nickfar20/uclatpc_CAD/src/run.cc
 CMakeFiles/uclatpc_CAD.dir/src/run.cc.o: CMakeFiles/uclatpc_CAD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/run.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/run.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uclatpc_CAD.dir/src/run.cc.o -MF CMakeFiles/uclatpc_CAD.dir/src/run.cc.o.d -o CMakeFiles/uclatpc_CAD.dir/src/run.cc.o -c /home/nickfar20/uclatpc_CAD/src/run.cc
 
 CMakeFiles/uclatpc_CAD.dir/src/run.cc.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/uclatpc_CAD.dir/src/run.cc.s: cmake_force
 CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o: CMakeFiles/uclatpc_CAD.dir/flags.make
 CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o: /home/nickfar20/uclatpc_CAD/src/stepping.cc
 CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o: CMakeFiles/uclatpc_CAD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o -MF CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o.d -o CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o -c /home/nickfar20/uclatpc_CAD/src/stepping.cc
 
 CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.s: cmake_force
 CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o: CMakeFiles/uclatpc_CAD.dir/flags.make
 CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o: /home/nickfar20/uclatpc_CAD/src/tracking.cc
 CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o: CMakeFiles/uclatpc_CAD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o -MF CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o.d -o CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o -c /home/nickfar20/uclatpc_CAD/src/tracking.cc
 
 CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.i: cmake_force
@@ -247,6 +261,7 @@ uclatpc_CAD_OBJECTS = \
 "CMakeFiles/uclatpc_CAD.dir/src/electricField.cc.o" \
 "CMakeFiles/uclatpc_CAD.dir/src/event.cc.o" \
 "CMakeFiles/uclatpc_CAD.dir/src/generator.cc.o" \
+"CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o" \
 "CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o" \
 "CMakeFiles/uclatpc_CAD.dir/src/run.cc.o" \
 "CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o" \
@@ -263,55 +278,58 @@ uclatpc_CAD: CMakeFiles/uclatpc_CAD.dir/src/detector.cc.o
 uclatpc_CAD: CMakeFiles/uclatpc_CAD.dir/src/electricField.cc.o
 uclatpc_CAD: CMakeFiles/uclatpc_CAD.dir/src/event.cc.o
 uclatpc_CAD: CMakeFiles/uclatpc_CAD.dir/src/generator.cc.o
+uclatpc_CAD: CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o
 uclatpc_CAD: CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o
 uclatpc_CAD: CMakeFiles/uclatpc_CAD.dir/src/run.cc.o
 uclatpc_CAD: CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o
 uclatpc_CAD: CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o
 uclatpc_CAD: CMakeFiles/uclatpc_CAD.dir/build.make
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4OpenGL.so
-uclatpc_CAD: /home/nickfar20/nest/build/G4integration/libNESTG4.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4Tree.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4FR.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4GMocren.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4visHepRep.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4RayTracer.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4VRML.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4ToolsSG.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4visVtk.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4vis_management.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4modeling.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4interfaces.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4OpenGL.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4visQt3D.so
+uclatpc_CAD: /home/nickfar20/nest-install/lib/libNESTG4.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4Tree.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4FR.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4GMocren.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4visHepRep.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4RayTracer.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4VRML.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4ToolsSG.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4visVtk.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4visXr.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4vis_management.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4modeling.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4interfaces.so
 uclatpc_CAD: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13
 uclatpc_CAD: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13
 uclatpc_CAD: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4mctruth.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4geomtext.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4gdml.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4mctruth.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4geomtext.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4gdml.so
 uclatpc_CAD: /usr/lib/x86_64-linux-gnu/libxerces-c.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4error_propagation.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4readout.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4physicslists.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4run.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4event.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4tracking.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4parmodels.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4processes.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4analysis.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4error_propagation.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4readout.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4physicslists.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4run.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4event.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4tracking.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4parmodels.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4processes.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4analysis.so
 uclatpc_CAD: /usr/lib/x86_64-linux-gnu/libexpat.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4digits_hits.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4track.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4particles.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4geometry.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4materials.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4graphics_reps.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4intercoms.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4global.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4clhep.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4zlib.so
-uclatpc_CAD: /home/nickfar20/GEANT4/geant4-v11.3.2-install/lib/libG4ptl.so.3.0.0
-uclatpc_CAD: /home/nickfar20/nest/build/libNESTCore.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4digits_hits.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4track.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4particles.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4geometry.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4materials.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4graphics_reps.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4intercoms.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4global.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4clhep.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4zlib.so
+uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4ptl.so.3.0.0
+uclatpc_CAD: /home/nickfar20/nest-install/lib/libNESTCore.so
 uclatpc_CAD: CMakeFiles/uclatpc_CAD.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable uclatpc_CAD"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable uclatpc_CAD"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/uclatpc_CAD.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
