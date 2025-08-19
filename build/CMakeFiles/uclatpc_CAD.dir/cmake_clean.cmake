@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.o"
+  "CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.o.d"
   "CMakeFiles/uclatpc_CAD.dir/src/WIMPElasticProcess.cc.o"
   "CMakeFiles/uclatpc_CAD.dir/src/WIMPElasticProcess.cc.o.d"
   "CMakeFiles/uclatpc_CAD.dir/src/action.cc.o"

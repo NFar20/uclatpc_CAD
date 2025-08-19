@@ -329,7 +329,7 @@ MPI_C_LINK_FLAGS:STRING=-L/usr/lib/x86_64-linux-gnu/openmpi/lib
 MPI_mpi_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libmpi.so
 
 //The directory containing a CMake configuration file for NEST.
-NEST_DIR:PATH=/home/nickfar20/nest-install/lib/cmake/NEST
+NEST_DIR:PATH=/home/nickfar20/nest/build
 
 //Path to a file.
 OPENGL_EGL_INCLUDE_DIR:PATH=/usr/include
@@ -443,7 +443,7 @@ TIFF_LIBRARY_DEBUG:FILEPATH=TIFF_LIBRARY_DEBUG-NOTFOUND
 TIFF_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libtiff.so
 
 //The directory containing a CMake configuration file for VTK.
-VTK_DIR:PATH=/home/nickfar20/GEANT4/vtk/vtk-install/lib/cmake/vtk-9.5
+VTK_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1
 
 //Number of processors available to run parallel tests.
 VTK_MPI_NUMPROCS:STRING=2
@@ -874,9 +874,6 @@ double-conversion_INCLUDE_DIR:PATH=/usr/include/double-conversion
 //double-conversion library
 double-conversion_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libdouble-conversion.so
 
-//The directory containing a CMake configuration file for freetype.
-freetype_DIR:PATH=freetype_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for gcem.
 gcem_DIR:PATH=/home/nickfar20/gcem/install
 
@@ -1068,7 +1065,7 @@ EXPAT_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Eigen3_INCLUDE_DIR
 Eigen3_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //Details about finding EXPAT
-FIND_PACKAGE_MESSAGE_DETAILS_EXPAT:INTERNAL=[/usr/lib/x86_64-linux-gnu/libexpat.so][/usr/include][v2.6.1(2.6.1)]
+FIND_PACKAGE_MESSAGE_DETAILS_EXPAT:INTERNAL=[/usr/lib/x86_64-linux-gnu/libexpat.so][/usr/include][v2.6.1()]
 //Details about finding Eigen3
 FIND_PACKAGE_MESSAGE_DETAILS_Eigen3:INTERNAL=[/usr/include/eigen3][v3.4.0()]
 //Details about finding Freetype
@@ -1090,7 +1087,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_MPI:INTERNAL=[TRUE][cfound components: C ][v3.1()]
 //Details about finding MPI_C
 FIND_PACKAGE_MESSAGE_DETAILS_MPI_C:INTERNAL=[/usr/lib/x86_64-linux-gnu/libmpi.so][mpi][/usr/lib/x86_64-linux-gnu/openmpi/include][TRUE][v3.1()]
 //Details about finding OpenGL
-FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenGL.so][/usr/lib/x86_64-linux-gnu/libGLX.so][/usr/include][c ][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenGL.so][/usr/lib/x86_64-linux-gnu/libGLX.so][/usr/include][cfound components: OpenGL GLX ][v()]
 //Details about finding PNG
 FIND_PACKAGE_MESSAGE_DETAILS_PNG:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpng.so][/usr/include][v1.6.43()]
 //Details about finding TIFF
@@ -1169,8 +1166,6 @@ MPI_C_LINK_FLAGS-ADVANCED:INTERNAL=1
 MPI_RESULT_C_test_mpi_normal:INTERNAL=TRUE
 //ADVANCED property for variable: MPI_mpi_LIBRARY
 MPI_mpi_LIBRARY-ADVANCED:INTERNAL=1
-//MODIFIED property for variable: NEST_DIR
-NEST_DIR-MODIFIED:INTERNAL=ON
 //ADVANCED property for variable: OPENGL_EGL_INCLUDE_DIR
 OPENGL_EGL_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: OPENGL_GLES2_INCLUDE_DIR
@@ -1277,16 +1272,12 @@ PNG_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 PNG_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PNG_PNG_INCLUDE_DIR
 PNG_PNG_INCLUDE_DIR-ADVANCED:INTERNAL=1
-//MODIFIED property for variable: PTL_DIR
-PTL_DIR-MODIFIED:INTERNAL=ON
 //ADVANCED property for variable: TIFF_INCLUDE_DIR
 TIFF_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: TIFF_LIBRARY_DEBUG
 TIFF_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: TIFF_LIBRARY_RELEASE
 TIFF_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
-//MODIFIED property for variable: VTK_DIR
-VTK_DIR-MODIFIED:INTERNAL=ON
 //ADVANCED property for variable: X11_ICE_INCLUDE_PATH
 X11_ICE_INCLUDE_PATH-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: X11_ICE_LIB

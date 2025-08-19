@@ -14,9 +14,8 @@ void ElectricField::GetFieldValue(const G4double Point[4], G4double *field) cons
 	field[2] = 0.;
 	field[3] = 0.;
 	field[4] = 0.;
-	field[5] = -100*volt/cm;
+	field[5] = 100*volt/cm;
 	
-	//G4cout << "E-field at (" << x << ", " << y << ", " << z << ") is (" << field[0] << ", " << field[1] << " " << field[2] << ")."<< G4endl;
 }
 
 G4bool ElectricField::DoesFieldChangeEnergy() const

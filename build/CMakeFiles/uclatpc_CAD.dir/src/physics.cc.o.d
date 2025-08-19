@@ -607,9 +607,9 @@ CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IsotopeProperty.hh \
  /home/nickfar20/uclatpc_CAD/include/physics.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StepLimiterPhysics.hh \
- /home/nickfar20/nest-install/include/NEST/NEST.hh \
- /home/nickfar20/nest-install/include/NEST/RandomGen.hh \
- /home/nickfar20/nest-install/include/NEST/xoroshiro.hh \
+ /home/nickfar20/nest/include/NEST/NEST.hh \
+ /home/nickfar20/nest/include/NEST/RandomGen.hh \
+ /home/nickfar20/nest/include/NEST/xoroshiro.hh \
  /home/nickfar20/gcem/include/gcem.hpp \
  /home/nickfar20/gcem/include/gcem_incl/gcem_options.hpp \
  /home/nickfar20/gcem/include/gcem_incl/quadrature/gauss_legendre_50.hpp \
@@ -682,12 +682,12 @@ CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: \
  /usr/include/c++/13/bits/random.tcc /usr/include/c++/13/numeric \
  /usr/include/c++/13/bits/stl_numeric.h \
  /usr/include/c++/13/pstl/glue_numeric_defs.h \
- /home/nickfar20/nest-install/include/Detectors/VDetector.hh \
- /home/nickfar20/nest-install/include/NEST/ValidityTests.hh \
+ /home/nickfar20/nest/include/Detectors/VDetector.hh \
+ /home/nickfar20/nest/include/NEST/ValidityTests.hh \
  /usr/include/c++/13/cfloat \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
  /usr/include/c++/13/math.h /usr/include/c++/13/cassert \
- /home/nickfar20/nest-install/include/NEST/G4/NESTProc.hh \
+ /home/nickfar20/nest/G4integration/NESTProc.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Track.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DynamicParticle.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Material.hh \
@@ -705,8 +705,8 @@ CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/templates.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialCutsCouple.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProductionCuts.hh \
- /home/nickfar20/nest-install/include/Detectors/MyDetector.hh \
- /home/nickfar20/nest-install/include/Detectors/VDetector.hh \
+ /home/nickfar20/nest/include/Detectors/MyDetector.hh \
+ /home/nickfar20/nest/include/Detectors/VDetector.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessManager.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessVector.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessVector.icc \

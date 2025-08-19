@@ -65,6 +65,7 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 
 
 	G4LogicalVolume *volume = step->GetPreStepPoint()->GetTouchableHandle()->GetVolume()->GetLogicalVolume();
+	G4Track *track = step->GetTrack();
 
     // Get position of interaction
     G4ThreeVector pos = step->GetPreStepPoint()->GetPosition();
@@ -73,7 +74,8 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 	
 	G4LogicalVolume *fScoringVolume = detectorConstruction->GetScoringVolume();
 
-	G4Track *track = step->GetTrack();
+	nestPart *nestDetector = new nestPart();
+
 	G4int id = track->GetTrackID();
 	G4double energy = track->GetKineticEnergy();
 	const G4ParticleDefinition* pd = track->GetParticleDefinition();
@@ -217,7 +219,7 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 
 	//Nest Part
 
-  	if (volume && volume->GetName() == "logicChamber")
+  	if (volume && volume->GetName() == "logicLXe")
 	{
 		if (driftElectron)
 		{
@@ -358,12 +360,12 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 
 		if(S2Event)
 		{
-			nS2Events = nS2Events +1;
+			nS2Events++;
 			totalS2Photons = totalS2Photons + nPhotons;
 		}
 		else
 		{
-			nS1Events = nS1Events +1;
+			nS1Events++;
 			totalS1Photons = totalS1Photons + nPhotons;
 		}
 		// G4cout << "Number of S1 events: " << nS1Events << G4endl;
@@ -392,6 +394,10 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 	
 	
 	previousEnergy[id] = energy;
+
+	if(volume->GetName() == "logicPMT" || volume->GetName() == "logicBottomPMT" || volume->GetName() == "logicTopCap") {
+		track->SetTrackStatus(fStopAndKill);
+	}
 	
 	if(volume != fScoringVolume) {
 		G4cout << volume->GetName() << G4endl;

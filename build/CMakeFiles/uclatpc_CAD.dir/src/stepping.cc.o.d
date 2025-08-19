@@ -421,9 +421,9 @@ CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o: \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SubEventTrackStack.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SubEvent.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/evtdefs.hh \
- /home/nickfar20/nest-install/include/NEST/NEST.hh \
- /home/nickfar20/nest-install/include/NEST/RandomGen.hh \
- /home/nickfar20/nest-install/include/NEST/xoroshiro.hh \
+ /home/nickfar20/nest/include/NEST/NEST.hh \
+ /home/nickfar20/nest/include/NEST/RandomGen.hh \
+ /home/nickfar20/nest/include/NEST/xoroshiro.hh \
  /home/nickfar20/gcem/include/gcem.hpp \
  /home/nickfar20/gcem/include/gcem_incl/gcem_options.hpp \
  /home/nickfar20/gcem/include/gcem_incl/quadrature/gauss_legendre_50.hpp \
@@ -496,12 +496,13 @@ CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o: \
  /usr/include/c++/13/bits/random.tcc /usr/include/c++/13/numeric \
  /usr/include/c++/13/bits/stl_numeric.h \
  /usr/include/c++/13/pstl/glue_numeric_defs.h \
- /home/nickfar20/nest-install/include/Detectors/VDetector.hh \
- /home/nickfar20/nest-install/include/NEST/ValidityTests.hh \
+ /home/nickfar20/nest/include/Detectors/VDetector.hh \
+ /home/nickfar20/nest/include/NEST/ValidityTests.hh \
  /usr/include/c++/13/cfloat \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
  /usr/include/c++/13/math.h /usr/include/c++/13/cassert \
- /home/nickfar20/nest-install/include/NEST/G4/NESTProc.hh \
+ /home/nickfar20/uclatpc_CAD/include/nestPart.hh \
+ /home/nickfar20/nest/G4integration/NESTProc.hh \
  /usr/include/c++/13/functional /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \
  /usr/include/c++/13/bits/hashtable.h \
@@ -529,9 +530,115 @@ CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o: \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProductionCuts.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProductionCuts.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SystemOfUnits.hh \
- /home/nickfar20/nest-install/include/Detectors/VDetector.hh \
- /home/nickfar20/nest-install/include/Detectors/MyDetector.hh \
- /home/nickfar20/nest-install/include/Detectors/VDetector.hh \
+ /home/nickfar20/nest/include/Detectors/VDetector.hh \
+ /home/nickfar20/nest/include/Detectors/MyDetector.hh \
+ /home/nickfar20/nest/include/Detectors/VDetector.hh \
+ /home/nickfar20/uclatpc_CAD/include/DriftElectronInfo.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserTrackInformation.hh \
+ /home/nickfar20/uclatpc_CAD/include/DynamicUserLimits.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserLimits.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserLimits.icc \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleTypes.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargedGeantino.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Geantino.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Gamma.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OpticalPhoton.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UnknownParticle.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargedUnknownParticle.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MuonPlus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MuonMinus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TauMinus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TauPlus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Electron.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Positron.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NeutrinoTau.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiNeutrinoTau.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NeutrinoMu.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiNeutrinoMu.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NeutrinoE.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiNeutrinoE.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PionPlus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PionMinus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PionZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Eta.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EtaPrime.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonPlus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonMinus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiKaonZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonZeroLong.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonZeroShort.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DMesonPlus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DMesonMinus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DMesonZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiDMesonZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DsMesonPlus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DsMesonMinus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4JPsi.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Etac.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BMesonPlus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BMesonMinus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BMesonZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiBMesonZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BsMesonZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiBsMesonZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Upsilon.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Proton.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiProton.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Neutron.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiNeutron.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Lambda.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmaPlus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmaZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmaMinus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XiMinus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XiZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OmegaMinus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiLambda.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmaPlus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmaZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmaMinus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXiMinus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXiZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiOmegaMinus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LambdacPlus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmacPlusPlus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmacPlus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmacZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XicPlus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XicZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OmegacZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiLambdacPlus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmacPlusPlus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmacPlus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmacZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXicPlus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXicZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiOmegacZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Lambdab.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmabPlus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmabZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmabMinus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XibZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XibMinus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OmegabMinus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiLambdab.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmabPlus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmabZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmabMinus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXibZero.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXibMinus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiOmegabMinus.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Alpha.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Deuteron.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4He3.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Triton.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiAlpha.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiDeuteron.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiHe3.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiTriton.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericIon.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VProcess.hh \
  /home/nickfar20/uclatpc_CAD/include/construction.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserDetectorConstruction.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VPhysicalVolume.hh \

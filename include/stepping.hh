@@ -17,9 +17,14 @@
 #include "G4StackManager.hh"
 
 #include "NEST.hh"
+#include "nestPart.hh"
 #include "NESTProc.hh"
 #include "Detectors/VDetector.hh"
 #include "MyDetector.hh"
+#include "DriftElectronInfo.hh"
+#include "DynamicUserLimits.hh"
+#include "G4VProcess.hh"
+#include "CLHEP/Random/RandGaussZiggurat.h"
 
 #include "construction.hh"
 #include "event.hh"

@@ -20,7 +20,7 @@ MyPrimaryGenerator::MyPrimaryGenerator()
 	
 	G4cout << "[Messenger] Bound to instance ID = " << instanceID << G4endl;
 	
-	momMagnitude = 0.8*MeV;
+	momMagnitude = 2.45*MeV;
 	n = 1;
 	
 	fParticleGun = new G4ParticleGun(n);
@@ -140,7 +140,7 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent)
 	particleArray[6] = Se72;
 	particleArray[7] = Rn220;
 	//particleArray[8] = G4ParticleTable::GetParticleTable()->FindParticle("geantino");
-	particleArray[8] = G4ParticleTable::GetParticleTable()->FindParticle("e-");
+	particleArray[8] = G4ParticleTable::GetParticleTable()->FindParticle("neutron");
 	
 	if(source == "Ba133")
 		particleIndex = 0;

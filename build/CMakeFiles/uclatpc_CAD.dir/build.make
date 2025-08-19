@@ -83,10 +83,24 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nickfar20/uclatpc_CAD/uclatpc_CAD.cc -o CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.s
 
+CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.o: CMakeFiles/uclatpc_CAD.dir/flags.make
+CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.o: /home/nickfar20/uclatpc_CAD/src/DriftElectronInfo.cc
+CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.o: CMakeFiles/uclatpc_CAD.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.o -MF CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.o.d -o CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.o -c /home/nickfar20/uclatpc_CAD/src/DriftElectronInfo.cc
+
+CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/nickfar20/uclatpc_CAD/src/DriftElectronInfo.cc > CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.i
+
+CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/nickfar20/uclatpc_CAD/src/DriftElectronInfo.cc -o CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.s
+
 CMakeFiles/uclatpc_CAD.dir/src/WIMPElasticProcess.cc.o: CMakeFiles/uclatpc_CAD.dir/flags.make
 CMakeFiles/uclatpc_CAD.dir/src/WIMPElasticProcess.cc.o: /home/nickfar20/uclatpc_CAD/src/WIMPElasticProcess.cc
 CMakeFiles/uclatpc_CAD.dir/src/WIMPElasticProcess.cc.o: CMakeFiles/uclatpc_CAD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/WIMPElasticProcess.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/WIMPElasticProcess.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uclatpc_CAD.dir/src/WIMPElasticProcess.cc.o -MF CMakeFiles/uclatpc_CAD.dir/src/WIMPElasticProcess.cc.o.d -o CMakeFiles/uclatpc_CAD.dir/src/WIMPElasticProcess.cc.o -c /home/nickfar20/uclatpc_CAD/src/WIMPElasticProcess.cc
 
 CMakeFiles/uclatpc_CAD.dir/src/WIMPElasticProcess.cc.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/uclatpc_CAD.dir/src/WIMPElasticProcess.cc.s: cmake_force
 CMakeFiles/uclatpc_CAD.dir/src/action.cc.o: CMakeFiles/uclatpc_CAD.dir/flags.make
 CMakeFiles/uclatpc_CAD.dir/src/action.cc.o: /home/nickfar20/uclatpc_CAD/src/action.cc
 CMakeFiles/uclatpc_CAD.dir/src/action.cc.o: CMakeFiles/uclatpc_CAD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/action.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/action.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uclatpc_CAD.dir/src/action.cc.o -MF CMakeFiles/uclatpc_CAD.dir/src/action.cc.o.d -o CMakeFiles/uclatpc_CAD.dir/src/action.cc.o -c /home/nickfar20/uclatpc_CAD/src/action.cc
 
 CMakeFiles/uclatpc_CAD.dir/src/action.cc.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/uclatpc_CAD.dir/src/action.cc.s: cmake_force
 CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: CMakeFiles/uclatpc_CAD.dir/flags.make
 CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/src/construction.cc
 CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: CMakeFiles/uclatpc_CAD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o -MF CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o.d -o CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o -c /home/nickfar20/uclatpc_CAD/src/construction.cc
 
 CMakeFiles/uclatpc_CAD.dir/src/construction.cc.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.s: cmake_force
 CMakeFiles/uclatpc_CAD.dir/src/detector.cc.o: CMakeFiles/uclatpc_CAD.dir/flags.make
 CMakeFiles/uclatpc_CAD.dir/src/detector.cc.o: /home/nickfar20/uclatpc_CAD/src/detector.cc
 CMakeFiles/uclatpc_CAD.dir/src/detector.cc.o: CMakeFiles/uclatpc_CAD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/detector.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/detector.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uclatpc_CAD.dir/src/detector.cc.o -MF CMakeFiles/uclatpc_CAD.dir/src/detector.cc.o.d -o CMakeFiles/uclatpc_CAD.dir/src/detector.cc.o -c /home/nickfar20/uclatpc_CAD/src/detector.cc
 
 CMakeFiles/uclatpc_CAD.dir/src/detector.cc.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/uclatpc_CAD.dir/src/detector.cc.s: cmake_force
 CMakeFiles/uclatpc_CAD.dir/src/electricField.cc.o: CMakeFiles/uclatpc_CAD.dir/flags.make
 CMakeFiles/uclatpc_CAD.dir/src/electricField.cc.o: /home/nickfar20/uclatpc_CAD/src/electricField.cc
 CMakeFiles/uclatpc_CAD.dir/src/electricField.cc.o: CMakeFiles/uclatpc_CAD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/electricField.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/electricField.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uclatpc_CAD.dir/src/electricField.cc.o -MF CMakeFiles/uclatpc_CAD.dir/src/electricField.cc.o.d -o CMakeFiles/uclatpc_CAD.dir/src/electricField.cc.o -c /home/nickfar20/uclatpc_CAD/src/electricField.cc
 
 CMakeFiles/uclatpc_CAD.dir/src/electricField.cc.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/uclatpc_CAD.dir/src/electricField.cc.s: cmake_force
 CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: CMakeFiles/uclatpc_CAD.dir/flags.make
 CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: /home/nickfar20/uclatpc_CAD/src/event.cc
 CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: CMakeFiles/uclatpc_CAD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/event.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/event.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uclatpc_CAD.dir/src/event.cc.o -MF CMakeFiles/uclatpc_CAD.dir/src/event.cc.o.d -o CMakeFiles/uclatpc_CAD.dir/src/event.cc.o -c /home/nickfar20/uclatpc_CAD/src/event.cc
 
 CMakeFiles/uclatpc_CAD.dir/src/event.cc.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.s: cmake_force
 CMakeFiles/uclatpc_CAD.dir/src/generator.cc.o: CMakeFiles/uclatpc_CAD.dir/flags.make
 CMakeFiles/uclatpc_CAD.dir/src/generator.cc.o: /home/nickfar20/uclatpc_CAD/src/generator.cc
 CMakeFiles/uclatpc_CAD.dir/src/generator.cc.o: CMakeFiles/uclatpc_CAD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/generator.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/generator.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uclatpc_CAD.dir/src/generator.cc.o -MF CMakeFiles/uclatpc_CAD.dir/src/generator.cc.o.d -o CMakeFiles/uclatpc_CAD.dir/src/generator.cc.o -c /home/nickfar20/uclatpc_CAD/src/generator.cc
 
 CMakeFiles/uclatpc_CAD.dir/src/generator.cc.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/uclatpc_CAD.dir/src/generator.cc.s: cmake_force
 CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o: CMakeFiles/uclatpc_CAD.dir/flags.make
 CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o: /home/nickfar20/uclatpc_CAD/src/nestPart.cc
 CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o: CMakeFiles/uclatpc_CAD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o -MF CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o.d -o CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o -c /home/nickfar20/uclatpc_CAD/src/nestPart.cc
 
 CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.i: cmake_force
@@ -198,7 +212,7 @@ CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.s: cmake_force
 CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: CMakeFiles/uclatpc_CAD.dir/flags.make
 CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: /home/nickfar20/uclatpc_CAD/src/physics.cc
 CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: CMakeFiles/uclatpc_CAD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o -MF CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o.d -o CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o -c /home/nickfar20/uclatpc_CAD/src/physics.cc
 
 CMakeFiles/uclatpc_CAD.dir/src/physics.cc.i: cmake_force
@@ -212,7 +226,7 @@ CMakeFiles/uclatpc_CAD.dir/src/physics.cc.s: cmake_force
 CMakeFiles/uclatpc_CAD.dir/src/run.cc.o: CMakeFiles/uclatpc_CAD.dir/flags.make
 CMakeFiles/uclatpc_CAD.dir/src/run.cc.o: /home/nickfar20/uclatpc_CAD/src/run.cc
 CMakeFiles/uclatpc_CAD.dir/src/run.cc.o: CMakeFiles/uclatpc_CAD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/run.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/run.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uclatpc_CAD.dir/src/run.cc.o -MF CMakeFiles/uclatpc_CAD.dir/src/run.cc.o.d -o CMakeFiles/uclatpc_CAD.dir/src/run.cc.o -c /home/nickfar20/uclatpc_CAD/src/run.cc
 
 CMakeFiles/uclatpc_CAD.dir/src/run.cc.i: cmake_force
@@ -226,7 +240,7 @@ CMakeFiles/uclatpc_CAD.dir/src/run.cc.s: cmake_force
 CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o: CMakeFiles/uclatpc_CAD.dir/flags.make
 CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o: /home/nickfar20/uclatpc_CAD/src/stepping.cc
 CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o: CMakeFiles/uclatpc_CAD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o -MF CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o.d -o CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o -c /home/nickfar20/uclatpc_CAD/src/stepping.cc
 
 CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.i: cmake_force
@@ -240,7 +254,7 @@ CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.s: cmake_force
 CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o: CMakeFiles/uclatpc_CAD.dir/flags.make
 CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o: /home/nickfar20/uclatpc_CAD/src/tracking.cc
 CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o: CMakeFiles/uclatpc_CAD.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o -MF CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o.d -o CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o -c /home/nickfar20/uclatpc_CAD/src/tracking.cc
 
 CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.i: cmake_force
@@ -254,6 +268,7 @@ CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.s: cmake_force
 # Object files for target uclatpc_CAD
 uclatpc_CAD_OBJECTS = \
 "CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o" \
+"CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.o" \
 "CMakeFiles/uclatpc_CAD.dir/src/WIMPElasticProcess.cc.o" \
 "CMakeFiles/uclatpc_CAD.dir/src/action.cc.o" \
 "CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o" \
@@ -271,6 +286,7 @@ uclatpc_CAD_OBJECTS = \
 uclatpc_CAD_EXTERNAL_OBJECTS =
 
 uclatpc_CAD: CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o
+uclatpc_CAD: CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.o
 uclatpc_CAD: CMakeFiles/uclatpc_CAD.dir/src/WIMPElasticProcess.cc.o
 uclatpc_CAD: CMakeFiles/uclatpc_CAD.dir/src/action.cc.o
 uclatpc_CAD: CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o
@@ -286,7 +302,7 @@ uclatpc_CAD: CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o
 uclatpc_CAD: CMakeFiles/uclatpc_CAD.dir/build.make
 uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4OpenGL.so
 uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4visQt3D.so
-uclatpc_CAD: /home/nickfar20/nest-install/lib/libNESTG4.so
+uclatpc_CAD: /home/nickfar20/nest/build/G4integration/libNESTG4.so
 uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4Tree.so
 uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4FR.so
 uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4GMocren.so
@@ -327,9 +343,9 @@ uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4global.so
 uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4clhep.so
 uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4zlib.so
 uclatpc_CAD: /home/nickfar20/g4xr/g4xr-install/lib/libG4ptl.so.3.0.0
-uclatpc_CAD: /home/nickfar20/nest-install/lib/libNESTCore.so
+uclatpc_CAD: /home/nickfar20/nest/build/libNESTCore.so
 uclatpc_CAD: CMakeFiles/uclatpc_CAD.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable uclatpc_CAD"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/nickfar20/uclatpc_CAD/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable uclatpc_CAD"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/uclatpc_CAD.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

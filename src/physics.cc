@@ -22,7 +22,7 @@ MyPhysicsList::MyPhysicsList()
   	// Turn OFF Geant4 scintillation so NEST (or your custom process) is the sole photon source
   	auto* opticalParams = G4OpticalParameters::Instance();
   	//opticalParams->SetProcessActivation("Scintillation", false);
-	//opticalParams->SetProcessActivation("Cerenkov", false);
+	opticalParams->SetProcessActivation("Cerenkov", false);
   	// Optional: also ensure Geant4 doesn’t try to stack scint photons
   	//opticalParams->SetScintStackPhotons(false);
 

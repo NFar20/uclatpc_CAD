@@ -142,6 +142,30 @@ Simulation/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Simulation.dir/build.make CMakeFiles/Simulation.dir/build
 .PHONY : Simulation/fast
 
+src/DriftElectronInfo.o: src/DriftElectronInfo.cc.o
+.PHONY : src/DriftElectronInfo.o
+
+# target to build an object file
+src/DriftElectronInfo.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uclatpc_CAD.dir/build.make CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.o
+.PHONY : src/DriftElectronInfo.cc.o
+
+src/DriftElectronInfo.i: src/DriftElectronInfo.cc.i
+.PHONY : src/DriftElectronInfo.i
+
+# target to preprocess a source file
+src/DriftElectronInfo.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uclatpc_CAD.dir/build.make CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.i
+.PHONY : src/DriftElectronInfo.cc.i
+
+src/DriftElectronInfo.s: src/DriftElectronInfo.cc.s
+.PHONY : src/DriftElectronInfo.s
+
+# target to generate assembly for a file
+src/DriftElectronInfo.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uclatpc_CAD.dir/build.make CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.s
+.PHONY : src/DriftElectronInfo.cc.s
+
 src/WIMPElasticProcess.o: src/WIMPElasticProcess.cc.o
 .PHONY : src/WIMPElasticProcess.o
 
@@ -464,6 +488,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Simulation"
 	@echo "... uclatpc_CAD"
+	@echo "... src/DriftElectronInfo.o"
+	@echo "... src/DriftElectronInfo.i"
+	@echo "... src/DriftElectronInfo.s"
 	@echo "... src/WIMPElasticProcess.o"
 	@echo "... src/WIMPElasticProcess.i"
 	@echo "... src/WIMPElasticProcess.s"

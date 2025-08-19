@@ -1,7 +1,7 @@
 CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o: \
  /home/nickfar20/uclatpc_CAD/src/nestPart.cc /usr/include/stdc-predef.h \
  /home/nickfar20/uclatpc_CAD/include/nestPart.hh \
- /home/nickfar20/nest-install/include/Detectors/VDetector.hh \
+ /home/nickfar20/nest/include/Detectors/VDetector.hh \
  /usr/include/c++/13/string /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \

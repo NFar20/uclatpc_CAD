@@ -18,6 +18,15 @@ int main(int argc, char** argv)
 	runManager->SetUserInitialization(new MyPhysicsList());
 	runManager->SetUserInitialization(new MyActionInitialization());
 	runManager->Initialize();
+
+	G4OpticalParameters::Instance()->SetProcessActivation("Scintillation", false);
+
+	auto params = G4OpticalParameters::Instance();
+
+    params->SetScintByParticleType(false);           
+    params->SetScintTrackSecondariesFirst(false);    
+    params->SetCerenkovMaxPhotonsPerStep(0);
+    params->SetCerenkovTrackSecondariesFirst(false);
 	
 	G4UIExecutive *ui = 0;
 	
