@@ -31,8 +31,8 @@ MyPhysicsList::MyPhysicsList()
 
 MyPhysicsList::~MyPhysicsList()
 {
-	delete calc;
-  	delete det;
+	// delete calc;
+  	// delete det;
 }
 
 void MyPhysicsList::ConstructParticle()
@@ -54,8 +54,8 @@ void MyPhysicsList::ConstructProcess()
 	G4VModularPhysicsList::ConstructProcess();
 	G4cout << "[DEBUG] ConstructProcess called" << G4endl;
 
-	if (!det)  det  = new MyDetector();
-  	if (!calc) calc = new NEST::NESTcalc(det);
+	// if (!det)  det  = new MyDetector();
+  	// if (!calc) calc = new NEST::NESTcalc(det);
 
 	G4ParticleDefinition *particle;
 	//auto *particle = it->value();
@@ -68,7 +68,7 @@ void MyPhysicsList::ConstructProcess()
 	it->reset();
 
 	while((*it)()){
-		G4cout << "[DEBUG] While loop is running" << G4endl;
+		//G4cout << "[DEBUG] While loop is running" << G4endl;
     	particle = it->value();
     	pm = particle->GetProcessManager();
 

@@ -20,7 +20,6 @@
 #include "nestPart.hh"
 #include "NESTProc.hh"
 #include "Detectors/VDetector.hh"
-#include "MyDetector.hh"
 #include "DriftElectronInfo.hh"
 #include "DynamicUserLimits.hh"
 #include "G4VProcess.hh"

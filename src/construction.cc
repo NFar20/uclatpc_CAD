@@ -37,7 +37,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	G4Material *LXe = nist->FindOrBuildMaterial("G4_lXe");
 	
 	G4MaterialPropertiesTable *LXeMPT = new G4MaterialPropertiesTable();
-	G4double LXeRIndex[2] = {1.3, 1.3};
+	G4double LXeRIndex[2] = {1.5655, 1.5655};
 	G4double photonEnergy[2] = {1.55*eV, 10.*eV};
 	LXeMPT->AddProperty("RINDEX", photonEnergy, LXeRIndex, 2);
 	
@@ -62,8 +62,11 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 
 	StainlessSteel->SetMaterialPropertiesTable(steelMPT);
 	
-	G4Material *GXe = new G4Material("GXe", 0.0059*g/cm3, 1);
-	GXe->AddElement(nist->FindOrBuildElement("Xe"), 1);
+	G4Material *GXe = nist->FindOrBuildMaterial("G4_Xe");
+	
+	G4MaterialPropertiesTable *GXeMPT = new G4MaterialPropertiesTable();
+	G4double GXeRIndex[2] = {1.00067, 1.00067};
+	GXeMPT->AddProperty("RINDEX", photonEnergy, LXeRIndex, 2);
 	
 	G4Isotope *isoSe72 = new G4Isotope("isoSe72", 34, 72, 71.9221*g/mole);
 	G4Element *elSe72 = new G4Element("elSe72", "Se72", 1);
@@ -262,6 +265,11 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	G4VPhysicalVolume *physLXe = new G4PVPlacement(0, G4ThreeVector(0., 0., 78.4*mm), logicLXe, "physLXe", logicWorld, false, 0, true);
 	
 	fScoringVolume = logicLXe;
+
+	G4Tubs *solidGXe = new G4Tubs("solidGXe", 0.*mm, 46.4213333*mm, 9.*mm, 0.*deg, 360.*deg);
+	G4LogicalVolume *logicGXe = new G4LogicalVolume(solidGXe, GXe, "logicGXe");
+	logicGXe->SetVisAttributes(purpleVisAttributes);
+	G4VPhysicalVolume *physGXe = new G4PVPlacement(0, G4ThreeVector(0., 0., 41.2*mm), logicGXe, "physGXe", logicWorld, false, 0, true);
 	
 	//constructing electric field
 	G4ThreeVector electricFieldVector(0., 0., 100.*kilovolt/um);

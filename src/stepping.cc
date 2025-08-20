@@ -110,7 +110,7 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 	{
     // Estimate probability of ionization 
 		double P_ionize = 0;
-		if (Efield > ElThreshold)
+		if (Efield > ElThreshold || (pos.z()*mm <= 49.2 && pos.z()*mm > 30))
 		{
 			P_ionize = 1.;
 		}
@@ -219,13 +219,13 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 
 	//Nest Part
 
-  	if (volume && volume->GetName() == "logicLXe")
+  	if (volume && (volume->GetName() == "logicLXe" || volume->GetName() == "logicGXe"))
 	{
 		if (driftElectron)
 		{
 			if (edep > 0)
 			{
-				if (Efield > ElThreshold)
+				if (Efield > ElThreshold || volume->GetName() == "logicGXe")
 				{
 					nPhotons = photPerE;
 					nElectrons = 0;

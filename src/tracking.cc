@@ -11,9 +11,9 @@ void MyTrackingAction::PostUserTrackingAction(const G4Track *track)
 
 void MyTrackingAction::PreUserTrackingAction(const G4Track* track)
 {
-	if (track->GetDefinition()->GetParticleName() == "opticalphoton") {
+	/*if (track->GetDefinition()->GetParticleName() == "opticalphoton") {
         fpTrackingManager->SetStoreTrajectory(false); // don't store for viz
-    }
+    }*/
 }
 
 

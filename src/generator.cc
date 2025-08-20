@@ -27,7 +27,7 @@ MyPrimaryGenerator::MyPrimaryGenerator()
 	
 	G4ParticleDefinition *particle = G4ParticleTable::GetParticleTable()->FindParticle(generic);
 	
-	G4ThreeVector pos(0., 0.*mm, 77.2*mm);
+	G4ThreeVector pos(0., 55.*mm, 77.2*mm);
 	G4ThreeVector mom(0., -1., 0.);
 	fParticleGun->SetParticlePosition(pos);
 	fParticleGun->SetParticleMomentumDirection(mom);
