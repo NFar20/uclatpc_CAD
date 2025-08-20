@@ -530,8 +530,6 @@ CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o: \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProductionCuts.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SystemOfUnits.hh \
  /home/nickfar20/nest/include/Detectors/VDetector.hh \
- /home/nickfar20/nest/include/Detectors/MyDetector.hh \
- /home/nickfar20/nest/include/Detectors/VDetector.hh \
  /home/nickfar20/uclatpc_CAD/include/DriftElectronInfo.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserTrackInformation.hh \
  /home/nickfar20/uclatpc_CAD/include/DynamicUserLimits.hh \

@@ -669,7 +669,6 @@ CMakeFiles/uclatpc_CAD.dir/src/action.cc.o: /home/nickfar20/uclatpc_CAD/src/acti
   /home/nickfar20/gcem/include/gcem_incl/trunc.hpp \
   /home/nickfar20/nest/G4integration/NESTProc.hh \
   /home/nickfar20/nest/G4integration/NESTStackingAction.hh \
-  /home/nickfar20/nest/include/Detectors/MyDetector.hh \
   /home/nickfar20/nest/include/Detectors/VDetector.hh \
   /home/nickfar20/nest/include/NEST/NEST.hh \
   /home/nickfar20/nest/include/NEST/RandomGen.hh \
@@ -1927,6 +1926,7 @@ CMakeFiles/uclatpc_CAD.dir/src/detector.cc.o: /home/nickfar20/uclatpc_CAD/src/de
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4String.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SubEvent.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SubEventTrackStack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SystemOfUnits.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH1ToolsManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH2ToolsManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH3ToolsManager.hh \
@@ -2623,6 +2623,7 @@ CMakeFiles/uclatpc_CAD.dir/src/electricField.cc.o: /home/nickfar20/uclatpc_CAD/s
   /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
 CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: /home/nickfar20/uclatpc_CAD/src/event.cc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Utility/defs.h \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/ThreeVector.h \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
@@ -2658,6 +2659,7 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: /home/nickfar20/uclatpc_CAD/src/event
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Run.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4String.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4String.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SystemOfUnits.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH1ToolsManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH2ToolsManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH3ToolsManager.hh \
@@ -3510,7 +3512,6 @@ CMakeFiles/uclatpc_CAD.dir/src/generator.cc.o: /home/nickfar20/uclatpc_CAD/src/g
   /home/nickfar20/gcem/include/gcem_incl/tgamma.hpp \
   /home/nickfar20/gcem/include/gcem_incl/trunc.hpp \
   /home/nickfar20/nest/G4integration/NESTProc.hh \
-  /home/nickfar20/nest/include/Detectors/MyDetector.hh \
   /home/nickfar20/nest/include/Detectors/VDetector.hh \
   /home/nickfar20/nest/include/NEST/NEST.hh \
   /home/nickfar20/nest/include/NEST/RandomGen.hh \
@@ -4493,7 +4494,6 @@ CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: /home/nickfar20/uclatpc_CAD/src/phy
   /home/nickfar20/gcem/include/gcem_incl/tgamma.hpp \
   /home/nickfar20/gcem/include/gcem_incl/trunc.hpp \
   /home/nickfar20/nest/G4integration/NESTProc.hh \
-  /home/nickfar20/nest/include/Detectors/MyDetector.hh \
   /home/nickfar20/nest/include/Detectors/VDetector.hh \
   /home/nickfar20/nest/include/NEST/NEST.hh \
   /home/nickfar20/nest/include/NEST/RandomGen.hh \
@@ -4821,6 +4821,7 @@ CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: /home/nickfar20/uclatpc_CAD/src/phy
   /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
 CMakeFiles/uclatpc_CAD.dir/src/run.cc.o: /home/nickfar20/uclatpc_CAD/src/run.cc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Utility/defs.h \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/ThreeVector.h \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
@@ -4849,6 +4850,7 @@ CMakeFiles/uclatpc_CAD.dir/src/run.cc.o: /home/nickfar20/uclatpc_CAD/src/run.cc 
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Run.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4String.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4String.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SystemOfUnits.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH1ToolsManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH2ToolsManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH3ToolsManager.hh \
@@ -5775,7 +5777,6 @@ CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o: /home/nickfar20/uclatpc_CAD/src/st
   /home/nickfar20/gcem/include/gcem_incl/tgamma.hpp \
   /home/nickfar20/gcem/include/gcem_incl/trunc.hpp \
   /home/nickfar20/nest/G4integration/NESTProc.hh \
-  /home/nickfar20/nest/include/Detectors/MyDetector.hh \
   /home/nickfar20/nest/include/Detectors/VDetector.hh \
   /home/nickfar20/nest/include/NEST/NEST.hh \
   /home/nickfar20/nest/include/NEST/RandomGen.hh \
@@ -6683,7 +6684,6 @@ CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o: /home/nickfar20/uclatpc_CAD/src/tr
   /home/nickfar20/gcem/include/gcem_incl/tgamma.hpp \
   /home/nickfar20/gcem/include/gcem_incl/trunc.hpp \
   /home/nickfar20/nest/G4integration/NESTProc.hh \
-  /home/nickfar20/nest/include/Detectors/MyDetector.hh \
   /home/nickfar20/nest/include/Detectors/VDetector.hh \
   /home/nickfar20/nest/include/NEST/NEST.hh \
   /home/nickfar20/nest/include/NEST/RandomGen.hh \
@@ -7791,7 +7791,6 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
   /home/nickfar20/gcem/include/gcem_incl/trunc.hpp \
   /home/nickfar20/nest/G4integration/NESTProc.hh \
   /home/nickfar20/nest/G4integration/NESTStackingAction.hh \
-  /home/nickfar20/nest/include/Detectors/MyDetector.hh \
   /home/nickfar20/nest/include/Detectors/VDetector.hh \
   /home/nickfar20/nest/include/NEST/NEST.hh \
   /home/nickfar20/nest/include/NEST/RandomGen.hh \
@@ -9482,10 +9481,6 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p1d:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ViewParameters.hh:
-
-/usr/include/c++/13/bits/locale_conv.h:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Allocator.hh:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
@@ -10232,8 +10227,6 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h:
 
-/home/nickfar20/nest/include/Detectors/MyDetector.hh:
-
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IonTable.hh:
@@ -10381,3 +10374,7 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUIshell.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Vector3D.hh:
+
+/usr/include/c++/13/bits/locale_conv.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ViewParameters.hh:

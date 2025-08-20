@@ -274,8 +274,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	//constructing electric field
 	G4ThreeVector electricFieldVector(0., 0., 100.*kilovolt/um);
 	
-	electricField = new ElectricField();
-	//electricField = new G4UniformElectricField(electricFieldVector);
+	electricField = new ElectricField(100.);
 	
 	equation = new G4EqMagElectricField(electricField);
 	
@@ -283,19 +282,29 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	
 	auto pStepper = new G4DormandPrince745(equation, nvar);
 	
-	auto globalFieldManager = G4TransportationManager::GetTransportationManager()->GetFieldManager();
+	// auto globalFieldManager = G4TransportationManager::GetTransportationManager()->GetFieldManager();
 	
-	auto localFieldManager = new G4FieldManager(electricField);
-	localFieldManager->SetDetectorField(electricField);
+	auto liquidFieldManager = new G4FieldManager(electricField);
+	liquidFieldManager->SetDetectorField(electricField);
 	
 	G4double minStep = 0.001*mm;
 	auto pIntegrationDriver = new G4IntegrationDriver<G4DormandPrince745>(minStep, pStepper, nvar);
+
+	gasElectricField = new ElectricField(412000.);
+
+	gasEquation = new G4EqMagElectricField(gasElectricField);
+
+	auto gasFieldManager = new G4FieldManager(gasElectricField);
+	gasFieldManager->SetDetectorField(gasElectricField);
 	
 	chordFinder = new G4ChordFinder(pIntegrationDriver);
-	globalFieldManager->SetChordFinder(chordFinder);
-	localFieldManager->SetChordFinder(chordFinder);
+
+	// globalFieldManager->SetChordFinder(chordFinder);
+	liquidFieldManager->SetChordFinder(chordFinder);
+	gasFieldManager->SetChordFinder(chordFinder);
 	
-	logicLXe->SetFieldManager(localFieldManager, true);
+	logicLXe->SetFieldManager(liquidFieldManager, true);
+	logicGXe->SetFieldManager(gasFieldManager, true);
 	
 	
 	return physWorld;

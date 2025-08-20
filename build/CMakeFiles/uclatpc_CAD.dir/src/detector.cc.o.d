@@ -558,4 +558,5 @@ CMakeFiles/uclatpc_CAD.dir/src/detector.cc.o: \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SDStructure.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSensitiveDetector.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleTable.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OpticalPhoton.hh
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OpticalPhoton.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SystemOfUnits.hh

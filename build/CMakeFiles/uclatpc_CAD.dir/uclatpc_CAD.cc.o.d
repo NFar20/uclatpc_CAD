@@ -1036,8 +1036,6 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/templates.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialCutsCouple.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProductionCuts.hh \
- /home/nickfar20/nest/include/Detectors/MyDetector.hh \
- /home/nickfar20/nest/include/Detectors/VDetector.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessManager.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Transportation.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleChangeForTransport.hh \

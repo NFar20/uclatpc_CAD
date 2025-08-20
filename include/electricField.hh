@@ -10,11 +10,14 @@
 class ElectricField : public G4ElectroMagneticField
 {
 public:
-	ElectricField();
+	ElectricField(G4double z_field);
 	virtual ~ElectricField();
 	
 	virtual void GetFieldValue(const G4double Point[4], G4double *field) const override;
 	virtual G4bool DoesFieldChangeEnergy() const override;
+
+private:
+	G4double Zfield;
 };
 
 #endif

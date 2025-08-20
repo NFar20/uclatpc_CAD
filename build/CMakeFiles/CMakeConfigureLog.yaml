@@ -1063,3 +1063,44 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Geant4Config.cmake:474 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-tp1S8Y"
+      binary: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-tp1S8Y"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-tp1S8Y'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7116a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7116a.dir/build.make CMakeFiles/cmTC_7116a.dir/build
+        gmake[1]: Entering directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-tp1S8Y'
+        Building C object CMakeFiles/cmTC_7116a.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_7116a.dir/test_mpi.c.o -c /home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-tp1S8Y/test_mpi.c
+        Linking C executable cmTC_7116a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7116a.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_7116a.dir/test_mpi.c.o -o cmTC_7116a  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-tp1S8Y'
+        
+      exitCode: 0
+...

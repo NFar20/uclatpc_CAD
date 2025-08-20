@@ -41,8 +41,8 @@ public:
 	
 	MySensitiveDetector *sensPMT;
 	
-	G4ElectroMagneticField *electricField;
-	G4EqMagElectricField *equation;
+	G4ElectroMagneticField *electricField, *gasElectricField;
+	G4EqMagElectricField *equation, *gasEquation;
 	G4ChordFinder *chordFinder;
 	
 	virtual G4VPhysicalVolume *Construct();

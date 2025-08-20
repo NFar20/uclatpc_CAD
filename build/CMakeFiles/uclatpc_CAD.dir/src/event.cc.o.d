@@ -343,4 +343,6 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericFileManager.icc \
  /home/nickfar20/uclatpc_CAD/include/run.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserRunAction.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Run.hh
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Run.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SystemOfUnits.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Units/SystemOfUnits.h

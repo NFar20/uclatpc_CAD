@@ -14,9 +14,13 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhis
 	G4ParticleTable *particleTable = G4ParticleTable::GetParticleTable();
 	
 	G4bool opticalPhoton = track->GetDefinition() == G4OpticalPhoton::OpticalPhotonDefinition();
-	G4bool gamma = track->GetDefinition() == particleTable->FindParticle("gamma");
 	
-	if(opticalPhoton || gamma)
+	zSurface = 50.2*mm;
+
+	if(!opticalPhoton){
+		return false;
+	}
+	else
 	{
 		track->SetTrackStatus(fStopAndKill); //kills photon after detection
 		
@@ -26,6 +30,10 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhis
 		//for charged particles, there is a pre and post step point after every stepping process
 		
 		G4ThreeVector posPhoton = preStepPoint->GetPosition();
+		const G4double t_global = aStep->GetPreStepPoint()->GetGlobalTime(); // in ns
+  		const auto& vtx = track->GetVertexPosition();
+
+		const G4bool isS2 = (vtx.z() < zSurface);
 		
 		//G4cout << "Photon position: " << posPhoton << G4endl;
 		//live photon position
@@ -45,28 +53,17 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhis
 		//position of detector that has been hit
 	
 		G4int evt = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
-		
-		G4int type = -1;
-		if(opticalPhoton)
-		{
-			type = 0;
-		}
-		else if(gamma)
-		{
-			type = 1;
-		}
-		
-		G4int parentID = track->GetParentID();
 	
 		G4AnalysisManager *man = G4AnalysisManager::Instance();
+
+		man->FillH1(0, t_global);
+  		man->FillH1(isS2 ? 2 : 1, t_global);
 		
-		man->FillNtupleIColumn(0, 0, evt);
-		man->FillNtupleIColumn(0, 1, type);
-		man->FillNtupleIColumn(0, 2, parentID);
-		man->FillNtupleDColumn(0, 3, posDetector[0]);
-		man->FillNtupleDColumn(0, 4, posDetector[1]);
-		man->FillNtupleDColumn(0, 5, posDetector[2]);
-		man->AddNtupleRow(0);
+		// man->FillNtupleIColumn(0, 0, evt);
+		// man->FillNtupleDColumn(0, 3, posDetector[0]);
+		// man->FillNtupleDColumn(0, 4, posDetector[1]);
+		// man->FillNtupleDColumn(0, 5, posDetector[2]);
+		// man->AddNtupleRow(0);
 		
 	}
 	return true;

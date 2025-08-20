@@ -45,7 +45,7 @@ int nS1Events = 0;
 int nS2Events = 0;
 int totalS1Photons = 0;
 int totalS2Photons = 0;
-double ElThreshold = 412000.0;    //412000.0; //Literature says proportional Electroluminescense starts at 412 kV/cm
+double ElThreshold = 412000.;    //412000.0; //Literature says proportional Electroluminescense starts at 412 kV/cm
 // double gainArea = voltage / ((ElThreshold / 10) * std::log(b/a)); //   0.015; //in mm so ~15 microns
 G4double lastStep = 10000.*mm;
 int photPerE = 30;
@@ -82,7 +82,7 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 	G4double edep = step->GetTotalEnergyDeposit() / keV;
 	static std::map<G4int, G4double> previousEnergy;
 	static std::map<G4int, int> stagnationCounter;
-	const int maxSteps = 1000;
+	const int maxSteps = 200;
 	const double tol = 0.1 * eV;
 	bool S2Event = false;
 	bool driftElectron = false;
@@ -310,7 +310,7 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 		G4TrackVector* secondaries = new G4TrackVector();
 
 
-    // Spawn optical photons
+    //Spawn optical photons
     	for (int i = 0; i < nPhotons; ++i) 
 		{
 
@@ -395,7 +395,7 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 	
 	previousEnergy[id] = energy;
 
-	if(volume->GetName() == "logicPMT" || volume->GetName() == "logicBottomPMT" || volume->GetName() == "logicTopCap") {
+	if(volume->GetName() == "logicPMT" || volume->GetName() == "logicBottomPMT" || volume->GetName() == "logicTopCap" || volume->GetName() == "logicBottomPMTCap") {
 		track->SetTrackStatus(fStopAndKill);
 	}
 	

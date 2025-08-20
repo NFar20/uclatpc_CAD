@@ -1,6 +1,8 @@
 #include "electricField.hh"
 
-ElectricField::ElectricField() {}
+ElectricField::ElectricField(G4double z_field) {
+	Zfield = z_field;
+}
 ElectricField::~ElectricField() {}
 
 void ElectricField::GetFieldValue(const G4double Point[4], G4double *field) const
@@ -14,7 +16,7 @@ void ElectricField::GetFieldValue(const G4double Point[4], G4double *field) cons
 	field[2] = 0.;
 	field[3] = 0.;
 	field[4] = 0.;
-	field[5] = 100*volt/cm;
+	field[5] = Zfield*volt/cm;
 	
 }
 

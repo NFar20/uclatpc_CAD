@@ -7,6 +7,7 @@
 #include "G4SDManager.hh"
 #include "G4ParticleTable.hh"
 #include "G4OpticalPhoton.hh"
+#include "G4SystemOfUnits.hh"
 
 #include <set>
 
@@ -20,6 +21,7 @@ public:
 
 private:
 	virtual G4bool ProcessHits(G4Step *, G4TouchableHistory *);
+	G4double zSurface;
 };
 
 #endif
