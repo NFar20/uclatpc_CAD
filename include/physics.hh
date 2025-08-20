@@ -22,7 +22,6 @@
 #include "NEST.hh"
 #include "NESTProc.hh"
 #include "VDetector.hh"
-#include "MyDetector.hh"
 
 #include "G4ProcessManager.hh"
 #include "G4ParticleTable.hh"
@@ -47,8 +46,8 @@ public:
 
 	//VDetector *LXeDet;
 	//NEST::NESTcalc *calc;
-	MyDetector*     GetNESTDetector() const { return static_cast<MyDetector*>(det); }
-  	NEST::NESTcalc* GetNESTcalc()     const { return calc; }
+	// MyDetector*     GetNESTDetector() const { return static_cast<MyDetector*>(det); }
+  	// NEST::NESTcalc* GetNESTcalc()     const { return calc; }
 	
 	void ConstructParticle() override;
 	void ConstructProcess() override;
