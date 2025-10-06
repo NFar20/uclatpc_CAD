@@ -4,6 +4,924 @@
 CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.o: /home/nickfar20/uclatpc_CAD/src/DriftElectronInfo.cc \
   /usr/include/stdc-predef.h
 
+CMakeFiles/uclatpc_CAD.dir/src/FastS2Model.cc.o: /home/nickfar20/uclatpc_CAD/src/FastS2Model.cc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Normal3D.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Point3D.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Transform3D.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Transform3D.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Vector3D.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/DualRand.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/JamesRandom.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/MTwistEngine.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/MixMaxRng.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBinomial.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBinomial.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBit.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBit.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBreitWigner.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBreitWigner.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandChiSquare.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandChiSquare.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandExpZiggurat.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandExponential.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandExponential.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandFlat.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandFlat.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGamma.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGamma.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGauss.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGauss.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGaussQ.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGaussQ.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGaussZiggurat.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGeneral.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGeneral.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandLandau.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandLandau.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandPoisson.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandPoisson.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandPoissonQ.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandPoissonQ.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandStudentT.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandStudentT.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/Random.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/Random.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandomEngine.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandomEngine.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/Randomize.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RanecuEngine.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/Ranlux64Engine.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RanluxEngine.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RanluxppEngine.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RanshiEngine.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Units/PhysicalConstants.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Utility/defs.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Utility/memory.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Utility/thread_local.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/AxisAngle.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/AxisAngle.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/LorentzVector.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/LorentzVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/Rotation.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/Rotation.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationInterfaces.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationX.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationX.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationY.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationY.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationZ.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationZ.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/ThreeVector.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/TwoVector.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/TwoVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AffineTransform.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AffineTransform.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Allocator.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AllocatorPool.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Alpha.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisManagerState.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisUtilities.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisVerbose.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiAlpha.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiBMesonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiBsMesonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiDMesonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiDeuteron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiHe3.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiKaonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiLambda.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiLambdab.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiLambdacPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiNeutrinoE.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiNeutrinoMu.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiNeutrinoTau.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiNeutron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiOmegaMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiOmegabMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiOmegacZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiProton.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmaMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmaPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmaZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmabMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmabPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmabZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmacPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmacPlusPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmacZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiTriton.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXiMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXiZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXibMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXibZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXicPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXicZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnyMethod.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnyType.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ApplicationState.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AssemblyTriplet.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AssemblyTriplet.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AssemblyVolume.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AssemblyVolume.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AutoLock.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AuxiliaryNavServices.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AuxiliaryNavServices.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BMesonMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BMesonPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BMesonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BaseAnalysisManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BaseFileManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BinScheme.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BlockingList.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BlockingList.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BooleanSolid.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BooleanSolid.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Box.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Box.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BsMesonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4CSGSolid.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargeState.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargedGeantino.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargedUnknownParticle.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChordFinder.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChordFinder.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChordFinderDelegate.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChordFinderDelegate.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ClassificationOfNewTrack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4CollectionNameVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Color.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Colour.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DCofThisEvent.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DMesonMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DMesonPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DMesonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DataVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DataVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DensityEffectCalculator.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Deuteron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DisplacedSolid.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DormandPrince745.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DsMesonMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DsMesonPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DynamicParticle.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DynamicParticle.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElectricField.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElectroMagneticField.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Electron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElectronOccupancy.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Element.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElementTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElementVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EnvironmentUtils.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EqMagElectricField.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EquationOfMotion.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EquationOfMotion.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Eta.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EtaPrime.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Etac.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Event.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EventManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exception.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ExceptionSeverity.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exp.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastTrack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Fcn.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Field.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldTrack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldTrack.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldUtils.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldUtils.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ForceCondition.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GPILSelection.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Gamma.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Geantino.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericAnalysisManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericAnalysisManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericFileManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericFileManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericIon.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericMessenger.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GeomConfig.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GeomSplitter.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GeomTypes.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GlobalConfig.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HCofThisEvent.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HCtable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4He3.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HnInformation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HnManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ICRU90StoppingData.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IntegrationDriver.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IntegrationDriver.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IonisParamElm.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IonisParamMat.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Ions.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Isotope.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IsotopeVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4JPsi.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonZeroLong.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonZeroShort.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Lambda.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Lambdab.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LambdacPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Log.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LogicalVolume.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LogicalVolume.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LorentzVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MagIntegratorStepper.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MagIntegratorStepper.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Material.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialCutsCouple.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialPropertiesIndex.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialPropertiesTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialPropertyVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MuonMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MuonPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationHistory.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationHistory.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationHistoryPool.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationLevel.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationLevel.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationLevelRep.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationLevelRep.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationLogger.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Navigator.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Navigator.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NeutrinoE.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NeutrinoMu.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NeutrinoTau.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Neutron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NistElementBuilder.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NistManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NistMaterialBuilder.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NoProcess.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Normal3D.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NormalNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NormalNavigation.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NtupleBookingManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NtupleBookingManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OmegaMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OmegabMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OmegacZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OpticalPhoton.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OrderedTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PDefManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PVPlacement.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParameterisedNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParameterisedNavigation.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleChange.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleChange.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleDefinition.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleDefinition.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleMomentum.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleTable.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleTableIterator.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleTypes.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsFreeVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsModelCatalog.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsOrderedFreeVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsTable.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsVectorType.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PionMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PionPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PionZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Point3D.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Poisson.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Polyhedron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Positron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Pow.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PrimaryParticle.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PrimaryTransformer.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PrimaryVertex.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessType.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProductionCuts.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Proton.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RKIntegrationDriver.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RKIntegrationDriver.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ReferenceCountedHandle.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Region.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Region.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RegularNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ReplicaNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ReplicaNavigation.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RotationMatrix.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Run.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RunManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RunManagerKernel.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SDManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SDStructure.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SafetyHelper.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SandiaTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SensitiveVolumeList.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmaMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmaPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmaZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmabMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmabPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmabZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmacPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmacPlusPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmacZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartTrackStack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelHeader.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelHeader.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelNode.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelNode.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelProxy.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelProxy.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StackManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StackedTrack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Step.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Step.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StepPoint.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StepPoint.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StepStatus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SteppingControl.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SteppingManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4String.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4String.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SubEvent.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SubEventTrackStack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SubtractionSolid.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SurfBits.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SystemOfUnits.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH1ToolsManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH2ToolsManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH3ToolsManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnMessenger.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnMessenger.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnToolsManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnToolsManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TP1ToolsManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TP2ToolsManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TauMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TauPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TessellatedSolid.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tet.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Threading.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ThreeVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tokenizer.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ToolsAnalysisManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ToolsAnalysisManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TouchableHandle.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TouchableHistory.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TouchableHistory.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Track.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Track.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackStack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackStatus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackingManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackingMessenger.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrajectoryContainer.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Transform3D.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TransportationManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TransportationManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TriangularFacet.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Triton.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tubs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tubs.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TwoVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Types.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcommand.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIdirectory.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UImessenger.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIparameter.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UniformElectricField.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UnknownParticle.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Upsilon.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserEventAction.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserLimits.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserLimits.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserRunAction.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserStackingAction.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserSteppingAction.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserTrackingAction.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VAnalysisManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VAnalysisManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VBooleanProcessor.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VDigiCollection.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VExternalNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFacet.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFastSimulationModel.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFileManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VHit.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VHitsCollection.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VIntegrationDriver.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VNtupleManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VPVParameterisation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VParticleChange.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VParticleChange.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VPhysicalVolume.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VPhysicalVolume.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VProcess.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VReadOutGeometry.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VRestDiscreteProcess.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSDFilter.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSensitiveDetector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSolid.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSolid.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSteppingVerbose.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTBaseHnManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTHnFileManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTouchable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTrajectory.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserDetectorConstruction.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserEventInformation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserTrackInformation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VVolumeMaterialScanner.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VisAttributes.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VisAttributes.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Visible.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Visible.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VoxelNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VoxelNavigation.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Voxelizer.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Voxelizer.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XiMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XiZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XibMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XibZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XicPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XicZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ios.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/HepPolyhedron.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/Randomize.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/evtdefs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/geomdefs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/geomwdefs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/globals.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/graphics_reps_defs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/pwdefs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/rundefs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/templates.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tls.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/cid \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/cids \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/eqT \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/forit \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/axes \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/axis \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/b1 \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/b2 \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/b3 \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/base_histo \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h1 \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h1d \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h2 \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h2d \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h3 \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h3d \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/histo_data \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p1 \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p1d \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p2 \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p2d \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/profile_data \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/ntuple_booking \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/typedefs \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/trkdefs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/trkgdefs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/windefs.hh \
+  /home/nickfar20/gcem/include/gcem.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/abs.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/acos.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/acosh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/asin.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/asinh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/atan.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/atan2.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/atanh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/beta.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/binomial_coef.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/ceil.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/copysign.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/cos.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/cosh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/erf.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/erf_inv.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/exp.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/expm1.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/fabs.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/fabsf.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/fabsl.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/factorial.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/find_exponent.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/find_fraction.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/find_whole.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/floor.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/fmod.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/gcd.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/gcem_options.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/hypot.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/incomplete_beta.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/incomplete_beta_inv.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/incomplete_gamma.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/incomplete_gamma_inv.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/inv_sqrt.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/is_even.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/is_finite.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/is_inf.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/is_nan.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/is_odd.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/lbeta.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/lcm.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/lgamma.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/lmgamma.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/log.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/log10.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/log1p.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/log2.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/log_binomial_coef.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/mantissa.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/max.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/min.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/neg_zero.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/pow.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/pow_integral.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/quadrature/gauss_legendre_50.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/round.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/sgn.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/signbit.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/sin.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/sinh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/sqrt.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/tan.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/tanh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/tgamma.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/trunc.hpp \
+  /home/nickfar20/nest/G4integration/NESTProc.hh \
+  /home/nickfar20/nest/include/Detectors/VDetector.hh \
+  /home/nickfar20/nest/include/NEST/NEST.hh \
+  /home/nickfar20/nest/include/NEST/RandomGen.hh \
+  /home/nickfar20/nest/include/NEST/ValidityTests.hh \
+  /home/nickfar20/nest/include/NEST/xoroshiro.hh \
+  /home/nickfar20/uclatpc_CAD/include/CADMesh.hh \
+  /home/nickfar20/uclatpc_CAD/include/DriftElectronInfo.hh \
+  /home/nickfar20/uclatpc_CAD/include/DynamicUserLimits.hh \
+  /home/nickfar20/uclatpc_CAD/include/FastS2Model.hh \
+  /home/nickfar20/uclatpc_CAD/include/MyDetector.hh \
+  /home/nickfar20/uclatpc_CAD/include/construction.hh \
+  /home/nickfar20/uclatpc_CAD/include/detector.hh \
+  /home/nickfar20/uclatpc_CAD/include/electricField.hh \
+  /home/nickfar20/uclatpc_CAD/include/event.hh \
+  /home/nickfar20/uclatpc_CAD/include/nestPart.hh \
+  /home/nickfar20/uclatpc_CAD/include/run.hh \
+  /home/nickfar20/uclatpc_CAD/include/stepping.hh \
+  /home/nickfar20/uclatpc_CAD/include/tracking.hh \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/assert.h \
+  /usr/include/c++/13/algorithm \
+  /usr/include/c++/13/array \
+  /usr/include/c++/13/atomic \
+  /usr/include/c++/13/backward/auto_ptr.h \
+  /usr/include/c++/13/backward/binders.h \
+  /usr/include/c++/13/bit \
+  /usr/include/c++/13/bits/algorithmfwd.h \
+  /usr/include/c++/13/bits/align.h \
+  /usr/include/c++/13/bits/alloc_traits.h \
+  /usr/include/c++/13/bits/allocated_ptr.h \
+  /usr/include/c++/13/bits/allocator.h \
+  /usr/include/c++/13/bits/atomic_base.h \
+  /usr/include/c++/13/bits/atomic_futex.h \
+  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/13/bits/basic_ios.h \
+  /usr/include/c++/13/bits/basic_ios.tcc \
+  /usr/include/c++/13/bits/basic_string.h \
+  /usr/include/c++/13/bits/basic_string.tcc \
+  /usr/include/c++/13/bits/char_traits.h \
+  /usr/include/c++/13/bits/charconv.h \
+  /usr/include/c++/13/bits/chrono.h \
+  /usr/include/c++/13/bits/codecvt.h \
+  /usr/include/c++/13/bits/concept_check.h \
+  /usr/include/c++/13/bits/cpp_type_traits.h \
+  /usr/include/c++/13/bits/cxxabi_forced.h \
+  /usr/include/c++/13/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13/bits/enable_special_members.h \
+  /usr/include/c++/13/bits/erase_if.h \
+  /usr/include/c++/13/bits/exception.h \
+  /usr/include/c++/13/bits/exception_defines.h \
+  /usr/include/c++/13/bits/exception_ptr.h \
+  /usr/include/c++/13/bits/fstream.tcc \
+  /usr/include/c++/13/bits/functexcept.h \
+  /usr/include/c++/13/bits/functional_hash.h \
+  /usr/include/c++/13/bits/hash_bytes.h \
+  /usr/include/c++/13/bits/hashtable.h \
+  /usr/include/c++/13/bits/hashtable_policy.h \
+  /usr/include/c++/13/bits/invoke.h \
+  /usr/include/c++/13/bits/ios_base.h \
+  /usr/include/c++/13/bits/istream.tcc \
+  /usr/include/c++/13/bits/list.tcc \
+  /usr/include/c++/13/bits/locale_classes.h \
+  /usr/include/c++/13/bits/locale_classes.tcc \
+  /usr/include/c++/13/bits/locale_conv.h \
+  /usr/include/c++/13/bits/locale_facets.h \
+  /usr/include/c++/13/bits/locale_facets.tcc \
+  /usr/include/c++/13/bits/locale_facets_nonio.h \
+  /usr/include/c++/13/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/13/bits/localefwd.h \
+  /usr/include/c++/13/bits/memory_resource.h \
+  /usr/include/c++/13/bits/memoryfwd.h \
+  /usr/include/c++/13/bits/move.h \
+  /usr/include/c++/13/bits/nested_exception.h \
+  /usr/include/c++/13/bits/new_allocator.h \
+  /usr/include/c++/13/bits/node_handle.h \
+  /usr/include/c++/13/bits/ostream.tcc \
+  /usr/include/c++/13/bits/ostream_insert.h \
+  /usr/include/c++/13/bits/parse_numbers.h \
+  /usr/include/c++/13/bits/postypes.h \
+  /usr/include/c++/13/bits/predefined_ops.h \
+  /usr/include/c++/13/bits/ptr_traits.h \
+  /usr/include/c++/13/bits/quoted_string.h \
+  /usr/include/c++/13/bits/random.h \
+  /usr/include/c++/13/bits/random.tcc \
+  /usr/include/c++/13/bits/range_access.h \
+  /usr/include/c++/13/bits/refwrap.h \
+  /usr/include/c++/13/bits/requires_hosted.h \
+  /usr/include/c++/13/bits/shared_ptr.h \
+  /usr/include/c++/13/bits/shared_ptr_atomic.h \
+  /usr/include/c++/13/bits/shared_ptr_base.h \
+  /usr/include/c++/13/bits/specfun.h \
+  /usr/include/c++/13/bits/sstream.tcc \
+  /usr/include/c++/13/bits/std_abs.h \
+  /usr/include/c++/13/bits/std_function.h \
+  /usr/include/c++/13/bits/std_mutex.h \
+  /usr/include/c++/13/bits/std_thread.h \
+  /usr/include/c++/13/bits/stl_algo.h \
+  /usr/include/c++/13/bits/stl_algobase.h \
+  /usr/include/c++/13/bits/stl_bvector.h \
+  /usr/include/c++/13/bits/stl_construct.h \
+  /usr/include/c++/13/bits/stl_function.h \
+  /usr/include/c++/13/bits/stl_heap.h \
+  /usr/include/c++/13/bits/stl_iterator.h \
+  /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/13/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13/bits/stl_list.h \
+  /usr/include/c++/13/bits/stl_map.h \
+  /usr/include/c++/13/bits/stl_multimap.h \
+  /usr/include/c++/13/bits/stl_multiset.h \
+  /usr/include/c++/13/bits/stl_numeric.h \
+  /usr/include/c++/13/bits/stl_pair.h \
+  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/13/bits/stl_relops.h \
+  /usr/include/c++/13/bits/stl_set.h \
+  /usr/include/c++/13/bits/stl_tempbuf.h \
+  /usr/include/c++/13/bits/stl_tree.h \
+  /usr/include/c++/13/bits/stl_uninitialized.h \
+  /usr/include/c++/13/bits/stl_vector.h \
+  /usr/include/c++/13/bits/streambuf.tcc \
+  /usr/include/c++/13/bits/streambuf_iterator.h \
+  /usr/include/c++/13/bits/string_view.tcc \
+  /usr/include/c++/13/bits/stringfwd.h \
+  /usr/include/c++/13/bits/this_thread_sleep.h \
+  /usr/include/c++/13/bits/uniform_int_dist.h \
+  /usr/include/c++/13/bits/unique_lock.h \
+  /usr/include/c++/13/bits/unique_ptr.h \
+  /usr/include/c++/13/bits/unordered_map.h \
+  /usr/include/c++/13/bits/unordered_set.h \
+  /usr/include/c++/13/bits/uses_allocator.h \
+  /usr/include/c++/13/bits/uses_allocator_args.h \
+  /usr/include/c++/13/bits/utility.h \
+  /usr/include/c++/13/bits/vector.tcc \
+  /usr/include/c++/13/cassert \
+  /usr/include/c++/13/cctype \
+  /usr/include/c++/13/cerrno \
+  /usr/include/c++/13/cfloat \
+  /usr/include/c++/13/chrono \
+  /usr/include/c++/13/climits \
+  /usr/include/c++/13/clocale \
+  /usr/include/c++/13/cmath \
+  /usr/include/c++/13/compare \
+  /usr/include/c++/13/complex \
+  /usr/include/c++/13/condition_variable \
+  /usr/include/c++/13/cstddef \
+  /usr/include/c++/13/cstdint \
+  /usr/include/c++/13/cstdio \
+  /usr/include/c++/13/cstdlib \
+  /usr/include/c++/13/cstring \
+  /usr/include/c++/13/ctime \
+  /usr/include/c++/13/cwchar \
+  /usr/include/c++/13/cwctype \
+  /usr/include/c++/13/debug/assertions.h \
+  /usr/include/c++/13/debug/debug.h \
+  /usr/include/c++/13/exception \
+  /usr/include/c++/13/ext/aligned_buffer.h \
+  /usr/include/c++/13/ext/alloc_traits.h \
+  /usr/include/c++/13/ext/atomicity.h \
+  /usr/include/c++/13/ext/concurrence.h \
+  /usr/include/c++/13/ext/numeric_traits.h \
+  /usr/include/c++/13/ext/string_conversions.h \
+  /usr/include/c++/13/ext/type_traits.h \
+  /usr/include/c++/13/fstream \
+  /usr/include/c++/13/functional \
+  /usr/include/c++/13/future \
+  /usr/include/c++/13/initializer_list \
+  /usr/include/c++/13/iomanip \
+  /usr/include/c++/13/ios \
+  /usr/include/c++/13/iosfwd \
+  /usr/include/c++/13/iostream \
+  /usr/include/c++/13/istream \
+  /usr/include/c++/13/limits \
+  /usr/include/c++/13/list \
+  /usr/include/c++/13/locale \
+  /usr/include/c++/13/map \
+  /usr/include/c++/13/math.h \
+  /usr/include/c++/13/memory \
+  /usr/include/c++/13/mutex \
+  /usr/include/c++/13/new \
+  /usr/include/c++/13/numeric \
+  /usr/include/c++/13/ostream \
+  /usr/include/c++/13/pstl/execution_defs.h \
+  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/13/pstl/glue_memory_defs.h \
+  /usr/include/c++/13/pstl/glue_numeric_defs.h \
+  /usr/include/c++/13/pstl/pstl_config.h \
+  /usr/include/c++/13/random \
+  /usr/include/c++/13/ratio \
+  /usr/include/c++/13/set \
+  /usr/include/c++/13/sstream \
+  /usr/include/c++/13/stdexcept \
+  /usr/include/c++/13/stdlib.h \
+  /usr/include/c++/13/streambuf \
+  /usr/include/c++/13/string \
+  /usr/include/c++/13/string_view \
+  /usr/include/c++/13/system_error \
+  /usr/include/c++/13/thread \
+  /usr/include/c++/13/tr1/bessel_function.tcc \
+  /usr/include/c++/13/tr1/beta_function.tcc \
+  /usr/include/c++/13/tr1/ell_integral.tcc \
+  /usr/include/c++/13/tr1/exp_integral.tcc \
+  /usr/include/c++/13/tr1/gamma.tcc \
+  /usr/include/c++/13/tr1/hypergeometric.tcc \
+  /usr/include/c++/13/tr1/legendre_function.tcc \
+  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/13/tr1/poly_hermite.tcc \
+  /usr/include/c++/13/tr1/poly_laguerre.tcc \
+  /usr/include/c++/13/tr1/riemann_zeta.tcc \
+  /usr/include/c++/13/tr1/special_function_util.h \
+  /usr/include/c++/13/tuple \
+  /usr/include/c++/13/type_traits \
+  /usr/include/c++/13/typeinfo \
+  /usr/include/c++/13/unordered_map \
+  /usr/include/c++/13/unordered_set \
+  /usr/include/c++/13/utility \
+  /usr/include/c++/13/vector \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/libintl.h \
+  /usr/include/limits.h \
+  /usr/include/linux/errno.h \
+  /usr/include/linux/limits.h \
+  /usr/include/locale.h \
+  /usr/include/math.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/time.h \
+  /usr/include/wchar.h \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
+
 CMakeFiles/uclatpc_CAD.dir/src/WIMPElasticProcess.cc.o: /home/nickfar20/uclatpc_CAD/src/WIMPElasticProcess.cc \
   /usr/include/stdc-predef.h
 
@@ -222,6 +1140,14 @@ CMakeFiles/uclatpc_CAD.dir/src/action.cc.o: /home/nickfar20/uclatpc_CAD/src/acti
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exception.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ExceptionSeverity.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exp.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationManagerProcess.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationProcessType.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastTrack.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Fcn.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Field.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldManager.hh \
@@ -253,6 +1179,7 @@ CMakeFiles/uclatpc_CAD.dir/src/action.cc.o: /home/nickfar20/uclatpc_CAD/src/acti
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronElastic.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronElasticPhysics.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronElasticPhysicsHP.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronPhysicsQGSP_BERT.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronPhysicsQGSP_BIC.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronPhysicsQGSP_BIC_HP.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronicException.hh \
@@ -510,6 +1437,7 @@ CMakeFiles/uclatpc_CAD.dir/src/action.cc.o: /home/nickfar20/uclatpc_CAD/src/acti
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VEmModel.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VExternalNavigation.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFacet.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFastSimulationModel.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFileManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VHit.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VHitsCollection.hh \
@@ -677,6 +1605,8 @@ CMakeFiles/uclatpc_CAD.dir/src/action.cc.o: /home/nickfar20/uclatpc_CAD/src/acti
   /home/nickfar20/uclatpc_CAD/include/CADMesh.hh \
   /home/nickfar20/uclatpc_CAD/include/DriftElectronInfo.hh \
   /home/nickfar20/uclatpc_CAD/include/DynamicUserLimits.hh \
+  /home/nickfar20/uclatpc_CAD/include/FastS2Model.hh \
+  /home/nickfar20/uclatpc_CAD/include/MyDetector.hh \
   /home/nickfar20/uclatpc_CAD/include/action.hh \
   /home/nickfar20/uclatpc_CAD/include/construction.hh \
   /home/nickfar20/uclatpc_CAD/include/detector.hh \
@@ -799,6 +1729,7 @@ CMakeFiles/uclatpc_CAD.dir/src/action.cc.o: /home/nickfar20/uclatpc_CAD/src/acti
   /usr/include/c++/13/bits/unique_lock.h \
   /usr/include/c++/13/bits/unique_ptr.h \
   /usr/include/c++/13/bits/unordered_map.h \
+  /usr/include/c++/13/bits/unordered_set.h \
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
@@ -883,6 +1814,7 @@ CMakeFiles/uclatpc_CAD.dir/src/action.cc.o: /home/nickfar20/uclatpc_CAD/src/acti
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
   /usr/include/c++/13/unordered_map \
+  /usr/include/c++/13/unordered_set \
   /usr/include/c++/13/utility \
   /usr/include/c++/13/vector \
   /usr/include/ctype.h \
@@ -1090,10 +2022,45 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AffineTransform.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Allocator.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AllocatorPool.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Alpha.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisManagerState.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisUtilities.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisVerbose.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiAlpha.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiBMesonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiBsMesonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiDMesonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiDeuteron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiHe3.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiKaonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiLambda.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiLambdab.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiLambdacPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiNeutrinoE.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiNeutrinoMu.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiNeutrinoTau.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiNeutron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiOmegaMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiOmegabMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiOmegacZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiProton.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmaMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmaPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmaZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmabMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmabPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmabZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmacPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmacPlusPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmacZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiTriton.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXiMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXiZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXibMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXibZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXicPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXicZero.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnyMethod.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnyType.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ApplicationState.hh \
@@ -1104,6 +2071,9 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AutoLock.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AuxiliaryNavServices.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AuxiliaryNavServices.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BMesonMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BMesonPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BMesonZero.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BaseAnalysisManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BaseFileManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BinScheme.hh \
@@ -1113,8 +2083,11 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BooleanSolid.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Box.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Box.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BsMesonZero.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4CSGSolid.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargeState.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargedGeantino.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargedUnknownParticle.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChordFinder.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChordFinder.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChordFinderDelegate.hh \
@@ -1124,15 +2097,22 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Color.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Colour.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DCofThisEvent.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DMesonMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DMesonPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DMesonZero.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DataVector.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DataVector.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DensityEffectCalculator.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Deuteron.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DisplacedSolid.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DormandPrince745.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DsMesonMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DsMesonPlus.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DynamicParticle.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DynamicParticle.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElectricField.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElectroMagneticField.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Electron.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElectronOccupancy.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Element.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElementTable.hh \
@@ -1141,11 +2121,20 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EqMagElectricField.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EquationOfMotion.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EquationOfMotion.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Eta.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EtaPrime.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Etac.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Event.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EventManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exception.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ExceptionSeverity.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exp.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastTrack.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Fcn.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Field.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldManager.hh \
@@ -1156,10 +2145,13 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldUtils.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ForceCondition.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GPILSelection.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Gamma.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Geantino.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericAnalysisManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericAnalysisManager.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericFileManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericFileManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericIon.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericMessenger.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GeomConfig.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GeomSplitter.hh \
@@ -1167,6 +2159,7 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GlobalConfig.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HCofThisEvent.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HCtable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4He3.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HnInformation.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HnManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ICRU90StoppingData.hh \
@@ -1174,8 +2167,18 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IntegrationDriver.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IonisParamElm.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IonisParamMat.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Ions.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Isotope.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IsotopeVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4JPsi.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonZeroLong.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonZeroShort.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Lambda.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Lambdab.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LambdacPlus.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Log.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LogicalVolume.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LogicalVolume.icc \
@@ -1183,10 +2186,13 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MagIntegratorStepper.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MagIntegratorStepper.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Material.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialCutsCouple.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialPropertiesIndex.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialPropertiesTable.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialPropertyVector.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MuonMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MuonPlus.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationHistory.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationHistory.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationHistoryPool.hh \
@@ -1197,6 +2203,10 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationLogger.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Navigator.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Navigator.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NeutrinoE.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NeutrinoMu.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NeutrinoTau.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Neutron.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NistElementBuilder.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NistManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NistMaterialBuilder.hh \
@@ -1206,6 +2216,9 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NormalNavigation.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NtupleBookingManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NtupleBookingManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OmegaMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OmegabMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OmegacZero.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OpticalPhoton.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OrderedTable.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PDefManager.hh \
@@ -1220,15 +2233,22 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleTable.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleTable.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleTableIterator.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleTypes.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsFreeVector.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsModelCatalog.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsOrderedFreeVector.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsTable.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsTable.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsVector.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsVector.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsVectorType.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PionMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PionPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PionZero.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Point3D.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Poisson.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Polyhedron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Positron.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Pow.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PrimaryParticle.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PrimaryTransformer.hh \
@@ -1238,6 +2258,8 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessType.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessVector.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProductionCuts.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Proton.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RKIntegrationDriver.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RKIntegrationDriver.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ReferenceCountedHandle.hh \
@@ -1247,6 +2269,7 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ReplicaNavigation.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ReplicaNavigation.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RotationMatrix.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Run.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RunManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RunManagerKernel.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SDManager.hh \
@@ -1254,6 +2277,15 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SafetyHelper.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SandiaTable.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SensitiveVolumeList.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmaMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmaPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmaZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmabMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmabPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmabZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmacPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmacPlusPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmacZero.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartTrackStack.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelHeader.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelHeader.icc \
@@ -1288,6 +2320,8 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnToolsManager.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TP1ToolsManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TP2ToolsManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TauMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TauPlus.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TessellatedSolid.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tet.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Threading.hh \
@@ -1310,6 +2344,7 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TransportationManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TransportationManager.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TriangularFacet.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Triton.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tubs.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tubs.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TwoVector.hh \
@@ -1319,6 +2354,12 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UImessenger.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIparameter.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UniformElectricField.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UnknownParticle.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Upsilon.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserEventAction.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserLimits.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserLimits.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserRunAction.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserStackingAction.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserSteppingAction.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserTrackingAction.hh \
@@ -1328,6 +2369,7 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VDigiCollection.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VExternalNavigation.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFacet.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFastSimulationModel.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFileManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VHit.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VHitsCollection.hh \
@@ -1341,6 +2383,7 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VPhysicalVolume.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VProcess.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VReadOutGeometry.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VRestDiscreteProcess.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSDFilter.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSensitiveDetector.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSolid.hh \
@@ -1362,6 +2405,12 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VoxelNavigation.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Voxelizer.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Voxelizer.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XiMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XiZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XibMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XibZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XicPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XicZero.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ios.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/HepPolyhedron.h \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/Randomize.hh \
@@ -1401,10 +2450,92 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/trkdefs.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/trkgdefs.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/windefs.hh \
+  /home/nickfar20/gcem/include/gcem.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/abs.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/acos.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/acosh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/asin.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/asinh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/atan.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/atan2.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/atanh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/beta.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/binomial_coef.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/ceil.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/copysign.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/cos.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/cosh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/erf.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/erf_inv.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/exp.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/expm1.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/fabs.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/fabsf.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/fabsl.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/factorial.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/find_exponent.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/find_fraction.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/find_whole.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/floor.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/fmod.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/gcd.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/gcem_options.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/hypot.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/incomplete_beta.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/incomplete_beta_inv.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/incomplete_gamma.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/incomplete_gamma_inv.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/inv_sqrt.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/is_even.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/is_finite.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/is_inf.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/is_nan.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/is_odd.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/lbeta.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/lcm.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/lgamma.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/lmgamma.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/log.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/log10.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/log1p.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/log2.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/log_binomial_coef.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/mantissa.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/max.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/min.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/neg_zero.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/pow.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/pow_integral.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/quadrature/gauss_legendre_50.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/round.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/sgn.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/signbit.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/sin.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/sinh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/sqrt.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/tan.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/tanh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/tgamma.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/trunc.hpp \
+  /home/nickfar20/nest/G4integration/NESTProc.hh \
+  /home/nickfar20/nest/include/Detectors/VDetector.hh \
+  /home/nickfar20/nest/include/NEST/NEST.hh \
+  /home/nickfar20/nest/include/NEST/RandomGen.hh \
+  /home/nickfar20/nest/include/NEST/ValidityTests.hh \
+  /home/nickfar20/nest/include/NEST/xoroshiro.hh \
   /home/nickfar20/uclatpc_CAD/include/CADMesh.hh \
+  /home/nickfar20/uclatpc_CAD/include/DriftElectronInfo.hh \
+  /home/nickfar20/uclatpc_CAD/include/DynamicUserLimits.hh \
+  /home/nickfar20/uclatpc_CAD/include/FastS2Model.hh \
+  /home/nickfar20/uclatpc_CAD/include/MyDetector.hh \
   /home/nickfar20/uclatpc_CAD/include/construction.hh \
   /home/nickfar20/uclatpc_CAD/include/detector.hh \
   /home/nickfar20/uclatpc_CAD/include/electricField.hh \
+  /home/nickfar20/uclatpc_CAD/include/event.hh \
+  /home/nickfar20/uclatpc_CAD/include/nestPart.hh \
+  /home/nickfar20/uclatpc_CAD/include/run.hh \
+  /home/nickfar20/uclatpc_CAD/include/stepping.hh \
+  /home/nickfar20/uclatpc_CAD/include/tracking.hh \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
@@ -1471,6 +2602,8 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /usr/include/c++/13/bits/predefined_ops.h \
   /usr/include/c++/13/bits/ptr_traits.h \
   /usr/include/c++/13/bits/quoted_string.h \
+  /usr/include/c++/13/bits/random.h \
+  /usr/include/c++/13/bits/random.tcc \
   /usr/include/c++/13/bits/range_access.h \
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
@@ -1496,6 +2629,7 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /usr/include/c++/13/bits/stl_map.h \
   /usr/include/c++/13/bits/stl_multimap.h \
   /usr/include/c++/13/bits/stl_multiset.h \
+  /usr/include/c++/13/bits/stl_numeric.h \
   /usr/include/c++/13/bits/stl_pair.h \
   /usr/include/c++/13/bits/stl_raw_storage_iter.h \
   /usr/include/c++/13/bits/stl_relops.h \
@@ -1513,12 +2647,15 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /usr/include/c++/13/bits/unique_lock.h \
   /usr/include/c++/13/bits/unique_ptr.h \
   /usr/include/c++/13/bits/unordered_map.h \
+  /usr/include/c++/13/bits/unordered_set.h \
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
   /usr/include/c++/13/bits/vector.tcc \
+  /usr/include/c++/13/cassert \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
+  /usr/include/c++/13/cfloat \
   /usr/include/c++/13/chrono \
   /usr/include/c++/13/climits \
   /usr/include/c++/13/clocale \
@@ -1557,14 +2694,18 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /usr/include/c++/13/list \
   /usr/include/c++/13/locale \
   /usr/include/c++/13/map \
+  /usr/include/c++/13/math.h \
   /usr/include/c++/13/memory \
   /usr/include/c++/13/mutex \
   /usr/include/c++/13/new \
+  /usr/include/c++/13/numeric \
   /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
+  /usr/include/c++/13/pstl/glue_numeric_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
+  /usr/include/c++/13/random \
   /usr/include/c++/13/ratio \
   /usr/include/c++/13/set \
   /usr/include/c++/13/sstream \
@@ -1591,6 +2732,7 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
   /usr/include/c++/13/unordered_map \
+  /usr/include/c++/13/unordered_set \
   /usr/include/c++/13/utility \
   /usr/include/c++/13/vector \
   /usr/include/ctype.h \
@@ -1704,6 +2846,7 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
@@ -1712,6 +2855,7 @@ CMakeFiles/uclatpc_CAD.dir/src/construction.cc.o: /home/nickfar20/uclatpc_CAD/sr
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
@@ -2623,42 +3767,369 @@ CMakeFiles/uclatpc_CAD.dir/src/electricField.cc.o: /home/nickfar20/uclatpc_CAD/s
   /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
 CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: /home/nickfar20/uclatpc_CAD/src/event.cc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Normal3D.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Point3D.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Transform3D.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Transform3D.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Vector3D.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/DualRand.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/JamesRandom.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/MTwistEngine.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/MixMaxRng.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBinomial.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBinomial.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBit.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBit.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBreitWigner.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBreitWigner.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandChiSquare.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandChiSquare.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandExpZiggurat.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandExponential.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandExponential.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandFlat.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandFlat.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGamma.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGamma.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGauss.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGauss.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGaussQ.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGaussQ.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGaussZiggurat.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGeneral.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGeneral.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandLandau.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandLandau.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandPoisson.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandPoisson.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandPoissonQ.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandPoissonQ.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandStudentT.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandStudentT.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/Random.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/Random.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandomEngine.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandomEngine.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/Randomize.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RanecuEngine.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/Ranlux64Engine.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RanluxEngine.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RanluxppEngine.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RanshiEngine.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Units/PhysicalConstants.h \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Utility/defs.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Utility/memory.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Utility/thread_local.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/AxisAngle.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/AxisAngle.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/LorentzVector.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/LorentzVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/Rotation.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/Rotation.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationInterfaces.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationX.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationX.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationY.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationY.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationZ.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationZ.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/ThreeVector.h \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/TwoVector.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/TwoVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AffineTransform.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AffineTransform.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Allocator.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AllocatorPool.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Alpha.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisManagerState.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisUtilities.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisVerbose.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiAlpha.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiBMesonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiBsMesonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiDMesonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiDeuteron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiHe3.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiKaonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiLambda.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiLambdab.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiLambdacPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiNeutrinoE.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiNeutrinoMu.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiNeutrinoTau.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiNeutron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiOmegaMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiOmegabMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiOmegacZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiProton.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmaMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmaPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmaZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmabMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmabPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmabZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmacPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmacPlusPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmacZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiTriton.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXiMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXiZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXibMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXibZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXicPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXicZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnyMethod.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnyType.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ApplicationState.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AssemblyTriplet.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AssemblyTriplet.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AssemblyVolume.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AssemblyVolume.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AutoLock.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AuxiliaryNavServices.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AuxiliaryNavServices.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BMesonMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BMesonPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BMesonZero.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BaseAnalysisManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BaseFileManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BinScheme.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BlockingList.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BlockingList.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BooleanSolid.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BooleanSolid.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Box.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Box.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BsMesonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4CSGSolid.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargeState.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargedGeantino.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargedUnknownParticle.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChordFinder.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChordFinder.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChordFinderDelegate.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChordFinderDelegate.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ClassificationOfNewTrack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4CollectionNameVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Color.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Colour.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DCofThisEvent.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DMesonMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DMesonPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DMesonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DataVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DataVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DensityEffectCalculator.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Deuteron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DisplacedSolid.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DormandPrince745.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DsMesonMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DsMesonPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DynamicParticle.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DynamicParticle.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElectricField.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElectroMagneticField.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Electron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElectronOccupancy.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Element.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElementTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElementVector.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EnvironmentUtils.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EqMagElectricField.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EquationOfMotion.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EquationOfMotion.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Eta.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EtaPrime.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Etac.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Event.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EventManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exception.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ExceptionSeverity.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exp.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastTrack.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Fcn.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Field.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldTrack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldTrack.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldUtils.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldUtils.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ForceCondition.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GPILSelection.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Gamma.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Geantino.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericAnalysisManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericAnalysisManager.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericFileManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericFileManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericIon.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericMessenger.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GeomConfig.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GeomSplitter.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GeomTypes.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GlobalConfig.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HCofThisEvent.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HCtable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4He3.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HnInformation.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HnManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ICRU90StoppingData.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IntegrationDriver.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IntegrationDriver.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IonisParamElm.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IonisParamMat.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Ions.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Isotope.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IsotopeVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4JPsi.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonZeroLong.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonZeroShort.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Lambda.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Lambdab.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LambdacPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Log.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LogicalVolume.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LogicalVolume.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LorentzVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MagIntegratorStepper.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MagIntegratorStepper.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Material.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialCutsCouple.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialPropertiesIndex.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialPropertiesTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialPropertyVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MuonMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MuonPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationHistory.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationHistory.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationHistoryPool.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationLevel.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationLevel.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationLevelRep.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationLevelRep.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationLogger.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Navigator.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Navigator.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NeutrinoE.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NeutrinoMu.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NeutrinoTau.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Neutron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NistElementBuilder.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NistManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NistMaterialBuilder.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NoProcess.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Normal3D.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NormalNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NormalNavigation.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NtupleBookingManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NtupleBookingManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OmegaMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OmegabMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OmegacZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OpticalPhoton.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OrderedTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PDefManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PVPlacement.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParameterisedNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParameterisedNavigation.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleChange.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleChange.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleDefinition.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleDefinition.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleMomentum.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleTable.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleTableIterator.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleTypes.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsFreeVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsModelCatalog.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsOrderedFreeVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsTable.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsVectorType.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PionMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PionPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PionZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Point3D.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Poisson.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Polyhedron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Positron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Pow.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PrimaryParticle.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PrimaryTransformer.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PrimaryVertex.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessType.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProductionCuts.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Proton.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RKIntegrationDriver.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RKIntegrationDriver.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ReferenceCountedHandle.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Region.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Region.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RegularNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ReplicaNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ReplicaNavigation.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RotationMatrix.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Run.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RunManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RunManagerKernel.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SDManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SDStructure.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SafetyHelper.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SandiaTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SensitiveVolumeList.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmaMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmaPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmaZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmabMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmabPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmabZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmacPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmacPlusPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmacZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartTrackStack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelHeader.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelHeader.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelNode.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelNode.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelProxy.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelProxy.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StackManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StackedTrack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Step.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Step.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StepPoint.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StepPoint.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StepStatus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SteppingControl.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SteppingManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4String.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4String.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SubEvent.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SubEventTrackStack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SubtractionSolid.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SurfBits.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SystemOfUnits.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH1ToolsManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH2ToolsManager.hh \
@@ -2671,33 +4142,107 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: /home/nickfar20/uclatpc_CAD/src/event
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnToolsManager.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TP1ToolsManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TP2ToolsManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TauMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TauPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TessellatedSolid.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tet.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Threading.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ThreeVector.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tokenizer.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ToolsAnalysisManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ToolsAnalysisManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TouchableHandle.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TouchableHistory.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TouchableHistory.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Track.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Track.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackStack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackStatus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackingManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackingMessenger.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrajectoryContainer.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Transform3D.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TransportationManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TransportationManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TriangularFacet.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Triton.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tubs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tubs.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TwoVector.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Types.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcommand.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIdirectory.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UImessenger.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIparameter.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UniformElectricField.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UnknownParticle.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Upsilon.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserEventAction.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserLimits.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserLimits.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserRunAction.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserStackingAction.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserSteppingAction.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserTrackingAction.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VAnalysisManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VAnalysisManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VBooleanProcessor.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VDigiCollection.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VExternalNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFacet.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFastSimulationModel.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFileManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VHit.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VHitsCollection.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VIntegrationDriver.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VNavigation.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VNtupleManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VPVParameterisation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VParticleChange.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VParticleChange.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VPhysicalVolume.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VPhysicalVolume.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VProcess.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VReadOutGeometry.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VRestDiscreteProcess.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSDFilter.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSensitiveDetector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSolid.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSolid.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSteppingVerbose.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTBaseHnManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTHnFileManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTouchable.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTrajectory.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserDetectorConstruction.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserEventInformation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserTrackInformation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VVolumeMaterialScanner.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VisAttributes.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VisAttributes.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Visible.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Visible.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VoxelNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VoxelNavigation.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Voxelizer.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Voxelizer.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XiMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XiZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XibMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XibZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XicPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XicZero.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ios.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/HepPolyhedron.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/Randomize.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/evtdefs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/geomdefs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/geomwdefs.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/globals.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/graphics_reps_defs.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/pwdefs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/rundefs.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/templates.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/tls.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/cid \
@@ -2724,11 +4269,99 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: /home/nickfar20/uclatpc_CAD/src/event
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/profile_data \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/ntuple_booking \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/typedefs \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/trkdefs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/trkgdefs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/windefs.hh \
+  /home/nickfar20/gcem/include/gcem.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/abs.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/acos.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/acosh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/asin.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/asinh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/atan.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/atan2.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/atanh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/beta.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/binomial_coef.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/ceil.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/copysign.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/cos.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/cosh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/erf.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/erf_inv.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/exp.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/expm1.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/fabs.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/fabsf.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/fabsl.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/factorial.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/find_exponent.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/find_fraction.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/find_whole.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/floor.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/fmod.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/gcd.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/gcem_options.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/hypot.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/incomplete_beta.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/incomplete_beta_inv.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/incomplete_gamma.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/incomplete_gamma_inv.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/inv_sqrt.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/is_even.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/is_finite.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/is_inf.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/is_nan.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/is_odd.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/lbeta.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/lcm.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/lgamma.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/lmgamma.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/log.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/log10.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/log1p.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/log2.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/log_binomial_coef.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/mantissa.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/max.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/min.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/neg_zero.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/pow.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/pow_integral.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/quadrature/gauss_legendre_50.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/round.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/sgn.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/signbit.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/sin.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/sinh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/sqrt.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/tan.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/tanh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/tgamma.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/trunc.hpp \
+  /home/nickfar20/nest/G4integration/NESTProc.hh \
+  /home/nickfar20/nest/include/Detectors/VDetector.hh \
+  /home/nickfar20/nest/include/NEST/NEST.hh \
+  /home/nickfar20/nest/include/NEST/RandomGen.hh \
+  /home/nickfar20/nest/include/NEST/ValidityTests.hh \
+  /home/nickfar20/nest/include/NEST/xoroshiro.hh \
+  /home/nickfar20/uclatpc_CAD/include/CADMesh.hh \
+  /home/nickfar20/uclatpc_CAD/include/DriftElectronInfo.hh \
+  /home/nickfar20/uclatpc_CAD/include/DynamicUserLimits.hh \
+  /home/nickfar20/uclatpc_CAD/include/FastS2Model.hh \
+  /home/nickfar20/uclatpc_CAD/include/MyDetector.hh \
+  /home/nickfar20/uclatpc_CAD/include/construction.hh \
+  /home/nickfar20/uclatpc_CAD/include/detector.hh \
+  /home/nickfar20/uclatpc_CAD/include/electricField.hh \
   /home/nickfar20/uclatpc_CAD/include/event.hh \
+  /home/nickfar20/uclatpc_CAD/include/nestPart.hh \
   /home/nickfar20/uclatpc_CAD/include/run.hh \
+  /home/nickfar20/uclatpc_CAD/include/stepping.hh \
+  /home/nickfar20/uclatpc_CAD/include/tracking.hh \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/assert.h \
   /usr/include/c++/13/algorithm \
   /usr/include/c++/13/array \
   /usr/include/c++/13/atomic \
@@ -2755,6 +4388,7 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: /home/nickfar20/uclatpc_CAD/src/event
   /usr/include/c++/13/bits/cpp_type_traits.h \
   /usr/include/c++/13/bits/cxxabi_forced.h \
   /usr/include/c++/13/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13/bits/enable_special_members.h \
   /usr/include/c++/13/bits/erase_if.h \
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
@@ -2763,9 +4397,12 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: /home/nickfar20/uclatpc_CAD/src/event
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
   /usr/include/c++/13/bits/hash_bytes.h \
+  /usr/include/c++/13/bits/hashtable.h \
+  /usr/include/c++/13/bits/hashtable_policy.h \
   /usr/include/c++/13/bits/invoke.h \
   /usr/include/c++/13/bits/ios_base.h \
   /usr/include/c++/13/bits/istream.tcc \
+  /usr/include/c++/13/bits/list.tcc \
   /usr/include/c++/13/bits/locale_classes.h \
   /usr/include/c++/13/bits/locale_classes.tcc \
   /usr/include/c++/13/bits/locale_conv.h \
@@ -2787,6 +4424,8 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: /home/nickfar20/uclatpc_CAD/src/event
   /usr/include/c++/13/bits/predefined_ops.h \
   /usr/include/c++/13/bits/ptr_traits.h \
   /usr/include/c++/13/bits/quoted_string.h \
+  /usr/include/c++/13/bits/random.h \
+  /usr/include/c++/13/bits/random.tcc \
   /usr/include/c++/13/bits/range_access.h \
   /usr/include/c++/13/bits/refwrap.h \
   /usr/include/c++/13/bits/requires_hosted.h \
@@ -2808,9 +4447,11 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: /home/nickfar20/uclatpc_CAD/src/event
   /usr/include/c++/13/bits/stl_iterator.h \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13/bits/stl_list.h \
   /usr/include/c++/13/bits/stl_map.h \
   /usr/include/c++/13/bits/stl_multimap.h \
   /usr/include/c++/13/bits/stl_multiset.h \
+  /usr/include/c++/13/bits/stl_numeric.h \
   /usr/include/c++/13/bits/stl_pair.h \
   /usr/include/c++/13/bits/stl_raw_storage_iter.h \
   /usr/include/c++/13/bits/stl_relops.h \
@@ -2827,12 +4468,16 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: /home/nickfar20/uclatpc_CAD/src/event
   /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/unique_lock.h \
   /usr/include/c++/13/bits/unique_ptr.h \
+  /usr/include/c++/13/bits/unordered_map.h \
+  /usr/include/c++/13/bits/unordered_set.h \
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
   /usr/include/c++/13/bits/vector.tcc \
+  /usr/include/c++/13/cassert \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
+  /usr/include/c++/13/cfloat \
   /usr/include/c++/13/chrono \
   /usr/include/c++/13/climits \
   /usr/include/c++/13/clocale \
@@ -2859,6 +4504,7 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: /home/nickfar20/uclatpc_CAD/src/event
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
   /usr/include/c++/13/fstream \
+  /usr/include/c++/13/functional \
   /usr/include/c++/13/future \
   /usr/include/c++/13/initializer_list \
   /usr/include/c++/13/iomanip \
@@ -2867,20 +4513,26 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: /home/nickfar20/uclatpc_CAD/src/event
   /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
   /usr/include/c++/13/limits \
+  /usr/include/c++/13/list \
   /usr/include/c++/13/locale \
   /usr/include/c++/13/map \
+  /usr/include/c++/13/math.h \
   /usr/include/c++/13/memory \
   /usr/include/c++/13/mutex \
   /usr/include/c++/13/new \
+  /usr/include/c++/13/numeric \
   /usr/include/c++/13/ostream \
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/glue_memory_defs.h \
+  /usr/include/c++/13/pstl/glue_numeric_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
+  /usr/include/c++/13/random \
   /usr/include/c++/13/ratio \
   /usr/include/c++/13/set \
   /usr/include/c++/13/sstream \
   /usr/include/c++/13/stdexcept \
+  /usr/include/c++/13/stdlib.h \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
   /usr/include/c++/13/string_view \
@@ -2901,6 +4553,8 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: /home/nickfar20/uclatpc_CAD/src/event
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
+  /usr/include/c++/13/unordered_map \
+  /usr/include/c++/13/unordered_set \
   /usr/include/c++/13/utility \
   /usr/include/c++/13/vector \
   /usr/include/ctype.h \
@@ -3014,6 +4668,7 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: /home/nickfar20/uclatpc_CAD/src/event
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
   /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
@@ -3022,6 +4677,7 @@ CMakeFiles/uclatpc_CAD.dir/src/event.cc.o: /home/nickfar20/uclatpc_CAD/src/event
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
@@ -3163,6 +4819,7 @@ CMakeFiles/uclatpc_CAD.dir/src/generator.cc.o: /home/nickfar20/uclatpc_CAD/src/g
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BsMesonZero.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Cache.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4CacheDetails.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargeState.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargedGeantino.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargedUnknownParticle.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChemTimeStepModel.hh \
@@ -3206,6 +4863,16 @@ CMakeFiles/uclatpc_CAD.dir/src/generator.cc.o: /home/nickfar20/uclatpc_CAD/src/g
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exception.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ExceptionSeverity.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exp.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationManagerProcess.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationProcessType.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastTrack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldTrack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldTrack.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ForceCondition.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GPILSelection.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Gamma.hh \
@@ -3221,6 +4888,7 @@ CMakeFiles/uclatpc_CAD.dir/src/generator.cc.o: /home/nickfar20/uclatpc_CAD/src/g
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronElastic.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronElasticPhysics.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronElasticPhysicsHP.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronPhysicsQGSP_BERT.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronPhysicsQGSP_BIC.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronPhysicsQGSP_BIC_HP.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronicException.hh \
@@ -3404,6 +5072,7 @@ CMakeFiles/uclatpc_CAD.dir/src/generator.cc.o: /home/nickfar20/uclatpc_CAD/src/g
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VEmFluctuationModel.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VEmModel.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VExternalNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFastSimulationModel.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VModularPhysicsList.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VMscModel.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VMultipleScattering.hh \
@@ -3512,6 +5181,7 @@ CMakeFiles/uclatpc_CAD.dir/src/generator.cc.o: /home/nickfar20/uclatpc_CAD/src/g
   /home/nickfar20/gcem/include/gcem_incl/tgamma.hpp \
   /home/nickfar20/gcem/include/gcem_incl/trunc.hpp \
   /home/nickfar20/nest/G4integration/NESTProc.hh \
+  /home/nickfar20/nest/include/Detectors/MyDetector.hh \
   /home/nickfar20/nest/include/Detectors/VDetector.hh \
   /home/nickfar20/nest/include/NEST/NEST.hh \
   /home/nickfar20/nest/include/NEST/RandomGen.hh \
@@ -4145,6 +5815,7 @@ CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: /home/nickfar20/uclatpc_CAD/src/phy
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BsMesonZero.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Cache.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4CacheDetails.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargeState.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargedGeantino.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargedUnknownParticle.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChemTimeStepModel.hh \
@@ -4188,6 +5859,16 @@ CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: /home/nickfar20/uclatpc_CAD/src/phy
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exception.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ExceptionSeverity.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exp.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationManagerProcess.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationProcessType.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastTrack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldTrack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldTrack.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ForceCondition.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GPILSelection.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Gamma.hh \
@@ -4203,6 +5884,7 @@ CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: /home/nickfar20/uclatpc_CAD/src/phy
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronElastic.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronElasticPhysics.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronElasticPhysicsHP.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronPhysicsQGSP_BERT.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronPhysicsQGSP_BIC.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronPhysicsQGSP_BIC_HP.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronicException.hh \
@@ -4386,6 +6068,7 @@ CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: /home/nickfar20/uclatpc_CAD/src/phy
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VEmFluctuationModel.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VEmModel.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VExternalNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFastSimulationModel.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VModularPhysicsList.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VMscModel.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VMultipleScattering.hh \
@@ -4494,6 +6177,7 @@ CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: /home/nickfar20/uclatpc_CAD/src/phy
   /home/nickfar20/gcem/include/gcem_incl/tgamma.hpp \
   /home/nickfar20/gcem/include/gcem_incl/trunc.hpp \
   /home/nickfar20/nest/G4integration/NESTProc.hh \
+  /home/nickfar20/nest/include/Detectors/MyDetector.hh \
   /home/nickfar20/nest/include/Detectors/VDetector.hh \
   /home/nickfar20/nest/include/NEST/NEST.hh \
   /home/nickfar20/nest/include/NEST/RandomGen.hh \
@@ -4821,396 +6505,6 @@ CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: /home/nickfar20/uclatpc_CAD/src/phy
   /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
 CMakeFiles/uclatpc_CAD.dir/src/run.cc.o: /home/nickfar20/uclatpc_CAD/src/run.cc \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Utility/defs.h \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/ThreeVector.h \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisManager.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisManagerState.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisUtilities.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisVerbose.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ApplicationState.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AutoLock.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BaseAnalysisManager.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BaseFileManager.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BinScheme.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EnvironmentUtils.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exception.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ExceptionSeverity.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Fcn.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericAnalysisManager.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericAnalysisManager.icc \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericFileManager.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericFileManager.icc \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GlobalConfig.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HnInformation.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HnManager.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NtupleBookingManager.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NtupleBookingManager.icc \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Run.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4String.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4String.icc \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SystemOfUnits.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH1ToolsManager.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH2ToolsManager.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH3ToolsManager.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnManager.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnManager.icc \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnMessenger.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnMessenger.icc \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnToolsManager.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnToolsManager.icc \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TP1ToolsManager.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TP2ToolsManager.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Threading.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ThreeVector.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tokenizer.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ToolsAnalysisManager.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ToolsAnalysisManager.icc \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Types.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcommand.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIdirectory.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UImessenger.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIparameter.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserRunAction.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VAnalysisManager.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VAnalysisManager.icc \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFileManager.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VNtupleManager.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTBaseHnManager.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTHnFileManager.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ios.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/globals.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/templates.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tls.hh \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/cid \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/cids \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/eqT \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/forit \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/axes \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/axis \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/b1 \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/b2 \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/b3 \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/base_histo \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h1 \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h1d \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h2 \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h2d \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h3 \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h3d \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/histo_data \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p1 \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p1d \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p2 \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p2d \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/profile_data \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/ntuple_booking \
-  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/typedefs \
-  /home/nickfar20/uclatpc_CAD/include/run.hh \
-  /usr/include/alloca.h \
-  /usr/include/asm-generic/errno-base.h \
-  /usr/include/asm-generic/errno.h \
-  /usr/include/c++/13/algorithm \
-  /usr/include/c++/13/array \
-  /usr/include/c++/13/atomic \
-  /usr/include/c++/13/backward/auto_ptr.h \
-  /usr/include/c++/13/backward/binders.h \
-  /usr/include/c++/13/bit \
-  /usr/include/c++/13/bits/algorithmfwd.h \
-  /usr/include/c++/13/bits/align.h \
-  /usr/include/c++/13/bits/alloc_traits.h \
-  /usr/include/c++/13/bits/allocated_ptr.h \
-  /usr/include/c++/13/bits/allocator.h \
-  /usr/include/c++/13/bits/atomic_base.h \
-  /usr/include/c++/13/bits/atomic_futex.h \
-  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
-  /usr/include/c++/13/bits/basic_ios.h \
-  /usr/include/c++/13/bits/basic_ios.tcc \
-  /usr/include/c++/13/bits/basic_string.h \
-  /usr/include/c++/13/bits/basic_string.tcc \
-  /usr/include/c++/13/bits/char_traits.h \
-  /usr/include/c++/13/bits/charconv.h \
-  /usr/include/c++/13/bits/chrono.h \
-  /usr/include/c++/13/bits/codecvt.h \
-  /usr/include/c++/13/bits/concept_check.h \
-  /usr/include/c++/13/bits/cpp_type_traits.h \
-  /usr/include/c++/13/bits/cxxabi_forced.h \
-  /usr/include/c++/13/bits/cxxabi_init_exception.h \
-  /usr/include/c++/13/bits/erase_if.h \
-  /usr/include/c++/13/bits/exception.h \
-  /usr/include/c++/13/bits/exception_defines.h \
-  /usr/include/c++/13/bits/exception_ptr.h \
-  /usr/include/c++/13/bits/fstream.tcc \
-  /usr/include/c++/13/bits/functexcept.h \
-  /usr/include/c++/13/bits/functional_hash.h \
-  /usr/include/c++/13/bits/hash_bytes.h \
-  /usr/include/c++/13/bits/invoke.h \
-  /usr/include/c++/13/bits/ios_base.h \
-  /usr/include/c++/13/bits/istream.tcc \
-  /usr/include/c++/13/bits/locale_classes.h \
-  /usr/include/c++/13/bits/locale_classes.tcc \
-  /usr/include/c++/13/bits/locale_conv.h \
-  /usr/include/c++/13/bits/locale_facets.h \
-  /usr/include/c++/13/bits/locale_facets.tcc \
-  /usr/include/c++/13/bits/locale_facets_nonio.h \
-  /usr/include/c++/13/bits/locale_facets_nonio.tcc \
-  /usr/include/c++/13/bits/localefwd.h \
-  /usr/include/c++/13/bits/memory_resource.h \
-  /usr/include/c++/13/bits/memoryfwd.h \
-  /usr/include/c++/13/bits/move.h \
-  /usr/include/c++/13/bits/nested_exception.h \
-  /usr/include/c++/13/bits/new_allocator.h \
-  /usr/include/c++/13/bits/node_handle.h \
-  /usr/include/c++/13/bits/ostream.tcc \
-  /usr/include/c++/13/bits/ostream_insert.h \
-  /usr/include/c++/13/bits/parse_numbers.h \
-  /usr/include/c++/13/bits/postypes.h \
-  /usr/include/c++/13/bits/predefined_ops.h \
-  /usr/include/c++/13/bits/ptr_traits.h \
-  /usr/include/c++/13/bits/quoted_string.h \
-  /usr/include/c++/13/bits/range_access.h \
-  /usr/include/c++/13/bits/refwrap.h \
-  /usr/include/c++/13/bits/requires_hosted.h \
-  /usr/include/c++/13/bits/shared_ptr.h \
-  /usr/include/c++/13/bits/shared_ptr_atomic.h \
-  /usr/include/c++/13/bits/shared_ptr_base.h \
-  /usr/include/c++/13/bits/specfun.h \
-  /usr/include/c++/13/bits/sstream.tcc \
-  /usr/include/c++/13/bits/std_abs.h \
-  /usr/include/c++/13/bits/std_function.h \
-  /usr/include/c++/13/bits/std_mutex.h \
-  /usr/include/c++/13/bits/std_thread.h \
-  /usr/include/c++/13/bits/stl_algo.h \
-  /usr/include/c++/13/bits/stl_algobase.h \
-  /usr/include/c++/13/bits/stl_bvector.h \
-  /usr/include/c++/13/bits/stl_construct.h \
-  /usr/include/c++/13/bits/stl_function.h \
-  /usr/include/c++/13/bits/stl_heap.h \
-  /usr/include/c++/13/bits/stl_iterator.h \
-  /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
-  /usr/include/c++/13/bits/stl_iterator_base_types.h \
-  /usr/include/c++/13/bits/stl_map.h \
-  /usr/include/c++/13/bits/stl_multimap.h \
-  /usr/include/c++/13/bits/stl_multiset.h \
-  /usr/include/c++/13/bits/stl_pair.h \
-  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
-  /usr/include/c++/13/bits/stl_relops.h \
-  /usr/include/c++/13/bits/stl_set.h \
-  /usr/include/c++/13/bits/stl_tempbuf.h \
-  /usr/include/c++/13/bits/stl_tree.h \
-  /usr/include/c++/13/bits/stl_uninitialized.h \
-  /usr/include/c++/13/bits/stl_vector.h \
-  /usr/include/c++/13/bits/streambuf.tcc \
-  /usr/include/c++/13/bits/streambuf_iterator.h \
-  /usr/include/c++/13/bits/string_view.tcc \
-  /usr/include/c++/13/bits/stringfwd.h \
-  /usr/include/c++/13/bits/this_thread_sleep.h \
-  /usr/include/c++/13/bits/uniform_int_dist.h \
-  /usr/include/c++/13/bits/unique_lock.h \
-  /usr/include/c++/13/bits/unique_ptr.h \
-  /usr/include/c++/13/bits/uses_allocator.h \
-  /usr/include/c++/13/bits/uses_allocator_args.h \
-  /usr/include/c++/13/bits/utility.h \
-  /usr/include/c++/13/bits/vector.tcc \
-  /usr/include/c++/13/cctype \
-  /usr/include/c++/13/cerrno \
-  /usr/include/c++/13/chrono \
-  /usr/include/c++/13/climits \
-  /usr/include/c++/13/clocale \
-  /usr/include/c++/13/cmath \
-  /usr/include/c++/13/compare \
-  /usr/include/c++/13/complex \
-  /usr/include/c++/13/condition_variable \
-  /usr/include/c++/13/cstddef \
-  /usr/include/c++/13/cstdint \
-  /usr/include/c++/13/cstdio \
-  /usr/include/c++/13/cstdlib \
-  /usr/include/c++/13/cstring \
-  /usr/include/c++/13/ctime \
-  /usr/include/c++/13/cwchar \
-  /usr/include/c++/13/cwctype \
-  /usr/include/c++/13/debug/assertions.h \
-  /usr/include/c++/13/debug/debug.h \
-  /usr/include/c++/13/exception \
-  /usr/include/c++/13/ext/aligned_buffer.h \
-  /usr/include/c++/13/ext/alloc_traits.h \
-  /usr/include/c++/13/ext/atomicity.h \
-  /usr/include/c++/13/ext/concurrence.h \
-  /usr/include/c++/13/ext/numeric_traits.h \
-  /usr/include/c++/13/ext/string_conversions.h \
-  /usr/include/c++/13/ext/type_traits.h \
-  /usr/include/c++/13/fstream \
-  /usr/include/c++/13/future \
-  /usr/include/c++/13/initializer_list \
-  /usr/include/c++/13/iomanip \
-  /usr/include/c++/13/ios \
-  /usr/include/c++/13/iosfwd \
-  /usr/include/c++/13/iostream \
-  /usr/include/c++/13/istream \
-  /usr/include/c++/13/limits \
-  /usr/include/c++/13/locale \
-  /usr/include/c++/13/map \
-  /usr/include/c++/13/memory \
-  /usr/include/c++/13/mutex \
-  /usr/include/c++/13/new \
-  /usr/include/c++/13/ostream \
-  /usr/include/c++/13/pstl/execution_defs.h \
-  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
-  /usr/include/c++/13/pstl/glue_memory_defs.h \
-  /usr/include/c++/13/pstl/pstl_config.h \
-  /usr/include/c++/13/ratio \
-  /usr/include/c++/13/set \
-  /usr/include/c++/13/sstream \
-  /usr/include/c++/13/stdexcept \
-  /usr/include/c++/13/streambuf \
-  /usr/include/c++/13/string \
-  /usr/include/c++/13/string_view \
-  /usr/include/c++/13/system_error \
-  /usr/include/c++/13/thread \
-  /usr/include/c++/13/tr1/bessel_function.tcc \
-  /usr/include/c++/13/tr1/beta_function.tcc \
-  /usr/include/c++/13/tr1/ell_integral.tcc \
-  /usr/include/c++/13/tr1/exp_integral.tcc \
-  /usr/include/c++/13/tr1/gamma.tcc \
-  /usr/include/c++/13/tr1/hypergeometric.tcc \
-  /usr/include/c++/13/tr1/legendre_function.tcc \
-  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
-  /usr/include/c++/13/tr1/poly_hermite.tcc \
-  /usr/include/c++/13/tr1/poly_laguerre.tcc \
-  /usr/include/c++/13/tr1/riemann_zeta.tcc \
-  /usr/include/c++/13/tr1/special_function_util.h \
-  /usr/include/c++/13/tuple \
-  /usr/include/c++/13/type_traits \
-  /usr/include/c++/13/typeinfo \
-  /usr/include/c++/13/utility \
-  /usr/include/c++/13/vector \
-  /usr/include/ctype.h \
-  /usr/include/endian.h \
-  /usr/include/errno.h \
-  /usr/include/features-time64.h \
-  /usr/include/features.h \
-  /usr/include/libintl.h \
-  /usr/include/limits.h \
-  /usr/include/linux/errno.h \
-  /usr/include/linux/limits.h \
-  /usr/include/locale.h \
-  /usr/include/math.h \
-  /usr/include/pthread.h \
-  /usr/include/sched.h \
-  /usr/include/stdc-predef.h \
-  /usr/include/stdint.h \
-  /usr/include/stdio.h \
-  /usr/include/stdlib.h \
-  /usr/include/string.h \
-  /usr/include/strings.h \
-  /usr/include/time.h \
-  /usr/include/wchar.h \
-  /usr/include/wctype.h \
-  /usr/include/x86_64-linux-gnu/asm/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
-  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
-  /usr/include/x86_64-linux-gnu/bits/endian.h \
-  /usr/include/x86_64-linux-gnu/bits/endianness.h \
-  /usr/include/x86_64-linux-gnu/bits/errno.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
-  /usr/include/x86_64-linux-gnu/bits/floatn.h \
-  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
-  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
-  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
-  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
-  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/locale.h \
-  /usr/include/x86_64-linux-gnu/bits/long-double.h \
-  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
-  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/sched.h \
-  /usr/include/x86_64-linux-gnu/bits/select.h \
-  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
-  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/time.h \
-  /usr/include/x86_64-linux-gnu/bits/time64.h \
-  /usr/include/x86_64-linux-gnu/bits/timesize.h \
-  /usr/include/x86_64-linux-gnu/bits/timex.h \
-  /usr/include/x86_64-linux-gnu/bits/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
-  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
-  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
-  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
-  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
-  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
-  /usr/include/x86_64-linux-gnu/bits/wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
-  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
-  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
-  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
-  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
-  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
-  /usr/include/x86_64-linux-gnu/sys/select.h \
-  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
-  /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h \
-  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
-
-CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o: /home/nickfar20/uclatpc_CAD/src/stepping.cc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Normal3D.h \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Point3D.h \
@@ -5395,6 +6689,12 @@ CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o: /home/nickfar20/uclatpc_CAD/src/st
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exception.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ExceptionSeverity.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exp.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastTrack.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Fcn.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Field.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldManager.hh \
@@ -5629,6 +6929,7 @@ CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o: /home/nickfar20/uclatpc_CAD/src/st
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VDigiCollection.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VExternalNavigation.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFacet.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFastSimulationModel.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFileManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VHit.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VHitsCollection.hh \
@@ -5785,6 +7086,8 @@ CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o: /home/nickfar20/uclatpc_CAD/src/st
   /home/nickfar20/uclatpc_CAD/include/CADMesh.hh \
   /home/nickfar20/uclatpc_CAD/include/DriftElectronInfo.hh \
   /home/nickfar20/uclatpc_CAD/include/DynamicUserLimits.hh \
+  /home/nickfar20/uclatpc_CAD/include/FastS2Model.hh \
+  /home/nickfar20/uclatpc_CAD/include/MyDetector.hh \
   /home/nickfar20/uclatpc_CAD/include/construction.hh \
   /home/nickfar20/uclatpc_CAD/include/detector.hh \
   /home/nickfar20/uclatpc_CAD/include/electricField.hh \
@@ -5904,6 +7207,7 @@ CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o: /home/nickfar20/uclatpc_CAD/src/st
   /usr/include/c++/13/bits/unique_lock.h \
   /usr/include/c++/13/bits/unique_ptr.h \
   /usr/include/c++/13/bits/unordered_map.h \
+  /usr/include/c++/13/bits/unordered_set.h \
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
@@ -5988,6 +7292,925 @@ CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o: /home/nickfar20/uclatpc_CAD/src/st
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
   /usr/include/c++/13/unordered_map \
+  /usr/include/c++/13/unordered_set \
+  /usr/include/c++/13/utility \
+  /usr/include/c++/13/vector \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/libintl.h \
+  /usr/include/limits.h \
+  /usr/include/linux/errno.h \
+  /usr/include/linux/limits.h \
+  /usr/include/locale.h \
+  /usr/include/math.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/string.h \
+  /usr/include/strings.h \
+  /usr/include/time.h \
+  /usr/include/wchar.h \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/asm/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
+  /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/x86_64-linux-gnu/bits/errno.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+  /usr/include/x86_64-linux-gnu/bits/floatn.h \
+  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/locale.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/select.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
+  /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdarg.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
+
+CMakeFiles/uclatpc_CAD.dir/src/stepping.cc.o: /home/nickfar20/uclatpc_CAD/src/stepping.cc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/BasicVector3D.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Normal3D.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Point3D.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Transform3D.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Transform3D.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Vector3D.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/DualRand.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/JamesRandom.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/MTwistEngine.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/MixMaxRng.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBinomial.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBinomial.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBit.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBit.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBreitWigner.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBreitWigner.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandChiSquare.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandChiSquare.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandExpZiggurat.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandExponential.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandExponential.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandFlat.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandFlat.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGamma.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGamma.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGauss.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGauss.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGaussQ.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGaussQ.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGaussZiggurat.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGeneral.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGeneral.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandLandau.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandLandau.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandPoisson.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandPoisson.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandPoissonQ.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandPoissonQ.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandStudentT.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandStudentT.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/Random.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/Random.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandomEngine.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandomEngine.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/Randomize.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RanecuEngine.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/Ranlux64Engine.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RanluxEngine.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RanluxppEngine.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RanshiEngine.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Units/PhysicalConstants.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Utility/defs.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Utility/memory.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Utility/thread_local.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/AxisAngle.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/AxisAngle.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/LorentzVector.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/LorentzVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/Rotation.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/Rotation.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationInterfaces.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationInterfaces.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationX.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationX.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationY.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationY.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationZ.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationZ.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/ThreeVector.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/ThreeVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/TwoVector.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/TwoVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AffineTransform.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AffineTransform.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Allocator.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AllocatorPool.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Alpha.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisManagerState.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisUtilities.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisVerbose.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiAlpha.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiBMesonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiBsMesonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiDMesonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiDeuteron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiHe3.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiKaonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiLambda.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiLambdab.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiLambdacPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiNeutrinoE.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiNeutrinoMu.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiNeutrinoTau.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiNeutron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiOmegaMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiOmegabMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiOmegacZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiProton.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmaMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmaPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmaZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmabMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmabPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmabZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmacPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmacPlusPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmacZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiTriton.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXiMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXiZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXibMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXibZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXicPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXicZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnyMethod.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnyType.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ApplicationState.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AssemblyTriplet.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AssemblyTriplet.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AssemblyVolume.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AssemblyVolume.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AutoLock.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AuxiliaryNavServices.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AuxiliaryNavServices.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BMesonMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BMesonPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BMesonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BaseAnalysisManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BaseFileManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BinScheme.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BlockingList.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BlockingList.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BooleanSolid.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BooleanSolid.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Box.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Box.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BsMesonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4CSGSolid.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargeState.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargedGeantino.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargedUnknownParticle.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChordFinder.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChordFinder.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChordFinderDelegate.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChordFinderDelegate.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ClassificationOfNewTrack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4CollectionNameVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Color.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Colour.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DCofThisEvent.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DMesonMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DMesonPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DMesonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DataVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DataVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DensityEffectCalculator.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Deuteron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DisplacedSolid.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DormandPrince745.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DsMesonMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DsMesonPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DynamicParticle.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DynamicParticle.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElectricField.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElectroMagneticField.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Electron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElectronOccupancy.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Element.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElementTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElementVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EnvironmentUtils.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EqMagElectricField.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EquationOfMotion.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EquationOfMotion.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Eta.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EtaPrime.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Etac.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Event.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EventManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exception.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ExceptionSeverity.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exp.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastTrack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Fcn.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Field.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldTrack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldTrack.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldUtils.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldUtils.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ForceCondition.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GPILSelection.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Gamma.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Geantino.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericAnalysisManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericAnalysisManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericFileManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericFileManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericIon.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericMessenger.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GeomConfig.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GeomSplitter.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GeomTypes.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GlobalConfig.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HCofThisEvent.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HCtable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4He3.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HnInformation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HnManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ICRU90StoppingData.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IntegrationDriver.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IntegrationDriver.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IonisParamElm.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IonisParamMat.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Ions.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Isotope.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IsotopeVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4JPsi.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonZeroLong.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonZeroShort.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Lambda.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Lambdab.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LambdacPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Log.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LogicalVolume.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LogicalVolume.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LorentzVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MagIntegratorStepper.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MagIntegratorStepper.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Material.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialCutsCouple.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialPropertiesIndex.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialPropertiesTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialPropertyVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MuonMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MuonPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationHistory.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationHistory.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationHistoryPool.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationLevel.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationLevel.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationLevelRep.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationLevelRep.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationLogger.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Navigator.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Navigator.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NeutrinoE.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NeutrinoMu.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NeutrinoTau.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Neutron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NistElementBuilder.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NistManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NistMaterialBuilder.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NoProcess.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Normal3D.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NormalNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NormalNavigation.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NtupleBookingManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NtupleBookingManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OmegaMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OmegabMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OmegacZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OpticalPhoton.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OrderedTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PDefManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PVPlacement.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParameterisedNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParameterisedNavigation.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleChange.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleChange.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleDefinition.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleDefinition.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleMomentum.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleTable.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleTableIterator.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleTypes.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsFreeVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsModelCatalog.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsOrderedFreeVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsTable.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsVectorType.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PionMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PionPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PionZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Point3D.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Poisson.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Polyhedron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Positron.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Pow.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PrimaryParticle.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PrimaryTransformer.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PrimaryVertex.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessType.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProductionCuts.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Proton.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RKIntegrationDriver.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RKIntegrationDriver.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ReferenceCountedHandle.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Region.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Region.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RegularNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ReplicaNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ReplicaNavigation.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RotationMatrix.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Run.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RunManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RunManagerKernel.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SDManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SDStructure.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SafetyHelper.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SandiaTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SensitiveVolumeList.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmaMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmaPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmaZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmabMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmabPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmabZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmacPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmacPlusPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmacZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartTrackStack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelHeader.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelHeader.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelNode.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelNode.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelProxy.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelProxy.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StackManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StackedTrack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Step.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Step.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StepPoint.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StepPoint.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StepStatus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SteppingControl.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SteppingManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4String.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4String.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SubEvent.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SubEventTrackStack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SubtractionSolid.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SurfBits.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SystemOfUnits.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH1ToolsManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH2ToolsManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH3ToolsManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnMessenger.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnMessenger.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnToolsManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnToolsManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TP1ToolsManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TP2ToolsManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TauMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TauPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TessellatedSolid.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tet.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Threading.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ThreeVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tokenizer.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ToolsAnalysisManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ToolsAnalysisManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TouchableHandle.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TouchableHistory.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TouchableHistory.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Track.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Track.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackStack.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackStatus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackingManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackingMessenger.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrajectoryContainer.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Transform3D.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TransportationManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TransportationManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TriangularFacet.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Triton.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tubs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tubs.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TwoVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Types.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcommand.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIdirectory.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UImessenger.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIparameter.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UniformElectricField.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UnknownParticle.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Upsilon.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserEventAction.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserLimits.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserLimits.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserRunAction.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserStackingAction.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserSteppingAction.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserTrackingAction.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VAnalysisManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VAnalysisManager.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VBooleanProcessor.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VDigiCollection.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VExternalNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFacet.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFastSimulationModel.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFileManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VHit.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VHitsCollection.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VIntegrationDriver.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VNtupleManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VPVParameterisation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VParticleChange.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VParticleChange.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VPhysicalVolume.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VPhysicalVolume.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VProcess.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VReadOutGeometry.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VRestDiscreteProcess.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSDFilter.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSensitiveDetector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSolid.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSolid.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSteppingVerbose.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTBaseHnManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTHnFileManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTouchable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTrajectory.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserDetectorConstruction.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserEventInformation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserTrackInformation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VVolumeMaterialScanner.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VisAttributes.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VisAttributes.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Visible.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Visible.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VoxelNavigation.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VoxelNavigation.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Voxelizer.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Voxelizer.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XiMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XiZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XibMinus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XibZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XicPlus.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XicZero.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ios.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/HepPolyhedron.h \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/Randomize.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/evtdefs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/geomdefs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/geomwdefs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/globals.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/graphics_reps_defs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/pwdefs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/rundefs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/templates.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tls.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/cid \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/cids \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/eqT \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/forit \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/axes \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/axis \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/b1 \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/b2 \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/b3 \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/base_histo \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h1 \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h1d \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h2 \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h2d \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h3 \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h3d \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/histo_data \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p1 \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p1d \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p2 \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p2d \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/profile_data \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/ntuple_booking \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/typedefs \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/trkdefs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/trkgdefs.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/windefs.hh \
+  /home/nickfar20/gcem/include/gcem.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/abs.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/acos.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/acosh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/asin.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/asinh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/atan.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/atan2.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/atanh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/beta.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/binomial_coef.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/ceil.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/copysign.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/cos.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/cosh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/erf.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/erf_inv.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/exp.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/expm1.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/fabs.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/fabsf.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/fabsl.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/factorial.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/find_exponent.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/find_fraction.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/find_whole.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/floor.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/fmod.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/gcd.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/gcem_options.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/hypot.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/incomplete_beta.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/incomplete_beta_inv.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/incomplete_gamma.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/incomplete_gamma_inv.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/inv_sqrt.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/is_even.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/is_finite.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/is_inf.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/is_nan.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/is_odd.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/lbeta.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/lcm.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/lgamma.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/lmgamma.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/log.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/log10.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/log1p.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/log2.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/log_binomial_coef.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/mantissa.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/max.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/min.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/neg_zero.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/pow.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/pow_integral.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/quadrature/gauss_legendre_50.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/round.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/sgn.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/signbit.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/sin.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/sinh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/sqrt.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/tan.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/tanh.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/tgamma.hpp \
+  /home/nickfar20/gcem/include/gcem_incl/trunc.hpp \
+  /home/nickfar20/nest/G4integration/NESTProc.hh \
+  /home/nickfar20/nest/include/Detectors/VDetector.hh \
+  /home/nickfar20/nest/include/NEST/NEST.hh \
+  /home/nickfar20/nest/include/NEST/RandomGen.hh \
+  /home/nickfar20/nest/include/NEST/ValidityTests.hh \
+  /home/nickfar20/nest/include/NEST/xoroshiro.hh \
+  /home/nickfar20/uclatpc_CAD/include/CADMesh.hh \
+  /home/nickfar20/uclatpc_CAD/include/DriftElectronInfo.hh \
+  /home/nickfar20/uclatpc_CAD/include/DynamicUserLimits.hh \
+  /home/nickfar20/uclatpc_CAD/include/FastS2Model.hh \
+  /home/nickfar20/uclatpc_CAD/include/MyDetector.hh \
+  /home/nickfar20/uclatpc_CAD/include/construction.hh \
+  /home/nickfar20/uclatpc_CAD/include/detector.hh \
+  /home/nickfar20/uclatpc_CAD/include/electricField.hh \
+  /home/nickfar20/uclatpc_CAD/include/event.hh \
+  /home/nickfar20/uclatpc_CAD/include/nestPart.hh \
+  /home/nickfar20/uclatpc_CAD/include/run.hh \
+  /home/nickfar20/uclatpc_CAD/include/stepping.hh \
+  /home/nickfar20/uclatpc_CAD/include/tracking.hh \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/assert.h \
+  /usr/include/c++/13/algorithm \
+  /usr/include/c++/13/array \
+  /usr/include/c++/13/atomic \
+  /usr/include/c++/13/backward/auto_ptr.h \
+  /usr/include/c++/13/backward/binders.h \
+  /usr/include/c++/13/bit \
+  /usr/include/c++/13/bits/algorithmfwd.h \
+  /usr/include/c++/13/bits/align.h \
+  /usr/include/c++/13/bits/alloc_traits.h \
+  /usr/include/c++/13/bits/allocated_ptr.h \
+  /usr/include/c++/13/bits/allocator.h \
+  /usr/include/c++/13/bits/atomic_base.h \
+  /usr/include/c++/13/bits/atomic_futex.h \
+  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/13/bits/basic_ios.h \
+  /usr/include/c++/13/bits/basic_ios.tcc \
+  /usr/include/c++/13/bits/basic_string.h \
+  /usr/include/c++/13/bits/basic_string.tcc \
+  /usr/include/c++/13/bits/char_traits.h \
+  /usr/include/c++/13/bits/charconv.h \
+  /usr/include/c++/13/bits/chrono.h \
+  /usr/include/c++/13/bits/codecvt.h \
+  /usr/include/c++/13/bits/concept_check.h \
+  /usr/include/c++/13/bits/cpp_type_traits.h \
+  /usr/include/c++/13/bits/cxxabi_forced.h \
+  /usr/include/c++/13/bits/cxxabi_init_exception.h \
+  /usr/include/c++/13/bits/enable_special_members.h \
+  /usr/include/c++/13/bits/erase_if.h \
+  /usr/include/c++/13/bits/exception.h \
+  /usr/include/c++/13/bits/exception_defines.h \
+  /usr/include/c++/13/bits/exception_ptr.h \
+  /usr/include/c++/13/bits/fstream.tcc \
+  /usr/include/c++/13/bits/functexcept.h \
+  /usr/include/c++/13/bits/functional_hash.h \
+  /usr/include/c++/13/bits/hash_bytes.h \
+  /usr/include/c++/13/bits/hashtable.h \
+  /usr/include/c++/13/bits/hashtable_policy.h \
+  /usr/include/c++/13/bits/invoke.h \
+  /usr/include/c++/13/bits/ios_base.h \
+  /usr/include/c++/13/bits/istream.tcc \
+  /usr/include/c++/13/bits/list.tcc \
+  /usr/include/c++/13/bits/locale_classes.h \
+  /usr/include/c++/13/bits/locale_classes.tcc \
+  /usr/include/c++/13/bits/locale_conv.h \
+  /usr/include/c++/13/bits/locale_facets.h \
+  /usr/include/c++/13/bits/locale_facets.tcc \
+  /usr/include/c++/13/bits/locale_facets_nonio.h \
+  /usr/include/c++/13/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/13/bits/localefwd.h \
+  /usr/include/c++/13/bits/memory_resource.h \
+  /usr/include/c++/13/bits/memoryfwd.h \
+  /usr/include/c++/13/bits/move.h \
+  /usr/include/c++/13/bits/nested_exception.h \
+  /usr/include/c++/13/bits/new_allocator.h \
+  /usr/include/c++/13/bits/node_handle.h \
+  /usr/include/c++/13/bits/ostream.tcc \
+  /usr/include/c++/13/bits/ostream_insert.h \
+  /usr/include/c++/13/bits/parse_numbers.h \
+  /usr/include/c++/13/bits/postypes.h \
+  /usr/include/c++/13/bits/predefined_ops.h \
+  /usr/include/c++/13/bits/ptr_traits.h \
+  /usr/include/c++/13/bits/quoted_string.h \
+  /usr/include/c++/13/bits/random.h \
+  /usr/include/c++/13/bits/random.tcc \
+  /usr/include/c++/13/bits/range_access.h \
+  /usr/include/c++/13/bits/refwrap.h \
+  /usr/include/c++/13/bits/requires_hosted.h \
+  /usr/include/c++/13/bits/shared_ptr.h \
+  /usr/include/c++/13/bits/shared_ptr_atomic.h \
+  /usr/include/c++/13/bits/shared_ptr_base.h \
+  /usr/include/c++/13/bits/specfun.h \
+  /usr/include/c++/13/bits/sstream.tcc \
+  /usr/include/c++/13/bits/std_abs.h \
+  /usr/include/c++/13/bits/std_function.h \
+  /usr/include/c++/13/bits/std_mutex.h \
+  /usr/include/c++/13/bits/std_thread.h \
+  /usr/include/c++/13/bits/stl_algo.h \
+  /usr/include/c++/13/bits/stl_algobase.h \
+  /usr/include/c++/13/bits/stl_bvector.h \
+  /usr/include/c++/13/bits/stl_construct.h \
+  /usr/include/c++/13/bits/stl_function.h \
+  /usr/include/c++/13/bits/stl_heap.h \
+  /usr/include/c++/13/bits/stl_iterator.h \
+  /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/13/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13/bits/stl_list.h \
+  /usr/include/c++/13/bits/stl_map.h \
+  /usr/include/c++/13/bits/stl_multimap.h \
+  /usr/include/c++/13/bits/stl_multiset.h \
+  /usr/include/c++/13/bits/stl_numeric.h \
+  /usr/include/c++/13/bits/stl_pair.h \
+  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/13/bits/stl_relops.h \
+  /usr/include/c++/13/bits/stl_set.h \
+  /usr/include/c++/13/bits/stl_tempbuf.h \
+  /usr/include/c++/13/bits/stl_tree.h \
+  /usr/include/c++/13/bits/stl_uninitialized.h \
+  /usr/include/c++/13/bits/stl_vector.h \
+  /usr/include/c++/13/bits/streambuf.tcc \
+  /usr/include/c++/13/bits/streambuf_iterator.h \
+  /usr/include/c++/13/bits/string_view.tcc \
+  /usr/include/c++/13/bits/stringfwd.h \
+  /usr/include/c++/13/bits/this_thread_sleep.h \
+  /usr/include/c++/13/bits/uniform_int_dist.h \
+  /usr/include/c++/13/bits/unique_lock.h \
+  /usr/include/c++/13/bits/unique_ptr.h \
+  /usr/include/c++/13/bits/unordered_map.h \
+  /usr/include/c++/13/bits/unordered_set.h \
+  /usr/include/c++/13/bits/uses_allocator.h \
+  /usr/include/c++/13/bits/uses_allocator_args.h \
+  /usr/include/c++/13/bits/utility.h \
+  /usr/include/c++/13/bits/vector.tcc \
+  /usr/include/c++/13/cassert \
+  /usr/include/c++/13/cctype \
+  /usr/include/c++/13/cerrno \
+  /usr/include/c++/13/cfloat \
+  /usr/include/c++/13/chrono \
+  /usr/include/c++/13/climits \
+  /usr/include/c++/13/clocale \
+  /usr/include/c++/13/cmath \
+  /usr/include/c++/13/compare \
+  /usr/include/c++/13/complex \
+  /usr/include/c++/13/condition_variable \
+  /usr/include/c++/13/cstddef \
+  /usr/include/c++/13/cstdint \
+  /usr/include/c++/13/cstdio \
+  /usr/include/c++/13/cstdlib \
+  /usr/include/c++/13/cstring \
+  /usr/include/c++/13/ctime \
+  /usr/include/c++/13/cwchar \
+  /usr/include/c++/13/cwctype \
+  /usr/include/c++/13/debug/assertions.h \
+  /usr/include/c++/13/debug/debug.h \
+  /usr/include/c++/13/exception \
+  /usr/include/c++/13/ext/aligned_buffer.h \
+  /usr/include/c++/13/ext/alloc_traits.h \
+  /usr/include/c++/13/ext/atomicity.h \
+  /usr/include/c++/13/ext/concurrence.h \
+  /usr/include/c++/13/ext/numeric_traits.h \
+  /usr/include/c++/13/ext/string_conversions.h \
+  /usr/include/c++/13/ext/type_traits.h \
+  /usr/include/c++/13/fstream \
+  /usr/include/c++/13/functional \
+  /usr/include/c++/13/future \
+  /usr/include/c++/13/initializer_list \
+  /usr/include/c++/13/iomanip \
+  /usr/include/c++/13/ios \
+  /usr/include/c++/13/iosfwd \
+  /usr/include/c++/13/iostream \
+  /usr/include/c++/13/istream \
+  /usr/include/c++/13/limits \
+  /usr/include/c++/13/list \
+  /usr/include/c++/13/locale \
+  /usr/include/c++/13/map \
+  /usr/include/c++/13/math.h \
+  /usr/include/c++/13/memory \
+  /usr/include/c++/13/mutex \
+  /usr/include/c++/13/new \
+  /usr/include/c++/13/numeric \
+  /usr/include/c++/13/ostream \
+  /usr/include/c++/13/pstl/execution_defs.h \
+  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/13/pstl/glue_memory_defs.h \
+  /usr/include/c++/13/pstl/glue_numeric_defs.h \
+  /usr/include/c++/13/pstl/pstl_config.h \
+  /usr/include/c++/13/random \
+  /usr/include/c++/13/ratio \
+  /usr/include/c++/13/set \
+  /usr/include/c++/13/sstream \
+  /usr/include/c++/13/stdexcept \
+  /usr/include/c++/13/stdlib.h \
+  /usr/include/c++/13/streambuf \
+  /usr/include/c++/13/string \
+  /usr/include/c++/13/string_view \
+  /usr/include/c++/13/system_error \
+  /usr/include/c++/13/thread \
+  /usr/include/c++/13/tr1/bessel_function.tcc \
+  /usr/include/c++/13/tr1/beta_function.tcc \
+  /usr/include/c++/13/tr1/ell_integral.tcc \
+  /usr/include/c++/13/tr1/exp_integral.tcc \
+  /usr/include/c++/13/tr1/gamma.tcc \
+  /usr/include/c++/13/tr1/hypergeometric.tcc \
+  /usr/include/c++/13/tr1/legendre_function.tcc \
+  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/13/tr1/poly_hermite.tcc \
+  /usr/include/c++/13/tr1/poly_laguerre.tcc \
+  /usr/include/c++/13/tr1/riemann_zeta.tcc \
+  /usr/include/c++/13/tr1/special_function_util.h \
+  /usr/include/c++/13/tuple \
+  /usr/include/c++/13/type_traits \
+  /usr/include/c++/13/typeinfo \
+  /usr/include/c++/13/unordered_map \
+  /usr/include/c++/13/unordered_set \
   /usr/include/c++/13/utility \
   /usr/include/c++/13/vector \
   /usr/include/ctype.h \
@@ -6302,6 +8525,12 @@ CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o: /home/nickfar20/uclatpc_CAD/src/tr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exception.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ExceptionSeverity.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exp.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastTrack.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Fcn.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Field.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldManager.hh \
@@ -6536,6 +8765,7 @@ CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o: /home/nickfar20/uclatpc_CAD/src/tr
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VDigiCollection.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VExternalNavigation.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFacet.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFastSimulationModel.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFileManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VHit.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VHitsCollection.hh \
@@ -6692,6 +8922,8 @@ CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o: /home/nickfar20/uclatpc_CAD/src/tr
   /home/nickfar20/uclatpc_CAD/include/CADMesh.hh \
   /home/nickfar20/uclatpc_CAD/include/DriftElectronInfo.hh \
   /home/nickfar20/uclatpc_CAD/include/DynamicUserLimits.hh \
+  /home/nickfar20/uclatpc_CAD/include/FastS2Model.hh \
+  /home/nickfar20/uclatpc_CAD/include/MyDetector.hh \
   /home/nickfar20/uclatpc_CAD/include/construction.hh \
   /home/nickfar20/uclatpc_CAD/include/detector.hh \
   /home/nickfar20/uclatpc_CAD/include/electricField.hh \
@@ -6811,6 +9043,7 @@ CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o: /home/nickfar20/uclatpc_CAD/src/tr
   /usr/include/c++/13/bits/unique_lock.h \
   /usr/include/c++/13/bits/unique_ptr.h \
   /usr/include/c++/13/bits/unordered_map.h \
+  /usr/include/c++/13/bits/unordered_set.h \
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
@@ -6895,6 +9128,7 @@ CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o: /home/nickfar20/uclatpc_CAD/src/tr
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
   /usr/include/c++/13/unordered_map \
+  /usr/include/c++/13/unordered_set \
   /usr/include/c++/13/utility \
   /usr/include/c++/13/vector \
   /usr/include/ctype.h \
@@ -7249,6 +9483,14 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exception.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ExceptionSeverity.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exp.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationManager.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationManagerProcess.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationProcessType.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.icc \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastTrack.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Fcn.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Field.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldManager.hh \
@@ -7282,6 +9524,7 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronElastic.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronElasticPhysics.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronElasticPhysicsHP.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronPhysicsQGSP_BERT.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronPhysicsQGSP_BIC.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronPhysicsQGSP_BIC_HP.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronicException.hh \
@@ -7329,6 +9572,7 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialPropertiesTable.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialPropertyVector.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialTable.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ModelColourMap.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ModelingParameters.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ModelingParameters.icc \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MscStepLimitType.hh \
@@ -7541,6 +9785,7 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackingMessenger.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrajectoriesModel.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrajectoryContainer.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrajectoryDrawByParticleID.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrajectoryFilterFactories.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrajectoryModelFactories.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Transform3D.hh \
@@ -7599,6 +9844,7 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VEmModel.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VExternalNavigation.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFacet.hh \
+  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFastSimulationModel.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFileManager.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFilter.hh \
   /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VGraphicsScene.hh \
@@ -7799,6 +10045,8 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
   /home/nickfar20/uclatpc_CAD/include/CADMesh.hh \
   /home/nickfar20/uclatpc_CAD/include/DriftElectronInfo.hh \
   /home/nickfar20/uclatpc_CAD/include/DynamicUserLimits.hh \
+  /home/nickfar20/uclatpc_CAD/include/FastS2Model.hh \
+  /home/nickfar20/uclatpc_CAD/include/MyDetector.hh \
   /home/nickfar20/uclatpc_CAD/include/action.hh \
   /home/nickfar20/uclatpc_CAD/include/construction.hh \
   /home/nickfar20/uclatpc_CAD/include/detector.hh \
@@ -7921,6 +10169,7 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
   /usr/include/c++/13/bits/unique_lock.h \
   /usr/include/c++/13/bits/unique_ptr.h \
   /usr/include/c++/13/bits/unordered_map.h \
+  /usr/include/c++/13/bits/unordered_set.h \
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
@@ -8005,6 +10254,7 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
   /usr/include/c++/13/unordered_map \
+  /usr/include/c++/13/unordered_set \
   /usr/include/c++/13/utility \
   /usr/include/c++/13/vector \
   /usr/include/ctype.h \
@@ -8143,11 +10393,109 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Vtk.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VisManager.hh:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VisExecutive.icc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StoppingPhysics.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Vector3D.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VViewer.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VViewer.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTree.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VStateDependent.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSceneHandler.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSceneHandler.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VRML2File.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VModel.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VGraphicsSystem.hh:
+
+/home/nickfar20/gcem/include/gcem_incl/gcd.hpp:
+
+/home/nickfar20/gcem/include/gcem_incl/fmod.hpp:
+
+/home/nickfar20/gcem/include/gcem_incl/incomplete_gamma_inv.hpp:
+
+/home/nickfar20/gcem/include/gcem_incl/factorial.hpp:
+
+/usr/include/c++/13/cstdio:
+
+/usr/include/math.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/home/nickfar20/gcem/include/gcem_incl/fabsl.hpp:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p2d:
+
+/usr/include/c++/13/cctype:
+
+/home/nickfar20/gcem/include/gcem_incl/fabs.hpp:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NistMaterialBuilder.hh:
+
+/home/nickfar20/gcem/include/gcem_incl/exp.hpp:
+
+/home/nickfar20/gcem/include/gcem_incl/erf_inv.hpp:
+
+/home/nickfar20/gcem/include/gcem_incl/copysign.hpp:
+
+/home/nickfar20/gcem/include/gcem.hpp:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/profile_data:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH1ToolsManager.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UnknownParticle.hh:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p1:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OpticalPhysics.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h2:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsOrderedFreeVector.hh:
+
+/home/nickfar20/gcem/include/gcem_incl/lgamma.hpp:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmMessenger.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/cid:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/histo_data:
+
+/usr/include/c++/13/ios:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/tls.hh:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/pwdefs.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XicPlus.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XibZero.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Vector3D.h:
+
+/usr/include/stdio.h:
+
+/usr/include/c++/13/algorithm:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VisAttributes.icc:
+
+/usr/include/c++/13/ext/type_traits.h:
+
+/usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTBaseHnManager.hh:
 
@@ -8171,9 +10519,17 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/BoostX.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VMscModel.hh:
+/usr/include/x86_64-linux-gnu/bits/errno.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VModularPhysicsList.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Xr.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/geomwdefs.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSolid.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VNavigation.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VIntegrationDriver.hh:
 
@@ -8189,29 +10545,19 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VEmFluctuationModel.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PionMinus.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VHitsCollection.hh:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VDiscreteProcess.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/HepPolyhedron.h:
-
-/usr/include/c++/13/tr1/modified_bessel_func.tcc:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VAnalysisManager.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BMesonPlus.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BaseFileManager.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserRunAction.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserTrackingAction.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UrbanMscModel.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VDigi.hh:
+
+/home/nickfar20/gcem/include/gcem_incl/find_exponent.hpp:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserRunAction.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VPhysicalVolume.icc:
 
@@ -8221,8 +10567,6 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiOmegabMinus.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcmdWithADouble.hh:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Triton.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXibMinus.hh:
@@ -8230,10 +10574,6 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackStatus.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MuonPlus.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TouchableHistory.icc:
-
-/usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcommand.hh:
 
@@ -8245,9 +10585,19 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldManager.hh:
 
+/home/nickfar20/gcem/include/gcem_incl/erf.hpp:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AuxiliaryNavServices.icc:
+
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TauPlus.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnMessenger.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnToolsManager.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/HepPolyhedron.h:
+
+/usr/include/c++/13/tr1/modified_bessel_func.tcc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VDiscreteProcess.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFacet.hh:
 
@@ -8255,11 +10605,7 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Scene.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH1ToolsManager.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/profile_data:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VViewer.hh:
+/home/nickfar20/gcem/include/gcem_incl/gcem_options.hpp:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SystemOfUnits.hh:
 
@@ -8271,7 +10617,15 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SubEventTrackStack.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StepLimiterPhysics.hh:
+/home/nickfar20/gcem/include/gcem_incl/cos.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+
+/usr/include/c++/13/bits/stl_map.h:
+
+/usr/include/c++/13/locale:
+
+/home/nickfar20/gcem/include/gcem_incl/atan.hpp:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Step.hh:
 
@@ -8279,17 +10633,29 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StackManager.hh:
 
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmacPlusPlus.hh:
+
+/home/nickfar20/gcem/include/gcem_incl/asinh.hpp:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/ntuple_booking:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUIshell.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelProxy.icc:
+
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelProxy.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationLevel.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelNode.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/BoostX.icc:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserLimits.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElectronOccupancy.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/BoostX.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/cids:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmacPlus.hh:
 
@@ -8305,9 +10671,15 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /usr/include/c++/13/bits/stl_uninitialized.h:
 
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/globals.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RunManagerKernel.hh:
+
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RunManager.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/typedefs:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Voxelizer.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ReplicaNavigation.icc:
 
@@ -8315,11 +10687,7 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/Randomize.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ReactionProductVector.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RadioactiveDecayPhysics.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BlockingList.icc:
+/home/nickfar20/gcem/include/gcem_incl/fabsf.hpp:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RKIntegrationDriver.hh:
 
@@ -8327,29 +10695,33 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProductionCuts.hh:
 
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/AxisAngle.icc:
+
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessType.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessManager.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PrimaryParticle.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/geomdefs.hh:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/eqT:
 
-/home/nickfar20/gcem/include/gcem_incl/factorial.hpp:
-
-/usr/include/c++/13/cstdio:
-
-/usr/include/math.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/geomdefs.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSteppingVerbose.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RegularNavigation.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Polyhedron.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIdirectory.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Poisson.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PrimaryVertex.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BsMesonZero.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PionPlus.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserSteppingAction.hh:
 
@@ -8363,7 +10735,9 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsTable.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsOrderedFreeVector.hh:
+/home/nickfar20/gcem/include/gcem_incl/atan2.hpp:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ios.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackingManager.hh:
 
@@ -8372,18 +10746,6 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleChangeForDecay.hh:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsLogVector.hh:
-
-/usr/include/c++/13/bits/ios_base.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsListOrderingParameter.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProductionCutsTable.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SensitiveVolumeList.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsListHelper.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsFreeVector.hh:
 
@@ -8395,15 +10757,23 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Types.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleChangeForTransport.icc:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XiZero.hh:
 
-/usr/include/pthread.h:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Ellipsoid.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PrimaryTransformer.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrajectoryDrawByParticleID.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VoxelNavigation.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleChange.icc:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleChange.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Navigator.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/b2:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParameterisedNavigation.icc:
 
@@ -8415,17 +10785,9 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VProcess.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OpticalPhysics.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p1:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OpticalPhoton.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OpticalParameters.hh:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OmegabMinus.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcmdWithABool.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OmegaMinus.hh:
 
@@ -8435,15 +10797,7 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AssemblyVolume.icc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleChangeForTransport.hh:
-
-/usr/include/c++/13/ostream:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NormalNavigation.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PrimaryVertex.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BsMesonZero.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NoProcess.hh:
 
@@ -8455,113 +10809,125 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NeutrinoE.hh:
 
+/home/nickfar20/gcem/include/gcem_incl/expm1.hpp:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmacZero.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/evtdefs.hh:
+
 /home/nickfar20/gcem/include/gcem_incl/incomplete_beta.hpp:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EtaPrime.hh:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationLevel.icc:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4CSGSolid.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VEmAngularDistribution.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsVector.icc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelHeader.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AssemblyVolume.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MscStepLimitType.hh:
+/usr/include/c++/13/bits/exception_ptr.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationHistoryPool.hh:
+/usr/include/c++/13/bits/specfun.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialPropertiesIndex.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DataVector.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/ntuple_booking:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/templates.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmacPlusPlus.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/graphics_reps_defs.hh:
 
-/home/nickfar20/gcem/include/gcem_incl/asinh.hpp:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StackedTrack.hh:
 
-/usr/include/c++/13/vector:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TriangularFacet.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleGun.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH2ToolsManager.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DMesonMinus.hh:
+/home/nickfar20/gcem/include/gcem_incl/binomial_coef.hpp:
 
-/home/nickfar20/gcem/include/gcem_incl/neg_zero.hpp:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VAnalysisManager.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/Ranlux64Engine.h:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonZeroShort.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmacPlusPlus.hh:
 
 /home/nickfar20/uclatpc_CAD/include/nestPart.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/Boost.icc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/Ranlux64Engine.h:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VNtupleManager.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmacPlusPlus.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DsMesonPlus.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonZeroLong.hh:
+/usr/include/c++/13/bits/streambuf_iterator.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGaussQ.h:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/base_histo:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmaZero.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserEventAction.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VRML2File.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/rundefs.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SandiaTable.hh:
+/usr/include/c++/13/math.h:
 
-/usr/include/c++/13/array:
+/usr/include/c++/13/tr1/exp_integral.tcc:
 
-/usr/include/c++/13/bits/random.h:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Positron.hh:
 
-/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargeState.hh:
 
-/usr/include/c++/13/ext/alloc_traits.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VisExtent.hh:
-
-/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/ThreeVector.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialTable.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IsotopeProperty.hh:
-
-/usr/include/c++/13/bits/stl_algo.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Ions.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialCutsCouple.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IonisParamMat.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TessellatedSolid.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IntegrationDriver.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ICRU90StoppingData.hh:
-
-/usr/include/c++/13/bits/predefined_ops.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HnManager.hh:
-
-/usr/include/c++/13/bits/shared_ptr.h:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Fcn.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleDefinition.icc:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Para.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmacZero.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h1d:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Pow.hh:
+/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RayTracer.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmaMinus.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationHistory.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmabMinus.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXiMinus.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXibZero.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Ions.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXicPlus.hh:
+
+/home/nickfar20/gcem/include/gcem_incl/log_binomial_coef.hpp:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ASCIITree.hh:
+
+/usr/include/c++/13/bits/hashtable_policy.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisManagerState.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SensitiveVolumeList.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProductionCutsTable.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/DualRand.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackingMessenger.hh:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Voxelizer.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Pow.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiProton.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBinomial.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldTrack.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisManager.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DisplacedSolid.hh:
 
@@ -8571,11 +10937,21 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ModelingParameters.hh:
 
-/home/nickfar20/gcem/include/gcem_incl/find_exponent.hpp:
+/usr/include/c++/13/ostream:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VViewer.icc:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleChangeForTransport.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiOmegacZero.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Normal3D.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Units/PhysicalConstants.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/TwoVector.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationX.icc:
+
+/usr/include/c++/13/bits/move.h:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiOmegaMinus.hh:
 
@@ -8591,11 +10967,11 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiLambdacPlus.hh:
 
+/home/nickfar20/gcem/include/gcem_incl/atanh.hpp:
+
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/BasicVector3D.h:
 
 /usr/include/c++/13/backward/binders.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4CacheDetails.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Deuteron.hh:
 
@@ -8605,21 +10981,23 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HCofThisEvent.hh:
 
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AssemblyTriplet.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonZeroLong.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGaussQ.h:
+
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tet.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/forit:
+/usr/include/c++/13/bits/stl_tree.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VContinuousDiscreteProcess.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiDeuteron.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/forit:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmaMinus.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Transportation.hh:
-
-/usr/include/c++/13/map:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronicProcessType.hh:
-
-/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ApplicationState.hh:
 
@@ -8627,25 +11005,9 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ForceCondition.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Run.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisUtilities.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleChangeForMSC.hh:
-
-/usr/include/c++/13/bits/hashtable_policy.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisManagerState.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/DualRand.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackingMessenger.hh:
-
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXicPlus.hh:
-
-/home/nickfar20/gcem/include/gcem_incl/log_binomial_coef.hpp:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ASCIITree.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationManagerProcess.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AffineTransform.icc:
 
@@ -8658,10 +11020,6 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackStack.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VPrimaryGenerator.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiDMesonZero.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AffineTransform.hh:
 
@@ -8677,17 +11035,59 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/MTwistEngine.h:
 
+/usr/include/linux/limits.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/trkgdefs.hh:
+
+/usr/include/c++/13/bits/unique_ptr.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/ThreeVector.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p2:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VBooleanProcessor.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/Rotation.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnMessenger.hh:
+
+/home/nickfar20/gcem/include/gcem_incl/mantissa.hpp:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TwoVector.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackVector.hh:
+
+/usr/include/c++/13/bits/streambuf.tcc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AssemblyTriplet.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Navigator.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VisManager.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.hh:
+
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TouchableHistory.hh:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationX.icc:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VMarker.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/TwoVector.h:
+/home/nickfar20/gcem/include/gcem_incl/acos.hpp:
 
-/usr/include/c++/13/bits/move.h:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmStandardPhysics.hh:
 
 /usr/include/c++/13/bits/exception.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleTable.hh:
+
+/usr/include/c++/13/bits/basic_string.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandChiSquare.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Gamma.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Etac.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h1:
 
@@ -8695,25 +11095,13 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4String.icc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ToolsAnalysisManager.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DCofThisEvent.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h3:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiLambda.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationZ.h:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BMesonMinus.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationHistory.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmabMinus.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXiMinus.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXibZero.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronicInteraction.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmLowEPPhysics.hh:
 
@@ -8725,49 +11113,9 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Lambda.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SafetyHelper.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/Randomize.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IonElasticPhysics.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisUtilities.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LambdacPlus.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VAnalysisManager.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SubEvent.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiBMesonZero.hh:
-
-/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
-
-/home/nickfar20/gcem/include/gcem_incl/gcd.hpp:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NistMaterialBuilder.hh:
-
-/home/nickfar20/gcem/include/gcem_incl/fabs.hpp:
-
-/usr/include/c++/13/bits/streambuf_iterator.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnToolsManager.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationLevelRep.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcmdWithADoubleAndUnit.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VModelFactory.hh:
-
-/usr/include/c++/13/ext/aligned_buffer.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/AxisAngle.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonZero.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessVector.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiBsMesonZero.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnToolsManager.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartTrackStack.hh:
 
@@ -8777,15 +11125,11 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserLimits.icc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElementTable.hh:
+/home/nickfar20/gcem/include/gcem_incl/find_fraction.hpp:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Box.icc:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnyType.hh:
 
-/usr/include/c++/13/bits/allocator.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Units/PhysicalConstants.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Normal3D.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandFlat.h:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChordFinderDelegate.icc:
 
@@ -8793,51 +11137,71 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /usr/include/c++/13/ratio:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NormalNavigation.hh:
-
-/home/nickfar20/uclatpc_CAD/src/action.cc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmFluoDirectory.hh:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiHe3.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessManager.icc:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EquationOfMotion.icc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadFinalState.hh:
-
-/home/nickfar20/gcem/include/gcem_incl/is_even.hpp:
-
-/usr/include/x86_64-linux-gnu/sys/types.h:
-
 /usr/include/c++/13/bits/stl_set.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h3d:
+
+/usr/include/c++/13/bits/enable_special_members.h:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandPoissonQ.icc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Transportation.icc:
-
-/usr/include/c++/13/ctime:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VVolumeMaterialScanner.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandomEngine.h:
+
+/home/nickfar20/gcem/include/gcem_incl/hypot.hpp:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AllocatorPool.hh:
+
+/home/nickfar20/nest/include/Detectors/VDetector.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBinomial.icc:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Region.icc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmSaturation.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessVector.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonZero.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4coutDestination.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGamma.icc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmModelManager.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialPropertyVector.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSolid.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXiZero.hh:
+
+/usr/include/c++/13/bits/nested_exception.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/axes:
+
+/usr/include/c++/13/cfloat:
+
+/usr/include/ctype.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TessellatedSolid.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NeutrinoMu.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandPoisson.h:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UImessenger.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/trkdefs.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericFileManager.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandExponential.icc:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EventManager.hh:
 
@@ -8849,59 +11213,47 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /usr/include/c++/13/bits/cpp_type_traits.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UnknownParticle.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AutoLock.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/Rotation.icc:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandStudentT.icc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VBooleanProcessor.hh:
+/home/nickfar20/gcem/include/gcem_incl/cosh.hpp:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p2:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PionMinus.hh:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VHitsCollection.hh:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VEmFluctuationModel.hh:
 
 /usr/include/stdc-predef.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TransportationLogger.hh:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBreitWigner.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UniformElectricField.hh:
+/usr/include/libintl.h:
 
-/usr/include/c++/13/bits/sstream.tcc:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VoxelNavigation.hh:
 
-/home/nickfar20/gcem/include/gcem_incl/tan.hpp:
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PseudoScene.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ICRU90StoppingData.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldUtils.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DsMesonPlus.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VNtupleManager.hh:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronElasticPhysics.hh:
+/usr/include/c++/13/bits/predefined_ops.h:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationZ.icc:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Isotope.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGaussQ.icc:
-
-/usr/include/c++/13/bits/locale_classes.tcc:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandFlat.icc:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ToolsSGOffscreen.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialPropertiesTable.hh:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleDefinition.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Utility/memory.h:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Threading.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HCtable.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tubs.icc:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBit.h:
 
@@ -8913,9 +11265,19 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PVPlacement.hh:
 
-/home/nickfar20/gcem/include/gcem_incl/lcm.hpp:
+/home/nickfar20/uclatpc_CAD/src/FastS2Model.cc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EnergyRangeManager.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VEmAngularDistribution.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DMesonPlus.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StepPoint.icc:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
+
+/usr/include/c++/13/clocale:
+
+/usr/include/c++/13/stdexcept:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TauMinus.hh:
 
@@ -8923,13 +11285,13 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiNeutrinoMu.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnToolsManager.hh:
+/usr/include/c++/13/bits/locale_classes.tcc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGaussQ.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4CacheDetails.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Log.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ReactionProduct.hh:
-
-/home/nickfar20/uclatpc_CAD/include/tracking.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ViewParameters.icc:
 
@@ -8939,59 +11301,61 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/gcem/include/gcem_incl/incomplete_beta_inv.hpp:
 
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VMarker.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGeneral.h:
+
 /usr/include/c++/13/bits/hashtable.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Navigator.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AssemblyTriplet.icc:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGeneral.icc:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandLandau.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmabMinus.hh:
-
-/usr/include/c++/13/bits/algorithmfwd.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MagIntegratorStepper.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElectroMagneticField.hh:
-
-/usr/include/c++/13/cwctype:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SteppingManager.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBit.icc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandPoisson.icc:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmaPlus.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VEmModel.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EquationOfMotion.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBreitWigner.icc:
+/home/nickfar20/gcem/include/gcem_incl/ceil.hpp:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SDStructure.hh:
+/usr/include/c++/13/bits/string_view.tcc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Nucleus.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Transform3D.h:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4CrossSectionDataStore.hh:
-
-/home/nickfar20/gcem/include/gcem_incl/pow_integral.hpp:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/LorentzRotation.h:
-
-/usr/include/c++/13/bits/refwrap.h:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Units/SystemOfUnits.h:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tokenizer.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DMesonMinus.hh:
+
+/home/nickfar20/gcem/include/gcem_incl/neg_zero.hpp:
+
+/usr/include/c++/13/vector:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleGun.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldTrack.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisManager.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastTrack.hh:
+
+/usr/include/c++/13/bits/stringfwd.h:
+
+/usr/include/c++/13/cerrno:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandExpZiggurat.h:
 
 /usr/include/c++/13/bits/basic_ios.tcc:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Upsilon.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSDFilter.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericFileManager.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElementVector.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsVectorType.hh:
 
@@ -9001,35 +11365,23 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/Random.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LorentzRotation.hh:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DynamicParticle.icc:
 
 /usr/include/c++/13/unordered_map:
 
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LorentzRotation.hh:
+
 /usr/include/c++/13/bits/charconv.h:
 
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XiMinus.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelNode.icc:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmParameters.hh:
+
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/Random.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/base_histo:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserEventAction.hh:
-
-/usr/include/c++/13/tr1/exp_integral.tcc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Positron.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargeState.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmaMinus.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RayTracer.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Fcn.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiDeuteron.hh:
-
-/usr/include/c++/13/bits/stl_tree.h:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandomEngine.icc:
 
@@ -9037,23 +11389,11 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OrderedTable.hh:
 
-/home/nickfar20/uclatpc_CAD/include/DynamicUserLimits.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NuclearFormfactorType.hh:
-
-/usr/include/c++/13/bits/unique_lock.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationX.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Point3D.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmExtraPhysics.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Alpha.hh:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGaussZiggurat.h:
 
 /usr/include/c++/13/tr1/poly_laguerre.tcc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationProcessType.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TransportationManager.icc:
 
@@ -9061,9 +11401,13 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RanluxppEngine.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserActionInitialization.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Utility/memory.h:
 
-/home/nickfar20/uclatpc_CAD/include/detector.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HCtable.hh:
+
+/usr/include/c++/13/bits/stl_numeric.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exp.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/ThreeVector.icc:
 
@@ -9075,93 +11419,15 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
-/home/nickfar20/gcem/include/gcem_incl/atan.hpp:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiBsMesonZero.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Vector3D.h:
+/home/nickfar20/gcem/include/gcem_incl/floor.hpp:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XibZero.hh:
+/home/nickfar20/uclatpc_CAD/src/DriftElectronInfo.cc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IsotopeVector.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleMomentum.hh:
-
-/usr/include/c++/13/debug/assertions.h:
-
-/usr/include/c++/13/bits/basic_string.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandChiSquare.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Gamma.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleTable.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Utility/thread_local.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/graphics_reps_defs.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StackedTrack.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TriangularFacet.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tubs.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Threading.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TH2ToolsManager.hh:
-
-/home/nickfar20/gcem/include/gcem_incl/binomial_coef.hpp:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AssemblyTriplet.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Etac.hh:
-
-/home/nickfar20/gcem/include/gcem_incl/mantissa.hpp:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TwoVector.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackVector.hh:
-
-/usr/include/c++/13/bits/streambuf.tcc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/BoostZ.icc:
-
-/usr/include/c++/13/bits/exception_ptr.h:
-
-/usr/include/c++/13/bits/specfun.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DataVector.hh:
-
-/home/nickfar20/nest/include/Detectors/VDetector.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandStudentT.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AutoLock.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AllocatorPool.hh:
-
-/home/nickfar20/gcem/include/gcem_incl/hypot.hpp:
+/usr/include/c++/13/unordered_set:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandPoissonQ.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIdirectory.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Poisson.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationInterfaces.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadXSTypes.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ThreadLocalSingleton.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ViewerList.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/b1:
-
-/home/nickfar20/uclatpc_CAD/src/WIMPElasticProcess.cc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrajectoryContainer.hh:
-
-/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BMesonZero.hh:
 
@@ -9172,12 +11438,6 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFileManager.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RanecuEngine.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VCrossSectionDataSet.hh:
-
-/home/nickfar20/gcem/include/gcem_incl/signbit.hpp:
-
-/home/nickfar20/gcem/include/gcem_incl/log1p.hpp:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmabPlus.hh:
 
@@ -9193,27 +11453,33 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrajectoriesModel.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserTrackInformation.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4BlockingList.icc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IonPhysics.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RadioactiveDecayPhysics.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmabZero.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VModel.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ExceptionSeverity.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmacZero.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationY.icc:
 
 /usr/include/endian.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElectricField.hh:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THnManager.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElectricField.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Box.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PionPlus.hh:
+/usr/include/c++/13/map:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h2d:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Point3D.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Cache.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationX.h:
 
 /usr/include/x86_64-linux-gnu/bits/time.h:
 
@@ -9221,9 +11487,9 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/gcem/include/gcem_incl/sqrt.hpp:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChemTimeStepModel.hh:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GlobalConfig.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XibMinus.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VisExecutive.hh:
 
@@ -9239,45 +11505,61 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Cons.icc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DMesonPlus.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StepPoint.icc:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
-
-/usr/include/c++/13/clocale:
-
-/usr/include/c++/13/stdexcept:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DMesonZero.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4JPsi.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LambdacPlus.hh:
 
-/usr/include/c++/13/numeric:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/MixMaxRng.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIExecutive.hh:
+/usr/include/c++/13/bits/ptr_traits.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VDigiCollection.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationLevel.icc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronElasticPhysicsHP.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Electron.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DNAModelSubType.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldUtils.icc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4CSGSolid.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Element.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsVector.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AssemblyVolume.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Decay.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmElementSelector.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tubs.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericAnalysisManager.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DecayPhysics.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericAnalysisManager.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EnvironmentUtils.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EqMagElectricField.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialPropertiesTable.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmacPlus.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericIon.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TouchableHistory.icc:
+
+/usr/include/x86_64-linux-gnu/bits/typesizes.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tubs.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandBreitWigner.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SDStructure.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Nucleus.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Transform3D.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
+
+/usr/include/c++/13/bits/algorithmfwd.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MagIntegratorStepper.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GPILSelection.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TransportationManager.hh:
 
@@ -9287,309 +11569,107 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /usr/include/asm-generic/errno-base.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserTrackingAction.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VDigi.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DecayProcessType.hh:
-
-/usr/include/c++/13/utility:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/MixMaxRng.h:
-
-/usr/include/c++/13/bits/ptr_traits.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Electron.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldUtils.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Element.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronicProcess.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSolid.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VNavigation.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElementVector.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSDFilter.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericFileManager.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmStandardPhysics.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VMarker.hh:
-
-/home/nickfar20/gcem/include/gcem_incl/acos.hpp:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmTableType.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EqMagElectricField.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronPhysicsQGSP_BIC.hh:
-
-/usr/include/c++/13/bits/codecvt.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronicException.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EnvironmentUtils.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmacPlus.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/LorentzRotation.icc:
-
-/home/nickfar20/uclatpc_CAD/include/CADMesh.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericIon.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiAlpha.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GeomSplitter.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronPhysicsQGSP_BIC_HP.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/BoostY.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Qt3D.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GPILSelection.hh:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GeomConfig.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialPropertyVector.hh:
+/home/nickfar20/gcem/include/gcem_incl/abs.hpp:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSolid.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiXiZero.hh:
-
-/usr/include/c++/13/bits/nested_exception.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelNode.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmParameters.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XiMinus.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VPhysicsConstructor.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronElastic.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VVolumeMaterialScanner.hh:
-
-/usr/include/c++/13/ext/type_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/time64.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VisAttributes.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Units/SystemOfUnits.h:
-
-/usr/include/c++/13/bits/string_view.tcc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserPhysicsList.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VMultipleScattering.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Visible.icc:
-
-/usr/include/c++/13/algorithm:
-
-/usr/include/stdio.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleChange.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VoxelNavigation.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Voxelizer.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Ellipsoid.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XiZero.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XibMinus.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4XicPlus.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4eMultipleScattering.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ios.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/Randomize.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmacZero.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/evtdefs.hh:
-
-/home/nickfar20/gcem/include/gcem_incl/expm1.hpp:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Xr.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/geomwdefs.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RunManagerKernel.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/globals.hh:
-
-/usr/include/c++/13/math.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/rundefs.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/templates.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/tls.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/cid:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/cids:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUPLSplitter.hh:
-
-/home/nickfar20/gcem/include/gcem_incl/lbeta.hpp:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/axes:
-
-/usr/include/c++/13/cfloat:
-
-/usr/include/ctype.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/axis:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/b2:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h1d:
-
-/usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h2:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h3:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h3d:
-
-/usr/include/c++/13/bits/enable_special_members.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/histo_data:
-
-/usr/include/c++/13/ios:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Transform3D.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p1d:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ViewParameters.hh:
+
+/usr/include/c++/13/bits/locale_conv.h:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Allocator.hh:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/p2d:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HnManager.hh:
 
-/home/nickfar20/gcem/include/gcem_incl/fabsl.hpp:
+/usr/include/c++/13/bits/shared_ptr.h:
 
-/usr/include/c++/13/cctype:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Utility/thread_local.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericFileManager.icc:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IsotopeVector.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandExponential.icc:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleMomentum.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/trkdefs.hh:
+/usr/include/c++/13/debug/assertions.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmMessenger.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFastSimulationModel.hh:
 
-/home/nickfar20/gcem/include/gcem_incl/lgamma.hpp:
+/home/nickfar20/gcem/include/gcem_incl/is_odd.hpp:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/trkgdefs.hh:
+/usr/include/c++/13/numeric:
 
-/usr/include/c++/13/bits/unique_ptr.h:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIExecutive.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserStackingAction.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4JPsi.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/b3:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DCofThisEvent.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/windefs.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ToolsAnalysisManager.icc:
 
-/home/nickfar20/gcem/include/gcem.hpp:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IntegrationDriver.icc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Transform3D.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmabMinus.hh:
 
-/home/nickfar20/gcem/include/gcem_incl/abs.hpp:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElectroMagneticField.hh:
+
+/usr/include/c++/13/cwctype:
 
 /home/nickfar20/gcem/include/gcem_incl/acosh.hpp:
 
-/home/nickfar20/gcem/include/gcem_incl/atan2.hpp:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SigmaZero.hh:
 
-/home/nickfar20/gcem/include/gcem_incl/atanh.hpp:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SandiaTable.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exp.hh:
+/usr/include/c++/13/array:
 
-/usr/include/c++/13/bits/stl_numeric.h:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IonisParamMat.hh:
 
-/home/nickfar20/uclatpc_CAD/src/DriftElectronInfo.cc:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialCutsCouple.hh:
 
-/home/nickfar20/gcem/include/gcem_incl/floor.hpp:
+/usr/include/c++/13/bits/random.h:
 
-/usr/include/linux/limits.h:
+/usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EquationOfMotion.hh:
+/usr/include/c++/13/ext/alloc_traits.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiSigmaPlus.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VisExtent.hh:
 
-/home/nickfar20/gcem/include/gcem_incl/ceil.hpp:
+/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
-/home/nickfar20/gcem/include/gcem_incl/copysign.hpp:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserStackingAction.hh:
 
-/home/nickfar20/gcem/include/gcem_incl/cos.hpp:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/windefs.hh:
 
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/b3:
 
-/home/nickfar20/gcem/include/gcem_incl/cosh.hpp:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/axis:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AuxiliaryNavServices.icc:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationHistoryPool.hh:
 
-/home/nickfar20/gcem/include/gcem_incl/erf.hpp:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialPropertiesIndex.hh:
 
-/home/nickfar20/gcem/include/gcem_incl/erf_inv.hpp:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialTable.hh:
 
-/usr/include/c++/13/bits/chrono.h:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ElementTable.hh:
 
-/usr/include/c++/13/limits:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Box.icc:
 
-/home/nickfar20/gcem/include/gcem_incl/exp.hpp:
+/usr/include/c++/13/bits/allocator.h:
 
-/home/nickfar20/gcem/include/gcem_incl/fabsf.hpp:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UniformElectricField.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandFlat.h:
+/usr/include/c++/13/bits/sstream.tcc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnyType.hh:
+/home/nickfar20/gcem/include/gcem_incl/tan.hpp:
 
-/home/nickfar20/gcem/include/gcem_incl/find_fraction.hpp:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PseudoScene.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh:
-
-/home/nickfar20/gcem/include/gcem_incl/find_whole.hpp:
-
-/usr/include/c++/13/bits/stl_map.h:
-
-/usr/include/c++/13/locale:
-
-/home/nickfar20/gcem/include/gcem_incl/fmod.hpp:
-
-/home/nickfar20/gcem/include/gcem_incl/incomplete_gamma_inv.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VoxelNavigation.hh:
-
-/usr/include/libintl.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/pwdefs.hh:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/home/nickfar20/gcem/include/gcem_incl/gcem_options.hpp:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldUtils.hh:
 
 /home/nickfar20/gcem/include/gcem_incl/incomplete_gamma.hpp:
 
@@ -9599,6 +11679,12 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/gcem/include/gcem_incl/inv_sqrt.hpp:
 
+/home/nickfar20/gcem/include/gcem_incl/is_even.hpp:
+
+/usr/include/x86_64-linux-gnu/sys/types.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadFinalState.hh:
+
 /home/nickfar20/gcem/include/gcem_incl/is_finite.hpp:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AuxiliaryNavServices.hh:
@@ -9606,8 +11692,6 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Scene.icc:
 
 /home/nickfar20/gcem/include/gcem_incl/is_nan.hpp:
-
-/home/nickfar20/gcem/include/gcem_incl/is_odd.hpp:
 
 /home/nickfar20/gcem/include/gcem_incl/log.hpp:
 
@@ -9629,7 +11713,13 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/gcem/include/gcem_incl/min.hpp:
 
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ModelColourMap.hh:
+
 /home/nickfar20/gcem/include/gcem_incl/pow.hpp:
+
+/home/nickfar20/gcem/include/gcem_incl/pow_integral.hpp:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4CrossSectionDataStore.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NistManager.hh:
 
@@ -9657,41 +11747,35 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/nest/G4integration/NESTProc.hh:
 
-/usr/include/c++/13/bits/char_traits.h:
-
-/home/nickfar20/nest/G4integration/NESTStackingAction.hh:
-
 /home/nickfar20/nest/include/NEST/NEST.hh:
 
 /home/nickfar20/uclatpc_CAD/include/electricField.hh:
 
 /usr/include/c++/13/bits/ostream.tcc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/BoostY.icc:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
-
 /home/nickfar20/nest/include/NEST/RandomGen.hh:
 
 /home/nickfar20/uclatpc_CAD/src/nestPart.cc:
+
+/home/nickfar20/uclatpc_CAD/include/CADMesh.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/LorentzRotation.icc:
 
 /home/nickfar20/uclatpc_CAD/include/DriftElectronInfo.hh:
 
 /usr/include/c++/13/ext/numeric_traits.h:
 
-/home/nickfar20/uclatpc_CAD/include/action.hh:
+/home/nickfar20/uclatpc_CAD/include/FastS2Model.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/BoostZ.h:
+/home/nickfar20/uclatpc_CAD/include/detector.hh:
 
-/home/nickfar20/uclatpc_CAD/include/event.hh:
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserActionInitialization.hh:
+
+/usr/include/c++/13/bits/std_mutex.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /home/nickfar20/uclatpc_CAD/include/generator.hh:
-
-/usr/include/c++/13/bits/std_mutex.h:
-
-/home/nickfar20/uclatpc_CAD/include/physics.hh:
 
 /home/nickfar20/uclatpc_CAD/include/run.hh:
 
@@ -9725,6 +11809,12 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /usr/include/c++/13/backward/auto_ptr.h:
 
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTrajectoryModel.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LogicalVolume.hh:
+
+/usr/include/c++/13/bits/align.h:
+
 /usr/include/c++/13/bits/alloc_traits.h:
 
 /usr/include/c++/13/bits/atomic_base.h:
@@ -9741,6 +11831,18 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
+/usr/include/c++/13/limits:
+
+/usr/include/c++/13/bits/chrono.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VDigiCollection.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronElasticPhysicsHP.hh:
+
+/usr/include/c++/13/bits/codecvt.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronPhysicsQGSP_BIC.hh:
+
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VisAttributes.hh:
 
 /usr/include/c++/13/bits/concept_check.h:
@@ -9751,9 +11853,11 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /usr/include/c++/13/bits/erase_if.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VModel.hh:
-
 /usr/include/c++/13/bits/invoke.h:
+
+/usr/include/c++/13/bits/ios_base.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsLogVector.hh:
 
 /usr/include/c++/13/bits/list.tcc:
 
@@ -9762,10 +11866,6 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 /usr/include/c++/13/type_traits:
 
 /usr/include/features-time64.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcmdWithAString.hh:
-
-/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/c++/13/bits/locale_classes.h:
 
@@ -9799,6 +11899,10 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /usr/include/c++/13/bits/range_access.h:
 
+/usr/include/c++/13/bits/refwrap.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/LorentzRotation.h:
+
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StepStatus.hh:
 
 /usr/include/c++/13/bits/shared_ptr_atomic.h:
@@ -9811,9 +11915,9 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /usr/include/linux/errno.h:
 
-/usr/include/c++/13/bits/fstream.tcc:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnyMethod.hh:
+
+/usr/include/c++/13/bits/fstream.tcc:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HitFilterFactories.hh:
 
@@ -9824,6 +11928,10 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 /usr/include/c++/13/bits/std_function.h:
 
 /usr/include/c++/13/bits/std_thread.h:
+
+/usr/include/c++/13/bits/stl_algo.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IsotopeProperty.hh:
 
 /usr/include/c++/13/pstl/execution_defs.h:
 
@@ -9869,11 +11977,15 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /usr/include/c++/13/bits/stl_vector.h:
 
-/usr/include/c++/13/bits/stringfwd.h:
+/usr/include/c++/13/bits/unique_lock.h:
 
-/usr/include/c++/13/cerrno:
+/home/nickfar20/uclatpc_CAD/include/DynamicUserLimits.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NuclearFormfactorType.hh:
 
 /usr/include/c++/13/bits/unordered_map.h:
+
+/usr/include/c++/13/bits/unordered_set.h:
 
 /usr/include/c++/13/bits/uses_allocator.h:
 
@@ -9886,10 +11998,6 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 /usr/include/c++/13/bits/vector.tcc:
 
 /usr/include/c++/13/cassert:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/Boost.h:
-
-/usr/include/c++/13/chrono:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
@@ -9915,6 +12023,10 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
 
+/usr/include/c++/13/ctime:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Transportation.icc:
+
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonPlus.hh:
 
 /usr/include/c++/13/cwchar:
@@ -9922,6 +12034,16 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 /usr/include/c++/13/exception:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcommandStatus.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VModelFactory.hh:
+
+/usr/include/c++/13/ext/aligned_buffer.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NavigationLevelRep.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcmdWithADoubleAndUnit.hh:
 
 /usr/include/c++/13/ext/concurrence.h:
 
@@ -9939,6 +12061,10 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /usr/include/c++/13/initializer_list:
 
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Alpha.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmExtraPhysics.hh:
+
 /usr/include/c++/13/iosfwd:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PolyhedraHistorical.hh:
@@ -9952,6 +12078,8 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 /usr/include/c++/13/new:
 
 /usr/include/c++/13/pstl/glue_algorithm_defs.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationManager.hh:
 
 /usr/include/c++/13/pstl/glue_numeric_defs.h:
 
@@ -9981,9 +12109,9 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MCCIndexConversionTable.hh:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonMinus.hh:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Visible.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4KaonMinus.hh:
 
 /usr/include/c++/13/string_view:
 
@@ -9997,9 +12125,9 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /usr/include/c++/13/tr1/ell_integral.tcc:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationY.h:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Colour.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationY.h:
 
 /usr/include/c++/13/streambuf:
 
@@ -10021,11 +12149,19 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
+/usr/include/c++/13/utility:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DecayProcessType.hh:
+
 /usr/include/errno.h:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsVector.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Plane3D.hh:
+
+/usr/include/pthread.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleChangeForTransport.icc:
 
 /usr/include/sched.h:
 
@@ -10113,21 +12249,11 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LogicalVolume.hh:
-
-/usr/include/c++/13/bits/align.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTrajectoryModel.hh:
-
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Exception.hh:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ExceptionSeverity.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VModel.icc:
 
 /usr/include/c++/13/complex:
 
@@ -10171,6 +12297,18 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SubEvent.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiBMesonZero.hh:
+
+/usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Visible.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VMultipleScattering.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserPhysicsList.hh:
+
 /usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Geometry/Plane3D.h:
@@ -10178,8 +12316,6 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
 
 /home/nickfar20/uclatpc_CAD/src/detector.cc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VGraphicsSystem.hh:
 
 /usr/include/c++/13/tr1/legendre_function.tcc:
 
@@ -10198,6 +12334,16 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 /usr/include/c++/13/memory:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrajectoryContainer.hh:
+
+/usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ViewerList.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/b1:
+
+/home/nickfar20/uclatpc_CAD/src/WIMPElasticProcess.cc:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
@@ -10227,13 +12373,15 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/messages_members.h:
 
+/home/nickfar20/nest/include/Detectors/MyDetector.hh:
+
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IonTable.hh:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h:
-
 /usr/include/x86_64-linux-gnu/c++/13/bits/time_members.h:
+
+/usr/include/x86_64-linux-gnu/sys/single_threaded.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronicProcessType.hh:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h:
 
@@ -10242,6 +12390,164 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AttDef.hh:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NormalNavigation.hh:
+
+/home/nickfar20/uclatpc_CAD/src/action.cc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmFluoDirectory.hh:
+
+/usr/include/c++/13/chrono:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/Boost.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/BoostY.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Qt3D.hh:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/BoostY.icc:
+
+/home/nickfar20/uclatpc_CAD/include/event.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/BoostZ.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/BoostZ.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/tools/histo/h2d:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Cache.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChemTimeStepModel.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DNAModelSubType.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Decay.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmElementSelector.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmModelManager.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmSaturation.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmTableType.hh:
+
+/home/nickfar20/gcem/include/gcem_incl/lcm.hpp:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EnergyRangeManager.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Vector/RotationInterfaces.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadXSTypes.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronElasticPhysics.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronPhysicsQGSP_BERT.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiAlpha.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GeomSplitter.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronPhysicsQGSP_BIC_HP.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronicException.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronicInteraction.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronicProcess.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SafetyHelper.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IonElasticPhysics.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserTrackInformation.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IonPhysics.hh:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/opt_random.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4IonTable.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelHeader.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MscStepLimitType.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4OpticalParameters.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Run.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleChangeForMSC.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsListHelper.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PhysicsListOrderingParameter.hh:
+
+/home/nickfar20/uclatpc_CAD/include/tracking.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ReactionProduct.hh:
+
+/home/nickfar20/gcem/include/gcem_incl/signbit.hpp:
+
+/home/nickfar20/gcem/include/gcem_incl/log1p.hpp:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VCrossSectionDataSet.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ReactionProductVector.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StepLimiterPhysics.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StoppingPhysics.hh:
+
+/home/nickfar20/gcem/include/gcem_incl/find_whole.hpp:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ThreadLocalSingleton.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TransportationLogger.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcmdWithABool.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcmdWithADouble.hh:
+
+/usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcmdWithAString.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UrbanMscModel.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VContinuousDiscreteProcess.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandPoisson.icc:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VEmModel.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VModularPhysicsList.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VMscModel.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronElastic.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VPhysicsConstructor.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AntiDMesonZero.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VPrimaryGenerator.hh:
+
+/home/nickfar20/gcem/include/gcem_incl/lbeta.hpp:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUPLSplitter.hh:
+
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4eMultipleScattering.hh:
+
+/usr/include/c++/13/bits/char_traits.h:
+
+/home/nickfar20/nest/G4integration/NESTStackingAction.hh:
+
+/home/nickfar20/uclatpc_CAD/include/action.hh:
+
+/home/nickfar20/uclatpc_CAD/include/physics.hh:
 
 /home/nickfar20/uclatpc_CAD/src/electricField.cc:
 
@@ -10301,11 +12607,11 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PolyconeHistorical.hh:
 
+/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VVisManager.hh:
+
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleTableIterator.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4LogicalVolume.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VVisManager.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PolyconeSide.hh:
 
@@ -10330,6 +12636,8 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Sphere.icc:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4THitsCollection.hh:
+
+/home/nickfar20/uclatpc_CAD/include/MyDetector.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ToolsSGQtGLES.hh:
 
@@ -10356,25 +12664,3 @@ CMakeFiles/uclatpc_CAD.dir/uclatpc_CAD.cc.o: /home/nickfar20/uclatpc_CAD/uclatpc
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VCSGfaceted.hh:
 
 /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VGraphicsScene.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandGeneral.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VMarker.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSceneHandler.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSceneHandler.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VStateDependent.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTree.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartVoxelProxy.icc:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUIshell.hh:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Vector3D.hh:
-
-/usr/include/c++/13/bits/locale_conv.h:
-
-/home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ViewParameters.hh:

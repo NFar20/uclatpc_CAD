@@ -8,7 +8,6 @@ MySensitiveDetector::~MySensitiveDetector()
 
 G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhist)
 {
-	//G4cout << "ProcessHits called" << G4endl;
 	G4Track *track = aStep->GetTrack();
 	
 	G4ParticleTable *particleTable = G4ParticleTable::GetParticleTable();
@@ -16,6 +15,8 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhis
 	G4bool opticalPhoton = track->GetDefinition() == G4OpticalPhoton::OpticalPhotonDefinition();
 	
 	zSurface = 50.2*mm;
+
+	//kills particles with unchanging energies to prevent program from infinitely running
 
 	if(!opticalPhoton){
 		return false;
@@ -56,14 +57,18 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhis
 	
 		G4AnalysisManager *man = G4AnalysisManager::Instance();
 
-		man->FillH1(0, t_global);
-  		man->FillH1(isS2 ? 2 : 1, t_global);
+		// man->FillH1(0, t_global);
+  		// man->FillH1(isS2 ? 2 : 1, t_global);
 		
 		// man->FillNtupleIColumn(0, 0, evt);
 		// man->FillNtupleDColumn(0, 3, posDetector[0]);
 		// man->FillNtupleDColumn(0, 4, posDetector[1]);
 		// man->FillNtupleDColumn(0, 5, posDetector[2]);
 		// man->AddNtupleRow(0);
+		man->FillH1(0, posDetector[0]/mm);
+    	man->FillH1(1, posDetector[1]/mm);
+		man->FillH1(2, posDetector[2]/mm);
+		man->FillH1(3, t_global/us);
 		
 	}
 	return true;

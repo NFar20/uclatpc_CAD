@@ -1,6 +1,8 @@
 #include "generator.hh"
 #include <cmath>
 
+int incidentRecoilType = 0; //0==ER , 1==NR
+
 MyPrimaryGenerator::MyPrimaryGenerator()
 {
 	generic = "geantino";
@@ -12,6 +14,7 @@ MyPrimaryGenerator::MyPrimaryGenerator()
 	G4cout << "[MyPrimaryGenerator] Instance created, ID = " << instanceCount << G4endl;
 	this->instanceID = instanceCount;
 	
+	//custom particle changing commands
 	fMessenger = new G4GenericMessenger(this, "/myGen/", "Particle Selection");
 	fMessenger->DeclareMethod("setParticle", &MyPrimaryGenerator::SetSource, "Choose particle source");
 	fMessenger->DeclareProperty("setGeneric", generic, "Choose generic particle");
@@ -23,6 +26,7 @@ MyPrimaryGenerator::MyPrimaryGenerator()
 	momMagnitude = 2.45*MeV;
 	n = 1;
 	
+	//creating particle gun
 	fParticleGun = new G4ParticleGun(n);
 	
 	G4ParticleDefinition *particle = G4ParticleTable::GetParticleTable()->FindParticle(generic);
@@ -39,6 +43,7 @@ MyPrimaryGenerator::MyPrimaryGenerator()
 	G4cout << "Constructor source value: " << source << G4endl;
 	
 	//fParticleGun->SetParticlePolarization(G4ThreeVector(1., 0., 0.));
+	//uncomment above line if firing a photon
 }
 
 MyPrimaryGenerator::~MyPrimaryGenerator()
@@ -56,6 +61,7 @@ void MyPrimaryGenerator::SetSource(G4String val)
 void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent)
 {
 	
+	//generating different source types
 	if(!Co60)
 	{
 		Co60 = G4IonTable::GetIonTable()->GetIon(27, 60, 0);
@@ -81,22 +87,7 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent)
 		const_cast<G4ParticleDefinition*>(Cf252)->SetPDGStable(false);
 	}
 	
-	//AmBe neutron spectrum
-	/*G4double E;
-	G4double[110] function;
-	if(AmBe)
-	{
-		while(true)
-		{
-			double E = G4UniformRand() * 11.0;
-			
-			if(G4UniformRand() < function)
-			{
-				break;
-			}
-		}
-			fParticleGun->SetParticleMomentum(E*MeV);
-	}*/
+	//Switch to GPS and use macro file for AmBe source
 	
 	
 	else if(!Co57)
@@ -142,6 +133,7 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent)
 	//particleArray[8] = G4ParticleTable::GetParticleTable()->FindParticle("geantino");
 	particleArray[8] = G4ParticleTable::GetParticleTable()->FindParticle("neutron");
 	
+	//for particle selection command
 	if(source == "Ba133")
 		particleIndex = 0;
 	else if(source == "Na22")

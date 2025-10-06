@@ -411,6 +411,11 @@ CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o: \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandPoissonQ.icc \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandStudentT.h \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Random/RandStudentT.icc \
+ /usr/include/c++/13/unordered_set \
+ /usr/include/c++/13/bits/unordered_set.h \
+ /usr/include/c++/13/bits/hashtable.h \
+ /usr/include/c++/13/bits/hashtable_policy.h \
+ /usr/include/c++/13/bits/enable_special_members.h \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StackManager.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserStackingAction.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ClassificationOfNewTrack.hh \
@@ -504,9 +509,6 @@ CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o: \
  /home/nickfar20/nest/G4integration/NESTProc.hh \
  /usr/include/c++/13/functional /usr/include/c++/13/unordered_map \
  /usr/include/c++/13/bits/unordered_map.h \
- /usr/include/c++/13/bits/hashtable.h \
- /usr/include/c++/13/bits/hashtable_policy.h \
- /usr/include/c++/13/bits/enable_special_members.h \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Material.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialPropertiesTable.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleMomentum.hh \
@@ -530,6 +532,7 @@ CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o: \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProductionCuts.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SystemOfUnits.hh \
  /home/nickfar20/nest/include/Detectors/VDetector.hh \
+ /home/nickfar20/uclatpc_CAD/include/MyDetector.hh \
  /home/nickfar20/uclatpc_CAD/include/DriftElectronInfo.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserTrackInformation.hh \
  /home/nickfar20/uclatpc_CAD/include/DynamicUserLimits.hh \
@@ -867,10 +870,22 @@ CMakeFiles/uclatpc_CAD.dir/src/tracking.cc.o: \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Voxelizer.icc \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Tet.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcommand.hh \
- /home/nickfar20/uclatpc_CAD/include/event.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserEventAction.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Event.hh \
+ /home/nickfar20/uclatpc_CAD/include/FastS2Model.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFastSimulationModel.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastTrack.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.icc \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastTrack.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleDefinition.hh \
  /home/nickfar20/uclatpc_CAD/include/run.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserRunAction.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Run.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.icc \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFastSimulationModel.hh \
+ /home/nickfar20/uclatpc_CAD/include/event.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserEventAction.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Event.hh \
  /home/nickfar20/uclatpc_CAD/include/tracking.hh

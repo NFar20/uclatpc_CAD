@@ -11,7 +11,7 @@
 class MyEventAction : public G4UserEventAction
 {
 public:
-	MyEventAction(MyRunAction*);
+	MyEventAction(); //MyRunAction*
 	~MyEventAction();
 	
 	virtual void BeginOfEventAction(const G4Event*);

@@ -9,6 +9,10 @@
 #include "construction.hh"
 #include "physics.hh"
 #include "action.hh"
+#include "G4OpticalParameters.hh"
+#include "G4TrajectoryDrawByParticleID.hh"
+
+nestPart *nestDetector = new nestPart();
 
 int main(int argc, char** argv)
 {

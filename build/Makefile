@@ -166,6 +166,30 @@ src/DriftElectronInfo.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uclatpc_CAD.dir/build.make CMakeFiles/uclatpc_CAD.dir/src/DriftElectronInfo.cc.s
 .PHONY : src/DriftElectronInfo.cc.s
 
+src/FastS2Model.o: src/FastS2Model.cc.o
+.PHONY : src/FastS2Model.o
+
+# target to build an object file
+src/FastS2Model.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uclatpc_CAD.dir/build.make CMakeFiles/uclatpc_CAD.dir/src/FastS2Model.cc.o
+.PHONY : src/FastS2Model.cc.o
+
+src/FastS2Model.i: src/FastS2Model.cc.i
+.PHONY : src/FastS2Model.i
+
+# target to preprocess a source file
+src/FastS2Model.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uclatpc_CAD.dir/build.make CMakeFiles/uclatpc_CAD.dir/src/FastS2Model.cc.i
+.PHONY : src/FastS2Model.cc.i
+
+src/FastS2Model.s: src/FastS2Model.cc.s
+.PHONY : src/FastS2Model.s
+
+# target to generate assembly for a file
+src/FastS2Model.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uclatpc_CAD.dir/build.make CMakeFiles/uclatpc_CAD.dir/src/FastS2Model.cc.s
+.PHONY : src/FastS2Model.cc.s
+
 src/WIMPElasticProcess.o: src/WIMPElasticProcess.cc.o
 .PHONY : src/WIMPElasticProcess.o
 
@@ -491,6 +515,9 @@ help:
 	@echo "... src/DriftElectronInfo.o"
 	@echo "... src/DriftElectronInfo.i"
 	@echo "... src/DriftElectronInfo.s"
+	@echo "... src/FastS2Model.o"
+	@echo "... src/FastS2Model.i"
+	@echo "... src/FastS2Model.s"
 	@echo "... src/WIMPElasticProcess.o"
 	@echo "... src/WIMPElasticProcess.i"
 	@echo "... src/WIMPElasticProcess.s"

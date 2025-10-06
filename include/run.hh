@@ -5,11 +5,15 @@
 #include "G4AnalysisManager.hh"
 #include"G4Run.hh"
 #include "G4SystemOfUnits.hh"
+#include "stepping.hh"
 
 extern int nS1Events;
 extern int nS2Events;
 extern int totalS1Photons;
 extern int totalS2Photons;
+extern int yieldPhotons;
+extern int yieldElectrons;
+extern int incidentRecoilType;
 
 class MyRunAction : public G4UserRunAction
 {

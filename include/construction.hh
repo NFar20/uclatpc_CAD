@@ -29,6 +29,11 @@
 
 #include "CADMesh.hh"
 
+#include "FastS2Model.hh"
+#include "nestPart.hh"
+#include "G4FastSimulationManager.hh"
+#include "DynamicUserLimits.hh"
+
 class MyDetectorConstruction : public G4VUserDetectorConstruction
 {
 public:

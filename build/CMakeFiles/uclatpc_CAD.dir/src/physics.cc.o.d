@@ -591,6 +591,7 @@ CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcmdWithADouble.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcmdWithAString.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcmdWithADoubleAndUnit.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronPhysicsQGSP_BERT.hh \
  /home/nickfar20/uclatpc_CAD/include/generator.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleGun.hh \
@@ -705,6 +706,8 @@ CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/templates.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4MaterialCutsCouple.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProductionCuts.hh \
+ /home/nickfar20/nest/include/Detectors/MyDetector.hh \
+ /home/nickfar20/nest/include/Detectors/VDetector.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessManager.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessVector.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessVector.icc \
@@ -767,4 +770,16 @@ CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Navigator.icc \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmParameters.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UrbanMscModel.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Electron.hh
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Electron.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationManagerProcess.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationVector.icc \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastTrack.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.icc \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VFastSimulationModel.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationProcessType.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldTrack.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargeState.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldTrack.icc

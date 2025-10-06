@@ -1104,3 +1104,413 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Geant4Config.cmake:474 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-5xL8Up"
+      binary: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-5xL8Up"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-5xL8Up'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e3bb1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e3bb1.dir/build.make CMakeFiles/cmTC_e3bb1.dir/build
+        gmake[1]: Entering directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-5xL8Up'
+        Building C object CMakeFiles/cmTC_e3bb1.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_e3bb1.dir/test_mpi.c.o -c /home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-5xL8Up/test_mpi.c
+        Linking C executable cmTC_e3bb1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3bb1.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_e3bb1.dir/test_mpi.c.o -o cmTC_e3bb1  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-5xL8Up'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Geant4Config.cmake:474 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-I9w04L"
+      binary: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-I9w04L"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-I9w04L'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_55749/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_55749.dir/build.make CMakeFiles/cmTC_55749.dir/build
+        gmake[1]: Entering directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-I9w04L'
+        Building C object CMakeFiles/cmTC_55749.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_55749.dir/test_mpi.c.o -c /home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-I9w04L/test_mpi.c
+        Linking C executable cmTC_55749
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55749.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_55749.dir/test_mpi.c.o -o cmTC_55749  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-I9w04L'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Geant4Config.cmake:474 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-KUgX2i"
+      binary: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-KUgX2i"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-KUgX2i'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_82a3c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_82a3c.dir/build.make CMakeFiles/cmTC_82a3c.dir/build
+        gmake[1]: Entering directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-KUgX2i'
+        Building C object CMakeFiles/cmTC_82a3c.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_82a3c.dir/test_mpi.c.o -c /home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-KUgX2i/test_mpi.c
+        Linking C executable cmTC_82a3c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_82a3c.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_82a3c.dir/test_mpi.c.o -o cmTC_82a3c  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-KUgX2i'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Geant4Config.cmake:474 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-q3YTWZ"
+      binary: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-q3YTWZ"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-q3YTWZ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3d4b0/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3d4b0.dir/build.make CMakeFiles/cmTC_3d4b0.dir/build
+        gmake[1]: Entering directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-q3YTWZ'
+        Building C object CMakeFiles/cmTC_3d4b0.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_3d4b0.dir/test_mpi.c.o -c /home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-q3YTWZ/test_mpi.c
+        Linking C executable cmTC_3d4b0
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3d4b0.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_3d4b0.dir/test_mpi.c.o -o cmTC_3d4b0  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-q3YTWZ'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Geant4Config.cmake:474 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-btSY7X"
+      binary: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-btSY7X"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-btSY7X'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_efe10/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_efe10.dir/build.make CMakeFiles/cmTC_efe10.dir/build
+        gmake[1]: Entering directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-btSY7X'
+        Building C object CMakeFiles/cmTC_efe10.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_efe10.dir/test_mpi.c.o -c /home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-btSY7X/test_mpi.c
+        Linking C executable cmTC_efe10
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_efe10.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_efe10.dir/test_mpi.c.o -o cmTC_efe10  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-btSY7X'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Geant4Config.cmake:474 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-lt4Gfm"
+      binary: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-lt4Gfm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-lt4Gfm'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_77550/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_77550.dir/build.make CMakeFiles/cmTC_77550.dir/build
+        gmake[1]: Entering directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-lt4Gfm'
+        Building C object CMakeFiles/cmTC_77550.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_77550.dir/test_mpi.c.o -c /home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-lt4Gfm/test_mpi.c
+        Linking C executable cmTC_77550
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77550.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_77550.dir/test_mpi.c.o -o cmTC_77550  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-lt4Gfm'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Geant4Config.cmake:474 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-LbyBz9"
+      binary: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-LbyBz9"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-LbyBz9'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_bf259/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_bf259.dir/build.make CMakeFiles/cmTC_bf259.dir/build
+        gmake[1]: Entering directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-LbyBz9'
+        Building C object CMakeFiles/cmTC_bf259.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_bf259.dir/test_mpi.c.o -c /home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-LbyBz9/test_mpi.c
+        Linking C executable cmTC_bf259
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf259.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_bf259.dir/test_mpi.c.o -o cmTC_bf259  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-LbyBz9'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Geant4Config.cmake:474 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-i08NEm"
+      binary: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-i08NEm"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-i08NEm'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3f391/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3f391.dir/build.make CMakeFiles/cmTC_3f391.dir/build
+        gmake[1]: Entering directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-i08NEm'
+        Building C object CMakeFiles/cmTC_3f391.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_3f391.dir/test_mpi.c.o -c /home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-i08NEm/test_mpi.c
+        Linking C executable cmTC_3f391
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3f391.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_3f391.dir/test_mpi.c.o -o cmTC_3f391  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-i08NEm'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Geant4Config.cmake:474 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-q8HQYS"
+      binary: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-q8HQYS"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-q8HQYS'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_99561/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_99561.dir/build.make CMakeFiles/cmTC_99561.dir/build
+        gmake[1]: Entering directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-q8HQYS'
+        Building C object CMakeFiles/cmTC_99561.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_99561.dir/test_mpi.c.o -c /home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-q8HQYS/test_mpi.c
+        Linking C executable cmTC_99561
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_99561.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_99561.dir/test_mpi.c.o -o cmTC_99561  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-q8HQYS'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Geant4Config.cmake:474 (find_dependency)"
+      - "CMakeLists.txt:5 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-6XzOij"
+      binary: "/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-6XzOij"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/home/nickfar20/g4xr/g4xr-install/lib/cmake/Geant4/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-6XzOij'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1b802/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1b802.dir/build.make CMakeFiles/cmTC_1b802.dir/build
+        gmake[1]: Entering directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-6XzOij'
+        Building C object CMakeFiles/cmTC_1b802.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_1b802.dir/test_mpi.c.o -c /home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-6XzOij/test_mpi.c
+        Linking C executable cmTC_1b802
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1b802.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_1b802.dir/test_mpi.c.o -o cmTC_1b802  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[1]: Leaving directory '/home/nickfar20/uclatpc_CAD/build/CMakeFiles/CMakeScratch/TryCompile-6XzOij'
+        
+      exitCode: 0
+...

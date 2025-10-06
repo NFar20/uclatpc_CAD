@@ -6,6 +6,7 @@ nestPart::nestPart() : VDetector()
 
 double nestPart::get_ElectricField(double x, double y, double z) const 
 {
+    //transferring electric field info to NEST
     double r = std::sqrt(x*x + y*y);
     
     if(r < 47.5 && z <= 105.2 && z >= 49.2) {

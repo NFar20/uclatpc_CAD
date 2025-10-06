@@ -1,5 +1,7 @@
 #include "construction.hh"
 
+nestPart detector;
+
 MyDetectorConstruction::MyDetectorConstruction()
 {}
 
@@ -8,20 +10,14 @@ MyDetectorConstruction::~MyDetectorConstruction()
 
 G4VPhysicalVolume *MyDetectorConstruction::Construct()
 {
-	G4NistManager *nist = G4NistManager::Instance();
+	G4NistManager *nist = G4NistManager::Instance(); //initialize NIST
+
 	
-	G4Material *SiO2 = new G4Material("SiO2", 2.201*g/cm3, 2);
-	SiO2->AddElement(nist->FindOrBuildElement("Si"), 1);
-	SiO2->AddElement(nist->FindOrBuildElement("O"), 2);
-	
-	G4Material *H2O = new G4Material("H2O", 1.000*g/cm3, 2);
-	H2O->AddElement(nist->FindOrBuildElement("H"), 2);
-	H2O->AddElement(nist->FindOrBuildElement("O"), 1);
-	
+	//creating materials for simulation and adding properties
+
+	G4Material *PTFE = new G4Material("PTFE", 2.2*g/cm3, 2);
 	G4Element *C = nist->FindOrBuildElement("C");
 	G4Element *F = nist->FindOrBuildElement("F");
-	
-	G4Material *PTFE = new G4Material("PTFE", 2.2*g/cm3, 2);
 	PTFE->AddElement(C, 1);
 	PTFE->AddElement(F, 2);
 	
@@ -93,6 +89,8 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	HDPE->AddElement(C, 1);
 
 	HDPE->SetMaterialPropertiesTable(HDPEmpt);
+
+	//creating different visual attributes
 	
 	G4VisAttributes *defaultVisAttributes = new G4VisAttributes();
 	G4Color silver(192., 192., 192., 0.3);
@@ -146,6 +144,8 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	invisible->SetVisibility(false);
 	
 	
+	//establishing world material and properties
+	
 	G4double energy[2] = {1.239841939*eV/0.9, 1.239841939*eV/0.2}; //blue and red light
 	G4double rindexAerogel[2] = {1.1, 1.1};
 	G4double rindexWorld[2] = {1.0, 1.0};
@@ -186,6 +186,8 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	
 	G4RotationMatrix *meshRot180 = new G4RotationMatrix();
 	meshRot180->rotateX(180.*deg);
+	
+	//building volumes in simulation (solid volumes from CAD, logical and physical volumes)
 	
 	G4VSolid *solidTopCap = topCap->GetSolid();
 	logicTopCap = new G4LogicalVolume(solidTopCap, PTFE, "logicTopCap");
@@ -230,7 +232,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	
 	G4VSolid *solidPESheeth = PESheeth->GetSolid();
 	G4LogicalVolume *logicPESheeth = new G4LogicalVolume(solidPESheeth, HDPE, "logicPESheeth");
-	logicPESheeth->SetVisAttributes(invisible); //HDPEVisAttributes
+	logicPESheeth->SetVisAttributes(HDPEVisAttributes);
 	G4VPhysicalVolume *physPESheeth = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 51.4*mm), logicPESheeth, "physPESheeth", logicWorld, false, 0, true);
 	
 	G4VPhysicalVolume *physSteelRing2 = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 106.4*mm), logicSteelRing, "physSteelRing", logicWorld, false, 2, true);
@@ -242,9 +244,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	G4VSolid *solidBottomCap = bottomPMTCap->GetSolid();
 	G4LogicalVolume *logicBottomCap = new G4LogicalVolume(solidBottomCap, PTFE, "logicBottomCap");
 	logicBottomCap->SetVisAttributes(defaultVisAttributes);
-	
-	//G4VPhysicalVolume *physBottomCap = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 104.8*mm), logicBottomCap, "physBottomCap", logicWorld, false, 0, true);
-	
+		
 	G4VSolid *solidBottomPMTCap = bottomPMTCap->GetSolid();
 	G4LogicalVolume *logicBottomPMTCap = new G4LogicalVolume(solidBottomPMTCap, PTFE, "logicBottomPMTCap");
 	logicBottomPMTCap->SetVisAttributes(defaultVisAttributes);
@@ -260,7 +260,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	
 	G4Tubs *solidLXe = new G4Tubs("solidLXe", 0.*mm, 46.4213333*mm, 28.*mm, 0.*deg, 360.*deg);
 	logicLXe = new G4LogicalVolume(solidLXe, LXe, "logicLXe");
-	logicLXe->SetVisAttributes(invisible); //purpleVisAttributes
+	logicLXe->SetVisAttributes(purpleVisAttributes);
 	
 	G4VPhysicalVolume *physLXe = new G4PVPlacement(0, G4ThreeVector(0., 0., 78.4*mm), logicLXe, "physLXe", logicWorld, false, 0, true);
 	
@@ -272,6 +272,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	G4VPhysicalVolume *physGXe = new G4PVPlacement(0, G4ThreeVector(0., 0., 41.2*mm), logicGXe, "physGXe", logicWorld, false, 0, true);
 	
 	//constructing electric field
+
 	G4ThreeVector electricFieldVector(0., 0., 100.*kilovolt/um);
 	
 	electricField = new ElectricField(100.);
@@ -318,5 +319,5 @@ void MyDetectorConstruction::ConstructSDandField()
 	sdManager->AddNewDetector(sensPMT);
 	
 	logicPMT->SetSensitiveDetector(sensPMT);
-	//logicBottomPMT->SetSensitiveDetector(sensPMT);
+	logicBottomPMT->SetSensitiveDetector(sensPMT);
 }

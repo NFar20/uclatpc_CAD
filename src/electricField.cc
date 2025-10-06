@@ -7,6 +7,8 @@ ElectricField::~ElectricField() {}
 
 void ElectricField::GetFieldValue(const G4double Point[4], G4double *field) const
 {
+	//custom electric field class
+
 	G4double x = Point[0];
 	G4double y = Point[1];
 	G4double z = Point[2];
