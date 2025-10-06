@@ -36,16 +36,9 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhis
 
 		const G4bool isS2 = (vtx.z() < zSurface);
 		
-		//G4cout << "Photon position: " << posPhoton << G4endl;
-		//live photon position
-		//won't have above line in reality, we will only have Cerenkov angle
-		
 		const G4VTouchable *touchable = aStep->GetPreStepPoint()->GetTouchable();
 		
 		G4int copyNo = touchable->GetCopyNumber();
-		
-		//G4cout << "Copy number: " << copyNo << G4endl;
-		//number of detector that has been hit
 		
 		G4VPhysicalVolume *physVol = touchable->GetVolume(0);
 		posDetector = physVol->GetTranslation();

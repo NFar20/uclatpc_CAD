@@ -89,7 +89,6 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent)
 	
 	//Switch to GPS and use macro file for AmBe source
 	
-	
 	else if(!Co57)
 	{
 		Co57 = G4IonTable::GetIonTable()->GetIon(27, 57, 0);
@@ -152,11 +151,9 @@ void MyPrimaryGenerator::GeneratePrimaries(G4Event *anEvent)
 		particleIndex = 7;
 	else
 	{
-		particleIndex = 8;
-		//G4cout << source << G4endl;	
+		particleIndex = 8;	
 	}
 	G4cout << source << G4endl;
-	//G4cout << particleIndex << G4endl;
 	G4cout << "[GeneratePrimaries] Called on instance ID = " << instanceID << ", source = " << source << G4endl;
 	
 	if(particleIndex >= 0 && particleIndex <=8 && particleArray[particleIndex] != nullptr)

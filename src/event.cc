@@ -17,9 +17,6 @@ void MyEventAction::EndOfEventAction(const G4Event*)
 {
 	G4cout << "Energy deposition: " << fEdep << G4endl;
 	
-	//G4ThreeVector detectorPos = sensTopPMT->GetDetectorPos();
-	//G4cout << "Detector pos: " << detectorPos << G4endl;
-	
 	G4AnalysisManager *man = G4AnalysisManager::Instance();
 	
 	// man->FillNtupleDColumn(1, 0, fEdep);

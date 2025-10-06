@@ -12,7 +12,6 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 {
 	G4NistManager *nist = G4NistManager::Instance(); //initialize NIST
 
-	
 	//creating materials for simulation and adding properties
 
 	G4Material *PTFE = new G4Material("PTFE", 2.2*g/cm3, 2);
@@ -143,7 +142,6 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	G4VisAttributes *invisible = new G4VisAttributes();
 	invisible->SetVisibility(false);
 	
-	
 	//establishing world material and properties
 	
 	G4double energy[2] = {1.239841939*eV/0.9, 1.239841939*eV/0.2}; //blue and red light
@@ -164,31 +162,21 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	G4VPhysicalVolume *physWorld = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicWorld, "physWorld", 0, false, 0, true);
 	
 	//importing CAD files
-	
 	auto topCap = CADMesh::TessellatedMesh::FromSTL("../UCLA TPC Parts/ATopPMTCap.stl");
-	
 	auto topPMT = CADMesh::TessellatedMesh::FromSTL("../UCLA TPC Parts/ATopPMT.stl");
-	
 	auto electrodeMesh = CADMesh::TessellatedMesh::FromSTL("../UCLA TPC Parts/AElectrodeMesh.stl");
-	
 	auto steelRing = CADMesh::TessellatedMesh::FromSTL("../UCLA TPC Parts/ASteelRing.stl");
-	
 	auto electrodeSeparationRing = CADMesh::TessellatedMesh::FromSTL("../UCLA TPC Parts/AElectrodeSeparationRing.stl");
-	
 	auto PESheeth = CADMesh::TessellatedMesh::FromSTL("../UCLA TPC Parts/APolyethyleneSheeth.stl");
-	
 	auto bottomPMT = CADMesh::TessellatedMesh::FromSTL("../UCLA TPC Parts/ABottomPMT.stl");
-	
 	auto bottomPMTCap = CADMesh::TessellatedMesh::FromSTL("../UCLA TPC Parts/ABottomPMTCap.stl");
 	
 	G4RotationMatrix *meshRot = new G4RotationMatrix();
 	meshRot->rotateX(-90.*deg);
-	
 	G4RotationMatrix *meshRot180 = new G4RotationMatrix();
 	meshRot180->rotateX(180.*deg);
 	
 	//building volumes in simulation (solid volumes from CAD, logical and physical volumes)
-	
 	G4VSolid *solidTopCap = topCap->GetSolid();
 	logicTopCap = new G4LogicalVolume(solidTopCap, PTFE, "logicTopCap");
 	logicTopCap->SetVisAttributes(defaultVisAttributes);
@@ -272,18 +260,11 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	G4VPhysicalVolume *physGXe = new G4PVPlacement(0, G4ThreeVector(0., 0., 41.2*mm), logicGXe, "physGXe", logicWorld, false, 0, true);
 	
 	//constructing electric field
-
 	G4ThreeVector electricFieldVector(0., 0., 100.*kilovolt/um);
-	
 	electricField = new ElectricField(100.);
-	
 	equation = new G4EqMagElectricField(electricField);
-	
 	G4int nvar = 8;
-	
 	auto pStepper = new G4DormandPrince745(equation, nvar);
-	
-	// auto globalFieldManager = G4TransportationManager::GetTransportationManager()->GetFieldManager();
 	
 	auto liquidFieldManager = new G4FieldManager(electricField);
 	liquidFieldManager->SetDetectorField(electricField);
@@ -291,16 +272,13 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	G4double minStep = 0.001*mm;
 	auto pIntegrationDriver = new G4IntegrationDriver<G4DormandPrince745>(minStep, pStepper, nvar);
 
-	gasElectricField = new ElectricField(412000.);
-
+	gasElectricField = new ElectricField(250.);
 	gasEquation = new G4EqMagElectricField(gasElectricField);
-
 	auto gasFieldManager = new G4FieldManager(gasElectricField);
 	gasFieldManager->SetDetectorField(gasElectricField);
 	
 	chordFinder = new G4ChordFinder(pIntegrationDriver);
 
-	// globalFieldManager->SetChordFinder(chordFinder);
 	liquidFieldManager->SetChordFinder(chordFinder);
 	gasFieldManager->SetChordFinder(chordFinder);
 	

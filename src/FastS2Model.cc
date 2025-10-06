@@ -134,8 +134,6 @@ void LXeElectronDriftModel::DoIt(const G4FastTrack& fastTrack, G4FastStep& fastS
 
     G4ThreeVector newDir(newDirX, newDirY, newDirZ);
 
-
-
     // Update track
 
     fastStep.ProposePrimaryTrackFinalPosition(newPos);
