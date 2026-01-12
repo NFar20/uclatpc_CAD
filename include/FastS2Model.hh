@@ -45,7 +45,7 @@ private:
     nestPart* nestCalc;
 
     bool CheckGainRegion(double x, double y, double z, double Efield) const {
-        return (z > 30.2*mm && z < 49.2*mm && sqrt(x*x + y*y) < 52.5*mm);
+        return (y > -44.*mm && y < -26.*mm && sqrt(x*x + z*z) < 52.5*mm);
     }
 
     double ElThreshold = 412000.; 

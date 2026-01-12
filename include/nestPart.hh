@@ -2,6 +2,7 @@
 #define NESTPART_HH
 
 #include "VDetector.hh"
+#include "G4SystemOfUnits.hh"
 
 class nestPart : public VDetector {
 public:

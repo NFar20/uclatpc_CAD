@@ -53,13 +53,25 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 		stagnationCounter.clear();
 	}
 
-	G4LogicalVolume *volume = step->GetPreStepPoint()->GetTouchableHandle()->GetVolume()->GetLogicalVolume();
+	G4VPhysicalVolume* pVol = step->GetPreStepPoint()->GetTouchableHandle()->GetVolume();
+	G4VPhysicalVolume* testVol = step->GetPostStepPoint()->GetTouchableHandle()->GetVolume();
+	if(!pVol || !testVol || (testVol == nullptr) || (pVol == nullptr)) {
+		G4cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~No volume found!~~~~~~~~~~~~~~~~~~~~~~~~~~~" << G4endl;
+		return;
+	}
+
+	if(nS2Events > 3000) {
+		G4cout << "Too many S2 events, stopping simulation to prevent memory overflow." << G4endl;
+		G4RunManager::GetRunManager()->AbortRun();
+		return;
+	}
+	G4LogicalVolume *volume = pVol->GetLogicalVolume();
 	G4Track *track = step->GetTrack();
 
     // Get position of interaction
     G4ThreeVector pos = step->GetPreStepPoint()->GetPosition();
 	G4ThreeVector dir = step->GetPreStepPoint()->GetMomentumDirection();
-	double r = std::sqrt(pos.x()/mm * pos.x()/mm + pos.y()/mm * pos.y()/mm);
+	double r = std::sqrt(pos.x()/mm * pos.x()/mm + pos.z()/mm * pos.z()/mm);
 	const MyDetectorConstruction *detectorConstruction = static_cast<const MyDetectorConstruction*> (G4RunManager::GetRunManager()->GetUserDetectorConstruction());
 	
 	G4LogicalVolume *fScoringVolume = detectorConstruction->GetScoringVolume();
@@ -71,7 +83,8 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 	G4double energy = track->GetKineticEnergy();
 	const G4ParticleDefinition* pd = track->GetParticleDefinition();
 	auto incidentParticle = pd->GetParticleName();
-	G4double edep = step->GetTotalEnergyDeposit() / keV;
+	G4double energyDeposit = step->GetTotalEnergyDeposit();
+	G4double edep = energyDeposit / keV; //* 1000
 	static std::map<G4int, G4double> previousEnergy;
 	static std::map<G4int, int> stagnationCounter;
 	const int maxSteps = 200;
@@ -87,15 +100,39 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 	double pressure = 1; //1 Bar (atmospheric pressure)
 	static nestPart detector;
 	NEST::NESTcalc* nestCalc = new NEST::NESTcalc(MyDet);
-	double Efield = nestDetector->get_ElectricField(pos.x() / cm, pos.y() / cm, pos.z() / cm);
+	double Efield = nestDetector->get_ElectricField(pos.x(), pos.y(), pos.z());
 	G4int parentID = track->GetParentID();
     G4int trackID = track->GetTrackID();
+	G4int eventID = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
+	G4int stepNo = track->GetCurrentStepNumber();
 	NEST::INTERACTION_TYPE recoilType = NEST::NoneType;
+
+	G4LogicalVolume *postVol = nullptr;
+	auto man = G4AnalysisManager::Instance();
+	G4bool isPhot = (pd == G4OpticalPhoton::OpticalPhotonDefinition());
+	G4double t_S1 = 0.;
+	G4double y_S1 = 0.;
 
 	const G4ParticleDefinition* particleDefinition = track->GetParticleDefinition();
 
+	if(pd==G4OpticalPhoton::OpticalPhotonDefinition()) {
+		// G4cout << "Optical Photon detected in " << volume->GetName() << G4endl;
+	}
+
+	G4bool pmt = volume->GetName() == "logicTopCap";
+
+		// if(pmt) {
+		// 	G4cout << "Particle Detected in PMT!" << G4endl;
+		// }
+
+		// if(post) {
+		// 	G4LogicalVolume *postVol = post->GetTouchableHandle()->GetVolume()->GetLogicalVolume();
+		// }
+
+
+
 	//get rid of particles with extremely low energy
-	if(energy < 0.001*eV) {
+	if(energy < 0.001*eV && !isPhot) {
 		track->SetTrackStatus(fStopAndKill);
     	return;
 	}
@@ -114,27 +151,48 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 
     if (info && info->IsDrift()) {
         driftElectron = true;
+
 		//track->SetKineticEnergy(energy / 1.25);
 		track->SetKineticEnergy(0.1*eV);
-		if (volume && (volume->GetName() == "logicWorld" || volume->GetName() == "logicPMT" || volume->GetName() == "logicBottomPMT" || volume->GetName() == "logicTopCap" || volume->GetName() == "logicBottomPMTCap"))
+		if (volume && (volume->GetName() == "logicTopCap" || volume->GetName() == "logicBottomPMTCap" || volume->GetName() == "logicBottomPMT"))
 		{
+			// volume->GetName() == "logicWorld"
 			track->SetTrackStatus(fStopAndKill);
+			G4cout << "killing drift e- that escaped TPC" << G4endl;
 		}
+		// if(volume->GetName() == "logicPMT0" || volume->GetName() == "logicPMT1" || volume->GetName() == "logicPMT2" || volume->GetName() == "logicPMT3" || volume->GetName() == "logicPMT4" || volume->GetName() == "logicPMT5" || volume->GetName() == "logicPMT6")
+		// {
+		// 	track->SetTrackStatus(fStopAndKill);
+		// 	G4cout << "killing drift e- that entered PMT" << G4endl;
+		// }
+		// else if(volume->GetName() == "logicTopCap" || volume->GetName() == "logicBottomPMTCap" || volume->GetName() == "logicBottomPMT")
+		// {
+		// 	track->SetTrackStatus(fStopAndKill);
+		// 	G4cout << "killing drift e- that entered PMT Cap" << G4endl;
+		// }
+
 		// return;
     }
 
-	if (pd == G4Electron::ElectronDefinition())
+	auto post = step->GetPostStepPoint();
+	if(post && driftElectron) {
+		if(post->GetTouchableHandle()->GetVolume()->GetLogicalVolume() != nullptr && volume->GetName() != "logicWorld") {
+			postVol = post->GetTouchableHandle()->GetVolume()->GetLogicalVolume();
+		}
+	}
+
+	if (pd == G4Electron::ElectronDefinition() && !driftElectron)
 	{
     // Estimate probability of ionization 
 		double P_ionize = 0;
-		if (pos.z()*mm <= 49.2 && pos.z()*mm > 30)
+		if (pos.y() <= -26.*mm && pos.y() >= -44.*mm)
 		{
-			P_ionize = 1.;
+			P_ionize = 0.1;
 		}
 
     	if (G4UniformRand() < P_ionize)
     	{
-			edep = energy / keV;
+			edep = energy; //* 1000
 
         	track->SetTrackStatus(fStopAndKill);
         	track->SetKineticEnergy(0.0);
@@ -236,9 +294,21 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 	}
 	else if (pd == G4OpticalPhoton::OpticalPhotonDefinition())
 	{
+		isPhot = true;
 		recoilType = NEST::INTERACTION_TYPE::gammaRay;
 		incidentParticle =  "optical photon";
-		return;
+		// return;
+	}
+
+	if(isPhot && pmt){
+		G4cout << "Optical photon detected in PMT!" << G4endl;
+		const double t_drift_us = post->GetGlobalTime() / us; // Δt since creation
+    	const int tid = track->GetTrackID();
+
+    	// man->FillNtupleDColumn(3, 0, t_drift_us);
+   		// man->FillNtupleIColumn(3, 1, track->GetTrackID());
+		// man->AddNtupleRow(3);
+		track->SetTrackStatus(fStopAndKill);
 	}
 
 	if (!std::isfinite(Efield) || Efield < 0.0) return;
@@ -250,16 +320,23 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 
 		if (particleDefinition == G4Electron::ElectronDefinition() || particleDefinition->GetParticleName() == "e-")
 		{
-			if (volume->GetName() == "logicGXe" || (pos.z()*mm <= 50.2 && pos.z()*mm >= 32))
+			if ((volume->GetName() == "logicGXe" || (pos.y() <= -26.*mm && pos.y() >= -44.*mm)) /*&& taggedTracksS2.count(trackID) <= 1*/)
 			{
-				check++;
 				nPhotons = photPerE;
 				nElectrons = 0;
 				S2Event = true;
 				nS2Events++;
 				G4cout << "--------------initializing S2 event--------------" << G4endl;
+
 			}
+
+			taggedTracksS2.insert(trackID);
 		}
+
+		// if (edep <= 14.*pow(10,-3) && !driftElectron) //14 eV needed for scintillation in liquid xenon.
+		// {
+		// 	return;
+		// }
 
 		// if (edep <= 14.*pow(10,-3) && !driftElectron) //14*10e-3.  14 eV needed for scintillation in liquid xenon   been using 12.*10e-2
 		// {
@@ -289,34 +366,43 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 		// }
 
 
-		if(!S2Event)
+		// if(volume->GetName() == "logicLXe" && !S2Event && !driftElectron && !isPhot && (pd == G4Electron::ElectronDefinition() && taggedTracksS1.count(trackID) <= 1))
+		if(volume->GetName() == "logicLXe" && !S2Event && energyDeposit > 0 && pd != G4Gamma::GammaDefinition())
 		{
 			// Create NEST object
+			taggedTracksS1.insert(trackID);
 			G4cout << "~~~~~~~~~~~~~~~initializing S1 event~~~~~~~~~~~~~~~" << G4endl;
+			G4cout << "Particle causing S1: " << particleDefinition->GetParticleName() << G4endl;
+			t_S1 = step->GetPreStepPoint()->GetGlobalTime() / us;
+			y_S1 = pos.y()/mm;
 
-			NEST::YieldResult yields = nestCalc->GetYields(recoilType, edep, density, Efield,          // drift field
+			NEST::YieldResult yields = nestCalc->GetYields(recoilType, edep*10, density, Efield,          // drift field
 			131,                     // A
 			54                           // Z
 			);
 			nPhotons = safeRound(yields.PhotonYield);
 			nElectrons = safeRound(yields.ElectronYield);
-			G4cout << "Number of yield electrons: " << nElectrons << G4endl;
-			G4cout << "Number of yield photons: " << nPhotons << G4endl;
+			// G4cout << "Number of yield electrons: " << nElectrons << G4endl;
+			// G4cout << "Number of yield photons: " << nPhotons << G4endl;
 			// G4cout << yields.PhotonYield << G4endl;
 			// G4cout << yields.ElectronYield << G4endl;
-			yieldElectrons = nElectrons;
-			yieldPhotons = nPhotons;
+			yieldElectrons += nElectrons;
+			yieldPhotons += nPhotons;
 
-			G4cout << "position: " << pos << G4endl;
-			G4cout << "Efield: " << Efield << G4endl;
-			G4cout << "edep (keV): " << edep << G4endl;
-			G4cout << "recoil type: " << recoilType << G4endl;
-			G4cout << "Photon Yield: " << nPhotons << G4endl;
-			G4cout << "Electron Yield: " << nElectrons << G4endl;
-			G4cout << "Incident Particle: " << incidentParticle << G4endl;
-			G4cout << "Particle Energy: " << energy/keV << " keV" << G4endl;
-			G4cout << "Track ID: " << trackID << G4endl;
-			G4cout << "   " << G4endl;
+			if(edep > 0) {
+				G4cout << "position: " << pos << G4endl;
+				// G4cout << "Efield: " << Efield << G4endl;
+				G4cout << "edep (keV): " << edep << G4endl;
+				G4cout << "recoil type: " << recoilType << G4endl;
+				G4cout << "Incident Particle: " << incidentParticle << G4endl;
+				G4cout << "Particle Energy: " << energy/keV << " keV" << G4endl;
+				// G4cout << "Track ID: " << trackID << G4endl;
+				G4cout << "   " << G4endl;
+				G4cout << "Photon Yield: " << nPhotons << G4endl;
+				G4cout << "Electron Yield: " << nElectrons << G4endl;
+			}
+			
+			
 		}
 
 		G4ParticleDefinition* photonDef = G4OpticalPhoton::OpticalPhotonDefinition();
@@ -325,26 +411,26 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 		G4TrackVector* secondaries = new G4TrackVector();
 
 		//G4cout << "r value: " << r << " Is drift electron? " << driftElectron << G4endl;
+	
+
+		//calculating electron drift velocity
 
     //Spawn optical photons
     	// for (int i = 0; i < nPhotons; ++i) 
 		// {
+		// 	G4ThreeVector dir = RandomUnitVector();
+		// 	G4double photonEnergy = SampleLXePhotonEnergy_GaussEnergy();  
 
-		// 		G4ThreeVector dir = RandomUnitVector();
-		// 		G4double photonEnergy = SampleLXePhotonEnergy_GaussEnergy();  
+		// 	G4DynamicParticle* dynPart = new G4DynamicParticle(photonDef, dir, photonEnergy);
+		// 	G4ThreeVector perp = dir.orthogonal();
+		// 	G4double phi = CLHEP::twopi * G4UniformRand();
+		// 	G4ThreeVector pol = perp.rotate(dir, phi).unit();
+		// 	dynPart->SetPolarization(pol);
 
-		// 		G4DynamicParticle* dynPart = new G4DynamicParticle(photonDef, dir, photonEnergy);
-		// 		G4ThreeVector perp = dir.orthogonal();
-		// 		G4double phi = CLHEP::twopi * G4UniformRand();
-		// 		G4ThreeVector pol = perp.rotate(dir, phi).unit();
-		// 		dynPart->SetPolarization(pol);
-
-		// 		G4Track* newTrack = new G4Track(dynPart, track->GetGlobalTime(), pos);
-		// 		newTrack->SetTouchableHandle(track->GetTouchableHandle());
-		// 		newTrack->SetParentID(track->GetTrackID());
-
-		// 		secondaries->push_back(newTrack);
-
+		// 	G4Track* newTrack = new G4Track(dynPart, track->GetGlobalTime(), pos);
+		// 	newTrack->SetTouchableHandle(track->GetTouchableHandle());
+		// 	newTrack->SetParentID(track->GetTrackID());
+		// 	secondaries->push_back(newTrack);
     	// }
 
     //Spawn electrons
@@ -375,6 +461,18 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 			//cout << "done creating secondaries" << G4endl;
     	}
 
+		// Record drift velocity data
+		if (driftElectron && postVol && post->GetStepStatus() == fGeomBoundary && (pmt || postVol->GetName() == "logicGXe")) {
+			G4double t_enterGXe = post->GetGlobalTime() / us; // Δt since creation
+			G4double t_drift_us = t_enterGXe - t_S1;
+    		G4int tid = track->GetTrackID();
+
+
+    		man->FillNtupleDColumn(3, 0, t_drift_us);
+			man->FillNtupleIColumn(3, 1, y_S1 + 45);
+			man->AddNtupleRow(3);
+		}
+
 		if(S2Event)
 		{
 			// nS2Events++;
@@ -388,18 +486,41 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 
 		if(S2Event)
 		{
-			track->SetTrackStatus(fStopAndKill);
+			// track->SetTrackStatus(fStopAndKill);
 			ClearStagnationData(id);
 		}
     	delete secondaries;
 
     }
 
+	// if(pd == G4Electron::ElectronDefinition()) {
+	// 	G4String procName = step->GetPostStepPoint()->GetProcessDefinedStep()->GetProcessName();
+
+	// 	MyRunAction::dataFile
+    //     << eventID   << "  "
+    //     << trackID   << "  "
+    //     << stepNo    << "  "
+    //     << procName  << "  "
+    //     << pos.x()/CLHEP::mm << "  "
+    //     << pos.y()/CLHEP::mm << "  "
+    //     << pos.z()/CLHEP::mm << "  "
+    //     << stepLength/CLHEP::mm << "  "
+    //     << "\n";
+	// }
+
 
 	previousEnergy[id] = energy;
 
-	if(volume->GetName() == "logicPMT" || volume->GetName() == "logicBottomPMT" || volume->GetName() == "logicTopCap" || volume->GetName() == "logicBottomPMTCap") {
+	// if(!isPhot && volume->GetName() == "logicPMT" || volume->GetName() == "logicBottomPMT" || volume->GetName() == "logicTopCap" || volume->GetName() == "logicBottomPMTCap") {
+	// 	track->SetTrackStatus(fStopAndKill);
+	// 	G4cout << "killing particle that escaped TPC" << G4endl;
+	// }
+
+	if (pos.y() > -4.*mm)
+	{
+		// volume->GetName() == "logicWorld"
 		track->SetTrackStatus(fStopAndKill);
+		// G4cout << "killing particle that escaped TPC" << G4endl;
 	}
 
 	//fEventAction->AddEdep(edep);

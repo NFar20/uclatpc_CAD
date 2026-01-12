@@ -76,11 +76,11 @@ void MyPhysicsList::ConstructProcess()
                     G4cout << "Removed ionization!!!!!!" << G4endl;
                     break;
                 }
-                if (proc->GetProcessName() == "msc")
-                {
-                    //pManager->RemoveProcess(proc);
-                    //G4cout << "Removed msc!!!!!!" << G4endl;
-                }
+                // if (proc->GetProcessName() == "msc")
+                // {
+                //     //pManager->RemoveProcess(proc);
+                //     //G4cout << "Removed msc!!!!!!" << G4endl;
+                // }
             }
 			auto* fastSimProc = new G4FastSimulationManagerProcess("fastSimProc");
             pManager->AddProcess(fastSimProc, -1, -1, 1);

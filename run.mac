@@ -1,3 +1,2 @@
 /run/initialize
-/myGen/setParticle Co60
 /run/beamOn 1000

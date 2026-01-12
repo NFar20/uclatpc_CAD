@@ -34,7 +34,14 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	G4MaterialPropertiesTable *LXeMPT = new G4MaterialPropertiesTable();
 	G4double LXeRIndex[2] = {1.5655, 1.5655};
 	G4double photonEnergy[2] = {1.55*eV, 10.*eV};
-	LXeMPT->AddProperty("RINDEX", photonEnergy, LXeRIndex, 2);
+	LXeMPT->AddProperty("RINDEX", photonEnergy, LXeRIndex, 2);\
+
+	G4Material *GXe = nist->FindOrBuildMaterial("G4_Xe");
+
+	G4MaterialPropertiesTable *GXeMPT = new G4MaterialPropertiesTable();
+	G4double GXeRIndex[2] = {1.0007, 1.0007};
+	LXeMPT->AddProperty("RINDEX", photonEnergy, GXeRIndex, 2);
+
 	
 	G4double scintPhotonEnergy[2] = {7. * eV, 7.5 * eV};
 	G4double scintYield[2] = {1.0, 1.0};
@@ -46,6 +53,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	//LXeMPT->AddConstProperty("SCINTILLATIONYIELD1", 1.);
 	
 	LXe->SetMaterialPropertiesTable(LXeMPT);
+	GXe->SetMaterialPropertiesTable(GXeMPT);
 
 	G4MaterialPropertiesTable *HDPEmpt = new G4MaterialPropertiesTable();
 	G4double HDPERIndex[2] = {1.52, 1.52};
@@ -57,11 +65,6 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 
 	StainlessSteel->SetMaterialPropertiesTable(steelMPT);
 	
-	G4Material *GXe = nist->FindOrBuildMaterial("G4_Xe");
-	
-	G4MaterialPropertiesTable *GXeMPT = new G4MaterialPropertiesTable();
-	G4double GXeRIndex[2] = {1.00067, 1.00067};
-	GXeMPT->AddProperty("RINDEX", photonEnergy, LXeRIndex, 2);
 	
 	G4Isotope *isoSe72 = new G4Isotope("isoSe72", 34, 72, 71.9221*g/mole);
 	G4Element *elSe72 = new G4Element("elSe72", "Se72", 1);
@@ -141,6 +144,12 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	
 	G4VisAttributes *invisible = new G4VisAttributes();
 	invisible->SetVisibility(false);
+
+	G4VisAttributes *PPTVisAttributes = new G4VisAttributes();
+	G4Color whiteOpaque(255., 255., 255., 1.);
+	PPTVisAttributes->SetColor(whiteOpaque);
+	PPTVisAttributes->SetForceWireframe(false);
+	PPTVisAttributes->SetForceSolid(true);
 	
 	//establishing world material and properties
 	
@@ -155,113 +164,242 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	
 	worldMat->SetMaterialPropertiesTable(mptWorld);
 	
-	G4Box *solidWorld = new G4Box("solidWorld", 0.3*m, 0.3*m, 0.3*m);
+	// G4Box *solidWorld = new G4Box("solidWorld", 0.3*m, 0.3*m, 0.3*m);
 	
-	G4LogicalVolume *logicWorld = new G4LogicalVolume(solidWorld, worldMat, "logicWorld");
+	// G4LogicalVolume *logicWorld = new G4LogicalVolume(solidWorld, worldMat, "logicWorld");
 	
-	G4VPhysicalVolume *physWorld = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicWorld, "physWorld", 0, false, 0, true);
+	// G4VPhysicalVolume *physWorld = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicWorld, "physWorld", 0, false, 0, true);
+
+	// auto TPC = CADMesh::TessellatedMesh::FromSTL("UpdatedCaliX.stl");
+
+	// G4VSolid *SolidTPC = TPC->GetSolid();
+	// G4LogicalVolume *logicTPC = new G4LogicalVolume(SolidTPC, StainlessSteel, "logicTPC");
+	// logicTPC->SetVisAttributes(defaultVisAttributes);
+
+	// G4VPhysicalVolume *physTPC = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicTPC, "physTPC", logicWorld, false, 0, true);
+
+	G4GDMLParser parser;
+  	parser.SetOverlapCheck(true);
+  	// parser.Read("../UpdatedCalixWorldVol.gdml");
+	parser.Read("../CaliXGDMLPleaseWork.gdml");
+	// parser.Read("../MergedCalixWorldVol.gdml");
+
+	// G4LogicalVolume *logicWorld = parser.GetVolume("GDMLBox_WorldBox");
+	G4VPhysicalVolume *physWorld = parser.GetWorldVolume("WorldVOL");
+	G4LogicalVolume *logicWorld = physWorld->GetLogicalVolume();
+
+	//adding visual attributes to each part from gdml file
+	logicTopCap = parser.GetVolume("LV_TopCap_PMTs");
+	logicTopCap->SetVisAttributes(PPTVisAttributes); //
+
+	// logicTopCap = parser.GetVolume("LV_Top_PMT_Cap");
+	// logicTopCap->SetVisAttributes(defaultVisAttributes);
+	// // logicTopCap->SetMaterial(HDPE);
+
+	// logicPMT0 = parser.GetVolume("LV_PMT__Small_");
+	// logicPMT0->SetVisAttributes(PPTVisAttributes);
+	// // logicPMT0->SetMaterial(HDPE);
+
+	// logicPMT1 = parser.GetVolume("LV_PMT__Small_001");
+	// logicPMT1->SetVisAttributes(PPTVisAttributes);
+	// // logicPMT1->SetMaterial(HDPE);
 	
-	//importing CAD files
-	auto topCap = CADMesh::TessellatedMesh::FromSTL("../UCLA TPC Parts/ATopPMTCap.stl");
-	auto topPMT = CADMesh::TessellatedMesh::FromSTL("../UCLA TPC Parts/ATopPMT.stl");
-	auto electrodeMesh = CADMesh::TessellatedMesh::FromSTL("../UCLA TPC Parts/AElectrodeMesh.stl");
-	auto steelRing = CADMesh::TessellatedMesh::FromSTL("../UCLA TPC Parts/ASteelRing.stl");
-	auto electrodeSeparationRing = CADMesh::TessellatedMesh::FromSTL("../UCLA TPC Parts/AElectrodeSeparationRing.stl");
-	auto PESheeth = CADMesh::TessellatedMesh::FromSTL("../UCLA TPC Parts/APolyethyleneSheeth.stl");
-	auto bottomPMT = CADMesh::TessellatedMesh::FromSTL("../UCLA TPC Parts/ABottomPMT.stl");
-	auto bottomPMTCap = CADMesh::TessellatedMesh::FromSTL("../UCLA TPC Parts/ABottomPMTCap.stl");
+	// logicPMT2 = parser.GetVolume("LV_PMT__Small_002");
+	// logicPMT2->SetVisAttributes(PPTVisAttributes);
+	// // logicPMT2->SetMaterial(HDPE);
+	
+	// logicPMT3 = parser.GetVolume("LV_PMT__Small_003");
+	// logicPMT3->SetVisAttributes(PPTVisAttributes);
+	// // logicPMT3->SetMaterial(HDPE);
+	
+	// logicPMT4 = parser.GetVolume("LV_PMT__Small_004");
+	// logicPMT4->SetVisAttributes(PPTVisAttributes);
+	// // logicPMT4->SetMaterial(HDPE);
+	
+	// logicPMT5 = parser.GetVolume("LV_PMT__Small_005");
+	// logicPMT5->SetVisAttributes(PPTVisAttributes);
+	// // logicPMT5->SetMaterial(HDPE);
+	
+	// logicPMT6 = parser.GetVolume("LV_PMT__Small_006");
+	// logicPMT6->SetVisAttributes(PPTVisAttributes);
+	// logicPMT6->SetMaterial(HDPE);
+
+	G4LogicalVolume *logicTopSpacer = parser.GetVolume("LV_TopSpacer");
+	logicTopSpacer->SetVisAttributes(purpleVisAttributes); // 
+	// logicTopSpacer->SetMaterial(HDPE);
+
+	G4LogicalVolume *logicESepRing = parser.GetVolume("LV_ESepRing_SteelRings");
+	logicESepRing->SetVisAttributes(yellowVisAttributes); //
+	
+	// G4LogicalVolume *logicSteelRing3 = parser.GetVolume("LV_Steel_Ring003");
+	// logicSteelRing3->SetVisAttributes(blueVisAttributes); // blueVisAttributes
+	// logicSteelRing3->SetMaterial(StainlessSteel);
+	
+	// G4LogicalVolume *logicElectrodeSeparationRing = parser.GetVolume("LV_Electrode_Separation_Ring");
+	// logicElectrodeSeparationRing->SetVisAttributes(yellowVisAttributes); // 
+	// // logicElectrodeSeparationRing->SetMaterial(StainlessSteel);
+
+	// G4LogicalVolume *logicSteelRing2 = parser.GetVolume("LV_Steel_Ring002");
+	// logicSteelRing2->SetVisAttributes(blueVisAttributes); // 
+	// // logicSteelRing2->SetMaterial(StainlessSteel);
+
+	G4LogicalVolume *logicPESheeth = parser.GetVolume("LV_Polythelne_Sheeth");
+	logicPESheeth->SetVisAttributes(invisible); // HDPEVisAttributes
+	logicPESheeth->SetMaterial(HDPE);
+
+	G4LogicalVolume *logicESepRingNoOpen = parser.GetVolume("LV_ESepRingNoOpen_SteelRings");
+	logicESepRingNoOpen->SetVisAttributes(yellowVisAttributes); //
+
+	// G4LogicalVolume *logicSteelRing1 = parser.GetVolume("LV_Steel_Ring001");
+	// logicSteelRing1->SetVisAttributes(blueVisAttributes); //
+	// // logicSteelRing1->SetMaterial(StainlessSteel);
+
+	// G4LogicalVolume *logicSteelRing0 = parser.GetVolume("LV_Steel_Ring");
+	// logicSteelRing0->SetVisAttributes(blueVisAttributes); // 
+	// // logicSteelRing0->SetMaterial(StainlessSteel);
+
+	// G4LogicalVolume *logicElectrodeSeparationRingNoOpening = parser.GetVolume("LV_Electrode_Separation_Ring_No_Opening");
+	// logicElectrodeSeparationRingNoOpening->SetVisAttributes(yellowVisAttributes); // 
+	// // logicElectrodeSeparationRingNoOpening->SetMaterial(StainlessSteel);
+
+	G4LogicalVolume *logicBottomPMTCap = parser.GetVolume("LV_Bottom_PMT_Cap");
+	logicBottomPMTCap->SetVisAttributes(defaultVisAttributes); // 
+	// logicBottomPMTCap->SetMaterial(HDPE);
+
+	G4LogicalVolume *logicBottomPMT = parser.GetVolume("LV_Hamamatsu_R11410_PMT");
+	logicBottomPMT->SetVisAttributes(PPTVisAttributes);
+	// logicBottomPMT->SetMaterial(HDPE);
+
+	G4LogicalVolume *logicElectrodeMesh0 = parser.GetVolume("LV_Electrode_Mesh");
+	logicElectrodeMesh0->SetVisAttributes(whiteVisAttributes); // 
+	// logicElectrodeMesh0->SetMaterial(StainlessSteel);
+
+	G4LogicalVolume *logicElectrodeMesh1 = parser.GetVolume("LV_Electrode_Mesh001");
+	logicElectrodeMesh1->SetVisAttributes(whiteVisAttributes); // 
+	// logicElectrodeMesh1->SetMaterial(StainlessSteel);
+
+	G4LogicalVolume *logicElectrodeMesh2 = parser.GetVolume("LV_Electrode_Mesh002");
+	logicElectrodeMesh2->SetVisAttributes(whiteVisAttributes); // 
+	// logicElectrodeMesh2->SetMaterial(StainlessSteel);
+
+	G4LogicalVolume *logicElectrodeMesh3 = parser.GetVolume("LV_Electrode_Mesh003");
+	logicElectrodeMesh3->SetVisAttributes(whiteVisAttributes); // 
+	// logicElectrodeMesh3->SetMaterial(StainlessSteel);
+
+	// if (auto* importedLV = parser.GetVolume("WorldVol")) {   // <-- put your <volume name="...">
+  	// 	new G4PVPlacement(nullptr, G4ThreeVector(), importedLV, "ImportedTop", logicWorld, false, 0, true);
+	// }
+
+	//importing new CAD files
+	// auto topCap = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/ATop PMT Cap.stl");
+	// auto topPMT = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/APMT (Small).stl");
+	// auto topSpacer = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/ATopSpacer.stl");
+	// auto electrodeMesh = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/AElectrode Mesh.stl");
+	// auto steelRing = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/ASteel Ring.stl");
+	// auto electrodeSeparationRing = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/AElectrode Separation Ring.stl");
+	// auto electrodeSeparationRingNoOpening = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/AElectrode Separation Ring No Opening.stl");
+	// auto PESheeth = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/APolythelne Sheeth.stl");
+	// auto fieldShapingRing = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/AField Shaping Ring.stl");
+	// auto bottomPMT = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/AHamamatsu R11410 PMT.stl");
+	// auto bottomPMTCap = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/ABottom PMT Cap.stl");	
 	
 	G4RotationMatrix *meshRot = new G4RotationMatrix();
 	meshRot->rotateX(-90.*deg);
-	G4RotationMatrix *meshRot180 = new G4RotationMatrix();
-	meshRot180->rotateX(180.*deg);
+	// G4RotationMatrix *meshRot180 = new G4RotationMatrix();
+	// meshRot180->rotateX(180.*deg);
+	// G4RotationMatrix *meshRot270 = new G4RotationMatrix();
+	// meshRot270->rotateX(270.*deg);
 	
-	//building volumes in simulation (solid volumes from CAD, logical and physical volumes)
-	G4VSolid *solidTopCap = topCap->GetSolid();
-	logicTopCap = new G4LogicalVolume(solidTopCap, PTFE, "logicTopCap");
-	logicTopCap->SetVisAttributes(defaultVisAttributes);
+	// //defining logical volumes in simulation (using different parts from gdml file)
+	// G4VSolid *solidTopCap = topCap->GetSolid();
+	// logicTopCap = new G4LogicalVolume(solidTopCap, PTFE, "logicTopCap");
 	
-	G4VPhysicalVolume *physTopCap = new G4PVPlacement(meshRot, G4ThreeVector(), logicTopCap, "physTopCap", logicWorld, false, 0, true);
+	// G4VPhysicalVolume *physTopCap = new G4PVPlacement(meshRot, G4ThreeVector(), logicTopCap, "physTopCap", logicWorld, false, 0, true);
 	
-	G4VSolid *solidTopPMT = topPMT->GetSolid();
-	logicPMT = new G4LogicalVolume(solidTopPMT, PTFE, "logicPMT");
-	logicPMT->SetVisAttributes(PMTVisAttributes);
+	// G4VSolid *solidTopPMT = topPMT->GetSolid();
+	// logicPMT = new G4LogicalVolume(solidTopPMT, PTFE, "logicPMT");
+	// logicPMT->SetVisAttributes(PMTVisAttributes);
 	
-	G4VPhysicalVolume *physPMT0 = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 0.), logicPMT, "physPMT", logicWorld, false, 0, true);
-	G4VPhysicalVolume *physPMT1 = new G4PVPlacement(meshRot, G4ThreeVector(-29.7*mm, 0., 0.), logicPMT, "physPMT", logicWorld, false, 1, true);
-	G4VPhysicalVolume *physPMT2 = new G4PVPlacement(meshRot, G4ThreeVector(29.7*mm, 0., 0.), logicPMT, "physPMT", logicWorld, false, 2, true);
-	G4VPhysicalVolume *physPMT3 = new G4PVPlacement(meshRot, G4ThreeVector(-14.85*mm, -29.7*mm, 0.), logicPMT, "physPMT", logicWorld, false, 3, true);
-	G4VPhysicalVolume *physPMT4 = new G4PVPlacement(meshRot, G4ThreeVector(14.85*mm, -29.7*mm, 0.), logicPMT, "physPMT", logicWorld, false, 4, true);
-	G4VPhysicalVolume *physPMT5 = new G4PVPlacement(meshRot, G4ThreeVector(-14.85*mm, 29.7*mm, 0.), logicPMT, "physPMT", logicWorld, false, 5, true);
-	G4VPhysicalVolume *physPMT6 = new G4PVPlacement(meshRot, G4ThreeVector(14.85*mm, 29.7*mm, 0.), logicPMT, "physPMT", logicWorld, false, 6, true);
+	// G4VPhysicalVolume *physPMT0 = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 3.5), logicPMT, "physPMT", logicWorld, false, 0, true);
+	// G4VPhysicalVolume *physPMT1 = new G4PVPlacement(meshRot, G4ThreeVector(-29.7*mm, 0., 3.5), logicPMT, "physPMT", logicWorld, false, 1, true);
+	// G4VPhysicalVolume *physPMT2 = new G4PVPlacement(meshRot, G4ThreeVector(29.7*mm, 0., 3.5), logicPMT, "physPMT", logicWorld, false, 2, true);
+	// G4VPhysicalVolume *physPMT3 = new G4PVPlacement(meshRot, G4ThreeVector(-14.85*mm, -29.7*mm, 3.5), logicPMT, "physPMT", logicWorld, false, 3, true);
+	// G4VPhysicalVolume *physPMT4 = new G4PVPlacement(meshRot, G4ThreeVector(14.85*mm, -29.7*mm, 3.5), logicPMT, "physPMT", logicWorld, false, 4, true);
+	// G4VPhysicalVolume *physPMT5 = new G4PVPlacement(meshRot, G4ThreeVector(-14.85*mm, 29.7*mm, 3.5), logicPMT, "physPMT", logicWorld, false, 5, true);
+	// G4VPhysicalVolume *physPMT6 = new G4PVPlacement(meshRot, G4ThreeVector(14.85*mm, 29.7*mm, 3.5), logicPMT, "physPMT", logicWorld, false, 6, true);
 	
-	G4VSolid *solidElectrodeMesh = electrodeMesh->GetSolid();
-	G4LogicalVolume *logicElectrodeMesh = new G4LogicalVolume(solidElectrodeMesh, StainlessSteel, "logicElectrodeMesh");
-	logicElectrodeMesh->SetVisAttributes(whiteVisAttributes);
+	// G4VSolid *solidTopSpacer = topSpacer->GetSolid();
+	// G4LogicalVolume *logicTopSpacer = new G4LogicalVolume(solidTopSpacer, PTFE, "logicTopSpacer");
+	// logicTopSpacer->SetVisAttributes(purpleVisAttributes);
+
+	// G4VPhysicalVolume *physTopSpacer = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 32.*mm), logicTopSpacer, "physTopSpacer", logicWorld, false, 0, true);
 	
-	G4VPhysicalVolume *physElectrodeMesh0 = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 32.*mm), logicElectrodeMesh, "physElectrodeMesh", logicWorld, false, 0, true);
-	G4VPhysicalVolume *physElectrodeMesh1 = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 50.2*mm), logicElectrodeMesh, "physElectrodeMesh", logicWorld, false, 1, true);
-	G4VPhysicalVolume *physElectrodeMesh2 = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 110.4*mm), logicElectrodeMesh, "physElectrodeMesh", logicWorld, false, 2, true);
-	G4VPhysicalVolume *physElectrodeMesh3 = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 124.6*mm), logicElectrodeMesh, "physElectrodeMesh", logicWorld, false, 3, true);
+	// G4VSolid *solidElectrodeSeparationRing = electrodeSeparationRing->GetSolid();
+	// G4LogicalVolume *logicElectrodeSeparationRing = new G4LogicalVolume(solidElectrodeSeparationRing, StainlessSteel, "logicElectrodeSeparationRing");
+	// logicElectrodeSeparationRing->SetVisAttributes(yellowVisAttributes);
+
+	// G4VPhysicalVolume *physTopElectrodeSeparationRing = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 62.*mm), logicElectrodeSeparationRing, "physElectrodeSeparationRing", logicWorld, false, 0, true);
+
+	// G4VSolid *solidElectrodeMesh = electrodeMesh->GetSolid();
+	// G4LogicalVolume *logicElectrodeMesh = new G4LogicalVolume(solidElectrodeMesh, StainlessSteel, "logicElectrodeMesh");
+	// logicElectrodeMesh->SetVisAttributes(whiteVisAttributes);
 	
-	G4VSolid *solidSteelRing = steelRing->GetSolid();
-	G4LogicalVolume *logicSteelRing = new G4LogicalVolume(solidSteelRing, StainlessSteel, "logicSteelRing");
-	logicSteelRing->SetVisAttributes(blueVisAttributes);
+	// G4VPhysicalVolume *physElectrodeMesh0 = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 63.8*mm), logicElectrodeMesh, "physElectrodeMesh", logicWorld, false, 0, true);
+	// // G4VPhysicalVolume *physElectrodeMesh1 = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 69.*mm), logicElectrodeMesh, "physElectrodeMesh", logicWorld, false, 1, true);
+	// // G4VPhysicalVolume *physElectrodeMesh2 = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 128.8*mm), logicElectrodeMesh, "physElectrodeMesh", logicWorld, false, 2, true);
+	// // G4VPhysicalVolume *physElectrodeMesh3 = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 147.*mm), logicElectrodeMesh, "physElectrodeMesh", logicWorld, false, 3, true);
 	
-	G4VPhysicalVolume *physSteelRing0 = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 32.2*mm), logicSteelRing, "physSteelRing", logicWorld, false, 0, true);
+	// G4VSolid *solidSteelRing = steelRing->GetSolid();
+	// G4LogicalVolume *logicSteelRing = new G4LogicalVolume(solidSteelRing, StainlessSteel, "logicSteelRing");
+	// logicSteelRing->SetVisAttributes(blueVisAttributes);
 	
-	G4VSolid *solidElectrodeSeparationRing = electrodeSeparationRing->GetSolid();
-	G4LogicalVolume *logicElectrodeSeparationRing = new G4LogicalVolume(solidElectrodeSeparationRing, StainlessSteel, "logicElectrodeSeparationRing");
-	logicElectrodeSeparationRing->SetVisAttributes(yellowVisAttributes);
+	// G4VPhysicalVolume *physSteelRing0 = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 62.*mm), logicSteelRing, "physSteelRing", logicWorld, false, 0, true);
 	
-	G4VPhysicalVolume *physTopElectrodeSeparationRing = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 36.2*mm), logicElectrodeSeparationRing, "physElectrodeSeparationRing", logicWorld, false, 0, true);
+	// G4VPhysicalVolume *physSteelRing1 = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 76.*mm), logicSteelRing, "physSteelRing", logicWorld, false, 1, true);
 	
-	G4VPhysicalVolume *physSteelRing1 = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 46.2*mm), logicSteelRing, "physSteelRing", logicWorld, false, 1, true);
+	// G4VSolid *solidPESheeth = PESheeth->GetSolid();
+	// G4LogicalVolume *logicPESheeth = new G4LogicalVolume(solidPESheeth, HDPE, "logicPESheeth");
+	// logicPESheeth->SetVisAttributes(HDPEVisAttributes);
+	// G4VPhysicalVolume *physPESheeth = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 78.*mm), logicPESheeth, "physPESheeth", logicWorld, false, 0, true);
 	
-	G4VSolid *solidPESheeth = PESheeth->GetSolid();
-	G4LogicalVolume *logicPESheeth = new G4LogicalVolume(solidPESheeth, HDPE, "logicPESheeth");
-	logicPESheeth->SetVisAttributes(HDPEVisAttributes);
-	G4VPhysicalVolume *physPESheeth = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 51.4*mm), logicPESheeth, "physPESheeth", logicWorld, false, 0, true);
+	// G4VPhysicalVolume *physBottomElectrodeSeparationRing = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 137.*mm), logicElectrodeSeparationRing, "physElectrodeSeparationRing", logicWorld, false, 1, true);
+
+	// G4VPhysicalVolume *physSteelRing2 = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 136.*mm), logicSteelRing, "physSteelRing", logicWorld, false, 2, true);
 	
-	G4VPhysicalVolume *physSteelRing2 = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 106.4*mm), logicSteelRing, "physSteelRing", logicWorld, false, 2, true);
+	// G4VPhysicalVolume *physSteelRing3 = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 150.*mm), logicSteelRing, "physSteelRing", logicWorld, false, 3, true);
 	
-	G4VPhysicalVolume *physBottomElectrodeSeparationRing = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 110.6*mm), logicElectrodeSeparationRing, "physElectrodeSeparationRing", logicWorld, false, 1, true);
-	
-	G4VPhysicalVolume *physSteelRing3 = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 120.6*mm), logicSteelRing, "physSteelRing", logicWorld, false, 3, true);
-	
-	G4VSolid *solidBottomCap = bottomPMTCap->GetSolid();
-	G4LogicalVolume *logicBottomCap = new G4LogicalVolume(solidBottomCap, PTFE, "logicBottomCap");
-	logicBottomCap->SetVisAttributes(defaultVisAttributes);
+	// G4VSolid *solidBottomCap = bottomPMTCap->GetSolid();
+	// G4LogicalVolume *logicBottomCap = new G4LogicalVolume(solidBottomCap, PTFE, "logicBottomCap");
+	// logicBottomCap->SetVisAttributes(defaultVisAttributes);
 		
-	G4VSolid *solidBottomPMTCap = bottomPMTCap->GetSolid();
-	G4LogicalVolume *logicBottomPMTCap = new G4LogicalVolume(solidBottomPMTCap, PTFE, "logicBottomPMTCap");
-	logicBottomPMTCap->SetVisAttributes(defaultVisAttributes);
+	// G4VSolid *solidBottomPMTCap = bottomPMTCap->GetSolid();
+	// G4LogicalVolume *logicBottomPMTCap = new G4LogicalVolume(solidBottomPMTCap, PTFE, "logicBottomPMTCap");
+	// logicBottomPMTCap->SetVisAttributes(defaultVisAttributes);
 	
-	G4VPhysicalVolume *physBottomPMTCap = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 104.8*mm), logicBottomPMTCap, "physBottomPMTCap", logicWorld, false, 0, true);
+	// G4VPhysicalVolume *physBottomPMTCap = new G4PVPlacement(meshRot270, G4ThreeVector(0., 0., 134.*mm), logicBottomPMTCap, "physBottomPMTCap", logicWorld, false, 0, true);
 	
-	G4VSolid *solidBottomPMT = bottomPMT->GetSolid();
-	logicBottomPMT = new G4LogicalVolume(solidBottomPMT, PTFE, "logicInnerBottomPMT");
-	logicBottomPMT->SetVisAttributes(PMTVisAttributes);
+	// G4VSolid *solidBottomPMT = bottomPMT->GetSolid();
+	// logicBottomPMT = new G4LogicalVolume(solidBottomPMT, PTFE, "logicInnerBottomPMT");
+	// logicBottomPMT->SetVisAttributes(PMTVisAttributes);
 	
-	G4VPhysicalVolume *physBottomPMT = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 125.8*mm), logicBottomPMT, "physBottomPMT", logicWorld, false, 0, true);
+	// G4VPhysicalVolume *physBottomPMT = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 151.*mm), logicBottomPMT, "physBottomPMT", logicWorld, false, 0, true);
 	
 	
-	G4Tubs *solidLXe = new G4Tubs("solidLXe", 0.*mm, 46.4213333*mm, 28.*mm, 0.*deg, 360.*deg);
+	G4Tubs *solidLXe = new G4Tubs("solidLXe", 0.*mm, 46.5*mm, 28.*mm, 0.*deg, 360.*deg);
 	logicLXe = new G4LogicalVolume(solidLXe, LXe, "logicLXe");
-	logicLXe->SetVisAttributes(purpleVisAttributes);
+	logicLXe->SetVisAttributes(invisible); //purpleVisAttributes
 	
-	G4VPhysicalVolume *physLXe = new G4PVPlacement(0, G4ThreeVector(0., 0., 78.4*mm), logicLXe, "physLXe", logicWorld, false, 0, true);
+	G4VPhysicalVolume *physLXe = new G4PVPlacement(meshRot, G4ThreeVector(0., -72.*mm, 0.), logicLXe, "physLXe", logicWorld, false, 0, true);
 	
 	fScoringVolume = logicLXe;
 
-	G4Tubs *solidGXe = new G4Tubs("solidGXe", 0.*mm, 46.4213333*mm, 9.*mm, 0.*deg, 360.*deg);
+	G4Tubs *solidGXe = new G4Tubs("solidGXe", 0.*mm, 46.5*mm, 8.*mm, 0.*deg, 360.*deg); //46.4213333
 	G4LogicalVolume *logicGXe = new G4LogicalVolume(solidGXe, GXe, "logicGXe");
 	logicGXe->SetVisAttributes(purpleVisAttributes);
-	G4VPhysicalVolume *physGXe = new G4PVPlacement(0, G4ThreeVector(0., 0., 41.2*mm), logicGXe, "physGXe", logicWorld, false, 0, true);
+	G4VPhysicalVolume *physGXe = new G4PVPlacement(meshRot, G4ThreeVector(0., -36.*mm, 0.), logicGXe, "physGXe", logicWorld, false, 0, true);
 	
 	//constructing electric field
-	G4ThreeVector electricFieldVector(0., 0., 100.*kilovolt/um);
-	electricField = new ElectricField(100.);
+	electricField = new ElectricField(-100.); //placeholder electric field value of 100 V/cm for lXe
 	equation = new G4EqMagElectricField(electricField);
 	G4int nvar = 8;
 	auto pStepper = new G4DormandPrince745(equation, nvar);
@@ -272,7 +410,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	G4double minStep = 0.001*mm;
 	auto pIntegrationDriver = new G4IntegrationDriver<G4DormandPrince745>(minStep, pStepper, nvar);
 
-	gasElectricField = new ElectricField(250.);
+	gasElectricField = new ElectricField(-250.); //placeholder electric field value of 250 V/cm for gXe
 	gasEquation = new G4EqMagElectricField(gasElectricField);
 	auto gasFieldManager = new G4FieldManager(gasElectricField);
 	gasFieldManager->SetDetectorField(gasElectricField);
@@ -283,6 +421,8 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	gasFieldManager->SetChordFinder(chordFinder);
 	
 	logicLXe->SetFieldManager(liquidFieldManager, true);
+	// logicPESheeth->SetFieldManager(liquidFieldManager, true);
+
 	logicGXe->SetFieldManager(gasFieldManager, true);
 	
 	
@@ -296,6 +436,13 @@ void MyDetectorConstruction::ConstructSDandField()
 	sensPMT = new MySensitiveDetector("sensPMT");
 	sdManager->AddNewDetector(sensPMT);
 	
-	logicPMT->SetSensitiveDetector(sensPMT);
-	logicBottomPMT->SetSensitiveDetector(sensPMT);
+	// logicPMT0->SetSensitiveDetector(sensPMT);
+	// logicPMT1->SetSensitiveDetector(sensPMT);
+	// logicPMT2->SetSensitiveDetector(sensPMT);
+	// logicPMT3->SetSensitiveDetector(sensPMT);
+	// logicPMT4->SetSensitiveDetector(sensPMT);
+	// logicPMT5->SetSensitiveDetector(sensPMT);
+	// logicPMT6->SetSensitiveDetector(sensPMT);
+	
+	// logicBottomPMT->SetSensitiveDetector(sensPMT);
 }

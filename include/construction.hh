@@ -28,6 +28,7 @@
 #include "electricField.hh"
 
 #include "CADMesh.hh"
+#include "G4GDMLParser.hh"
 
 #include "FastS2Model.hh"
 #include "nestPart.hh"
@@ -42,8 +43,10 @@ public:
 	
 	G4LogicalVolume *GetScoringVolume() const {return fScoringVolume;}
 	
-	G4LogicalVolume *logicDetector, *logicPMT, *logicTopCap, *logicLXe, *logicBottomPMT;
+	G4LogicalVolume *logicDetector, *logicTopCap, *logicLXe, *logicBottomPMT;
 	
+	G4LogicalVolume *logicPMT0, *logicPMT1, *logicPMT2, *logicPMT3, *logicPMT4, *logicPMT5, *logicPMT6;
+
 	MySensitiveDetector *sensPMT;
 	
 	G4ElectroMagneticField *electricField, *gasElectricField;

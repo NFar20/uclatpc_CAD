@@ -6,6 +6,7 @@
 #include"G4Run.hh"
 #include "G4SystemOfUnits.hh"
 #include "stepping.hh"
+#include <fstream>
 
 extern int nS1Events;
 extern int nS2Events;
@@ -23,6 +24,8 @@ public:
 	
 	virtual void BeginOfRunAction(const G4Run*);
 	virtual void EndOfRunAction(const G4Run*);
+
+	// static std::ofstream dataFile;
 };
 
 #endif

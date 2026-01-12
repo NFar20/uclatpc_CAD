@@ -11,9 +11,9 @@ void LXeElectronDriftModel::DoIt(const G4FastTrack& fastTrack, G4FastStep& fastS
     double x = pos.x()/cm;
     double y = pos.y()/cm;
     double z = pos.z()/cm;
-    double r = std::sqrt(x*x + y*y);
+    double r = std::sqrt(x*x + z*z);
     double unitX = x / r;
-    double unitY = y / r;
+    double unitZ = z / r;
 
     double dirX = dir.x();
     double dirY = dir.y();
@@ -65,7 +65,7 @@ void LXeElectronDriftModel::DoIt(const G4FastTrack& fastTrack, G4FastStep& fastS
     bool highField = (Efield >= 5000.);
 
     double v_drift = nestCalc.SetDriftVelocity(temp, density, Efield, pressure); // mm/us
-    G4ThreeVector v_drift_dir (-pos.x(), -pos.y(), 0);
+    G4ThreeVector v_drift_dir (-pos.x(), -pos.z(), 0);
     v_drift_dir = v_drift_dir.unit();
     double D_T = 0.;
     double D_L = 0.;
@@ -116,8 +116,8 @@ void LXeElectronDriftModel::DoIt(const G4FastTrack& fastTrack, G4FastStep& fastS
     double newY = newPos.y();        
     double newZ = newPos.z();
 
-    double newR = std::sqrt(newX*newX + newY*newY);
-    if (newR >= 25. || newZ >= 59. || newZ <= -59.)
+    double newR = std::sqrt(newX*newX + newZ*newZ);
+    if (newR >= 52.5 || newY >= 30. || newY <= -150.)
     {
         fastStep.KillPrimaryTrack();
         fastStep.ProposePrimaryTrackPathLength(0.0);        

@@ -119,8 +119,11 @@ CMakeFiles/uclatpc_CAD.dir/src/nestPart.cc.o: \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/cmath \
- /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/c++/13/bits/vector.tcc \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SystemOfUnits.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/CLHEP/Units/SystemOfUnits.h \
+ /usr/include/c++/13/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \

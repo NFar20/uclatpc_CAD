@@ -30,6 +30,9 @@
 #include "construction.hh"
 #include "event.hh"
 #include "tracking.hh"
+#include "run.hh"
+
+#include <fstream>
 
 extern int photPerE;
 extern bool S2Event;
@@ -55,6 +58,9 @@ private:
 	
 	std::map<G4int, G4double> previousEnergy;
 	std::map<G4int, G4int> stagnationCounter;
+
+    std::set<G4int> taggedTracksS1;
+    std::set<G4int> taggedTracksS2;
 };
 
 inline G4ThreeVector RandomUnitVector() 

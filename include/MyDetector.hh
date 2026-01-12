@@ -84,7 +84,7 @@ public:
     // Drift electric field as function of Z in mm
     // For example, use a high-order poly spline
     double FitEF(double xPos_mm, double yPos_mm, double zPos_mm) override {  // in V/cm
-        return -730.;  // NOTE: if just const don't use -1 field option at run-time
+        return 100.;  // NOTE: if just const don't use -1 field option at run-time
     }
 
     // S2 PDE custom fit for function of r

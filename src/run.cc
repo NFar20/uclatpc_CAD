@@ -8,10 +8,14 @@ extern int yieldPhotons;
 extern int yieldElectrons;
 extern int check;
 
+// std::ofstream MyRunAction::dataFile;
+
 MyRunAction::MyRunAction()
 {
+	// dataFile.open("outputData.txt");
+
 	G4AnalysisManager *man = G4AnalysisManager::Instance();
-	
+
 	man->CreateNtuple("Hits", "Hits");
 	man->CreateNtupleIColumn("fEvent");
 	man->CreateNtupleIColumn("fType");
@@ -25,28 +29,36 @@ MyRunAction::MyRunAction()
 	man->CreateNtupleDColumn("fEdep");
 	man->FinishNtuple(1);
 
-	const G4int bins = 1000; //2500
+	man->CreateNtuple("tS2-tS1", "global_electron_drift_time");
+	man->CreateNtupleDColumn("globalTime_us");
+	man->CreateNtupleIColumn("trackID");
+	man->FinishNtuple(2);
 
-    const double tmin = -5.; //microseconds 
-	const double tmax = 20; //microsends 
-    const double posMin = -35.; //mm
-    const double posMax = 35.; //mm
+	man->CreateNtuple("drift", "electron_drift_time");
+	man->CreateNtupleDColumn("driftTime_us");
+	man->CreateNtupleIColumn("distance_mm");
+	man->FinishNtuple(3);
 
-    man->CreateH1("posX", " ", bins, posMin, posMax); 
-    man->CreateH1("posY", " ", bins, posMin, posMax); 
-    man->CreateH1("posZ", " ", bins, -30, 30); 
-    man->CreateH1("Time", " ", bins, tmin, tmax); 
+	// const G4int bins = 1000; //2500
+
+    // const double tmin = -5.; //microseconds 
+	// const double tmax = 20; //microsends 
+    // const double posMin = -35.; //mm
+    // const double posMax = 35.; //mm
+
+    // man->CreateH1("posX", " ", bins, posMin, posMax); 
+    // man->CreateH1("posY", " ", bins, posMin, posMax); 
+    // man->CreateH1("posZ", " ", bins, -30, 30); 
+    // man->CreateH1("Time", " ", bins, tmin, tmax); 
 
 
-    man->CreateNtuple("Events", "Golden paramter");
-    man->CreateNtupleDColumn("logS2");
-    man->CreateNtupleDColumn("S1");
-    man->CreateNtupleIColumn("recoilType"); // 0=ER, 1=NR
-    man->FinishNtuple(2);
+
 }
 
 MyRunAction::~MyRunAction()
-{}
+{
+	// dataFile.close();
+}
 
 void MyRunAction::BeginOfRunAction(const G4Run* run)
 {
@@ -61,8 +73,12 @@ void MyRunAction::BeginOfRunAction(const G4Run* run)
 	G4int runID = run->GetRunID();
 	std::stringstream strRunID;
 	strRunID << runID;
+
+	if (!man->IsOpenFile()) {
+    	man->OpenFile("output.root");
+  	}
 	
-	// man->OpenFile("scintillation"+strRunID.str()+".root");
+	// man->OpenFile("driftVelo"+strRunID.str()+".root");
 	// const G4int bins = 2500;
 	// const G4double tmin = 0.*ns;
 	// const G4double tmax = 50000*ns;
@@ -71,7 +87,13 @@ void MyRunAction::BeginOfRunAction(const G4Run* run)
   	// man->CreateH1("hS1Time",  "S1 photon times;time [#mu s];hits",  bins, tmin, tmax);
   	// man->CreateH1("hS2Time",  "S2 photon times;time [#mu s];hits",  bins, tmin, tmax);
 
-	man->OpenFile("output"+strRunID.str()+".root");
+	// man->OpenFile("output"+strRunID.str()+".root");
+	
+	man->CreateNtuple("Events", "Golden paramter");
+    man->CreateNtupleDColumn("logS2");
+    man->CreateNtupleDColumn("S1");
+    man->CreateNtupleIColumn("recoilType"); // 0=ER, 1=NR
+    man->FinishNtuple(4);
 }
 
 void MyRunAction::EndOfRunAction(const G4Run*)
@@ -85,13 +107,15 @@ void MyRunAction::EndOfRunAction(const G4Run*)
     G4cout << "Total S1 Photons: " << totalS1Photons << G4endl;
 	G4cout << "Total S2 Photons: " << totalS2Photons << G4endl;
 
-	G4cout << "Yield Photons: " << yieldPhotons << G4endl;
-	G4cout << "Yield Electrons: " << yieldElectrons << G4endl;
+	// G4cout << "Yield Photons: " << yieldPhotons << G4endl;
+	// G4cout << "Yield Electrons: " << yieldElectrons << G4endl;
 
 	nS1Events = 0;
     nS2Events = 0;
     totalS1Photons = 0;
     totalS2Photons = 0;
+	yieldPhotons = 0;
+	yieldElectrons = 0;
 	
 	G4AnalysisManager *man = G4AnalysisManager::Instance();
 	
