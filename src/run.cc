@@ -39,6 +39,24 @@ MyRunAction::MyRunAction()
 	man->CreateNtupleIColumn("distance_mm");
 	man->FinishNtuple(3);
 
+	man->CreateNtuple("data", "Energy deposition data for nestpy");
+	man->CreateNtupleIColumn("event_id");      // 0
+  	man->CreateNtupleIColumn("step_id");       // 1
+  	man->CreateNtupleDColumn("edep_keV");      // 2
+  	man->CreateNtupleDColumn("x_mm");          // 3
+  	man->CreateNtupleDColumn("y_mm");          // 4
+  	man->CreateNtupleDColumn("z_mm");          // 5
+  	man->CreateNtupleDColumn("t_ns");          // 6
+  	man->CreateNtupleDColumn("Efield_Vcm");    // 7
+  	man->CreateNtupleIColumn("type");          // 8  (0=ER,1=NR)
+  	man->CreateNtupleIColumn("track_id");      // 9
+  	man->CreateNtupleIColumn("parent_id");     // 10
+  	man->CreateNtupleIColumn("pdg");           // 11
+  	man->CreateNtupleSColumn("process");       // 12
+  	man->CreateNtupleSColumn("volume");        // 13
+  	man->CreateNtupleSColumn("material");      // 14
+  	man->FinishNtuple();
+
 	// const G4int bins = 1000; //2500
 
     // const double tmin = -5.; //microseconds 
@@ -64,7 +82,7 @@ void MyRunAction::BeginOfRunAction(const G4Run* run)
 {
 	//make data file here instead of in the constructor, so a new file is created for every run event
 
-    DriftTrackIDs.clear();
+    // DriftTrackIDs.clear();
 
 	G4AnalysisManager *man = G4AnalysisManager::Instance();
 	
@@ -89,16 +107,16 @@ void MyRunAction::BeginOfRunAction(const G4Run* run)
 
 	// man->OpenFile("output"+strRunID.str()+".root");
 	
-	man->CreateNtuple("Events", "Golden paramter");
-    man->CreateNtupleDColumn("logS2");
-    man->CreateNtupleDColumn("S1");
-    man->CreateNtupleIColumn("recoilType"); // 0=ER, 1=NR
-    man->FinishNtuple(4);
+	// man->CreateNtuple("Events", "Golden paramter");
+    // man->CreateNtupleDColumn("logS2");
+    // man->CreateNtupleDColumn("S1");
+    // man->CreateNtupleIColumn("recoilType"); // 0=ER, 1=NR
+    // man->FinishNtuple(4);
 }
 
 void MyRunAction::EndOfRunAction(const G4Run*)
 {
-	DriftTrackIDs.clear();
+	// DriftTrackIDs.clear();
 
 
 	// G4cout << "Number of S1 events: " << nS1Events << G4endl;
@@ -110,12 +128,12 @@ void MyRunAction::EndOfRunAction(const G4Run*)
 	// G4cout << "Yield Photons: " << yieldPhotons << G4endl;
 	// G4cout << "Yield Electrons: " << yieldElectrons << G4endl;
 
-	nS1Events = 0;
-    nS2Events = 0;
-    totalS1Photons = 0;
-    totalS2Photons = 0;
-	yieldPhotons = 0;
-	yieldElectrons = 0;
+	// nS1Events = 0;
+    // nS2Events = 0;
+    // totalS1Photons = 0;
+    // totalS2Photons = 0;
+	// yieldPhotons = 0;
+	// yieldElectrons = 0;
 	
 	G4AnalysisManager *man = G4AnalysisManager::Instance();
 	

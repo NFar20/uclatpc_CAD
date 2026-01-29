@@ -4,7 +4,7 @@
 G4ThreadLocal std::unique_ptr<MyDetector> gMyDet;
 G4ThreadLocal std::unique_ptr<NEST::NESTcalc> gNest;
 
-MySteppingAction::MySteppingAction() //MyEventAction *eventAction)
+MySteppingAction::MySteppingAction(MyEventAction *eventAction) //
 {
 	if (!gMyDet)  gMyDet  = std::make_unique<MyDetector>();
   if (!gNest)   gNest   = std::make_unique<NEST::NESTcalc>(gMyDet.get());
@@ -97,9 +97,10 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 	G4double nElectrons = 0;
 	double density = 3.0558; //3.0558*g/cm3
 	double temp = 162; //162 Kelvin
-	double pressure = 1; //1 Bar (atmospheric pressure)
+	double pressure = 1.013; //1 Bar (atmospheric pressure)
 	static nestPart detector;
-	NEST::NESTcalc* nestCalc = new NEST::NESTcalc(MyDet);
+	NEST::NESTcalc *nestCalc = new NEST::NESTcalc(MyDet);
+	static NEST::NESTcalc nCalc(&detector);
 	double Efield = nestDetector->get_ElectricField(pos.x(), pos.y(), pos.z());
 	G4int parentID = track->GetParentID();
     G4int trackID = track->GetTrackID();
@@ -118,18 +119,6 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 	if(pd==G4OpticalPhoton::OpticalPhotonDefinition()) {
 		// G4cout << "Optical Photon detected in " << volume->GetName() << G4endl;
 	}
-
-	G4bool pmt = volume->GetName() == "logicTopCap";
-
-		// if(pmt) {
-		// 	G4cout << "Particle Detected in PMT!" << G4endl;
-		// }
-
-		// if(post) {
-		// 	G4LogicalVolume *postVol = post->GetTouchableHandle()->GetVolume()->GetLogicalVolume();
-		// }
-
-
 
 	//get rid of particles with extremely low energy
 	if(energy < 0.001*eV && !isPhot) {
@@ -300,6 +289,9 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 		// return;
 	}
 
+	//kill photons that enter PMT
+	G4bool pmt = volume->GetName() == "logicTopCap";
+
 	if(isPhot && pmt){
 		G4cout << "Optical photon detected in PMT!" << G4endl;
 		const double t_drift_us = post->GetGlobalTime() / us; // Δt since creation
@@ -312,6 +304,28 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 	}
 
 	if (!std::isfinite(Efield) || Efield < 0.0) return;
+
+	// ~~~~~~~~~~~~~~~~~~~~~~Drift velocity calculation (with diffusion)~~~~~~~~~~~~~~~~~~~~~~
+
+	Efield = 100; //volt/cm constant field for testing
+	G4double v_drift = nCalc.SetDriftVelocity(temp, density, Efield, pressure); //average drift velocity (mm/us) baseed on detector parameters
+	G4double dt = stepLength / v_drift; //time taken for step
+	// G4cout << "Step length: " << stepLength << " mm" << G4endl;
+
+	//calculating transverse and longitudinal diffusion coefficients
+	G4double D_T = nCalc.GetDiffTran_Liquid(Efield, false, temp, pressure, density, 54) * pow(10,-4); // converts from cm2/s to mm2/us
+	G4double D_L = nCalc.GetDiffLong_Liquid(Efield, false, temp, pressure, density, 54, 0) * pow(10, -4); // converts from cm2/s mm2/us 
+	
+	G4double sigma_L = sqrt(D_L * dt);
+    G4double sigma_T = sqrt(D_T * dt);
+
+	G4double diff_x = G4RandGauss::shoot(0., sigma_T); //transverse diffusion in x
+	G4double diff_y = G4RandGauss::shoot(0., sigma_L); //longitudinal diffusion in y
+	G4double diff_z = G4RandGauss::shoot(0., sigma_T); //transverse diffusion in z
+	G4ThreeVector diffusion(diff_x/dt, diff_y/dt, diff_z/dt); //total diffusion for 1 step
+	// G4cout << "Diffusion Vector: " << diffusion << " mm" << G4endl;
+	G4ThreeVector v_drift_dir = (G4ThreeVector(0., v_drift, 0.) + diffusion).unit(); //drift in +y direction with diffusion
+	
 
 	//Nest Part
 
@@ -327,55 +341,22 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 				S2Event = true;
 				nS2Events++;
 				G4cout << "--------------initializing S2 event--------------" << G4endl;
-
 			}
 
 			taggedTracksS2.insert(trackID);
 		}
 
-		// if (edep <= 14.*pow(10,-3) && !driftElectron) //14 eV needed for scintillation in liquid xenon.
-		// {
-		// 	return;
-		// }
-
-		// if (edep <= 14.*pow(10,-3) && !driftElectron) //14*10e-3.  14 eV needed for scintillation in liquid xenon   been using 12.*10e-2
-		// {
-		// 	return;
-
-			// if (edep > 0)
-			// {
-				
-			// 	// track->SetTrackStatus(fStopAndKill);
-			// 	// ClearStagnationData(id);
-			// 	// G4cout << "Killing because of weird edep code????" << G4endl;
-
-			// 	const G4VProcess* proc = step->GetPostStepPoint()->GetProcessDefinedStep();
-    		// 	if (proc) 
-			// 	{
-        	// 		G4String procName = proc->GetProcessName();
-        	// 		//G4cout << "Previous process: " << procName << G4endl;
-    		// 	} 
-			// 	else 
-			// 	{
-			// 		//G4cout << "No process defined this step" << G4endl;
-			// 	}
-			// }
-
-
-			// return;
-		// }
-
-
-		// if(volume->GetName() == "logicLXe" && !S2Event && !driftElectron && !isPhot && (pd == G4Electron::ElectronDefinition() && taggedTracksS1.count(trackID) <= 1))
 		if(volume->GetName() == "logicLXe" && !S2Event && energyDeposit > 0 && pd != G4Gamma::GammaDefinition())
 		{
 			// Create NEST object
 			taggedTracksS1.insert(trackID);
 			G4cout << "~~~~~~~~~~~~~~~initializing S1 event~~~~~~~~~~~~~~~" << G4endl;
 			G4cout << "Particle causing S1: " << particleDefinition->GetParticleName() << G4endl;
+			G4cout << "Drift Velocity: " << v_drift << " m/s" << G4endl;
 			t_S1 = step->GetPreStepPoint()->GetGlobalTime() / us;
 			y_S1 = pos.y()/mm;
 
+			double Efield = nestDetector->get_ElectricField(pos.x(), pos.y(), pos.z());
 			NEST::YieldResult yields = nestCalc->GetYields(recoilType, edep*10, density, Efield,          // drift field
 			131,                     // A
 			54                           // Z
@@ -405,15 +386,25 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 			
 		}
 
+		if(pd == G4Electron::ElectronDefinition() && volume->GetName() == "logicLXe"){
+
+			if(std::isfinite(diffusion.x()) && std::isfinite(diffusion.y()) && std::isfinite(diffusion.z())) {
+				G4ThreeVector eDir = step->GetPreStepPoint()->GetMomentumDirection();
+			G4ThreeVector newDiff = (2*diffusion + eDir).unit();
+			track->SetMomentumDirection(newDiff);
+			}
+			else {
+				//do nothing
+			}
+			// G4cout << "Scattering drift electron!" << G4endl;
+			// G4cout << "New direction: " << newDiff << G4endl;
+		}
+
 		G4ParticleDefinition* photonDef = G4OpticalPhoton::OpticalPhotonDefinition();
     	G4ParticleDefinition* eDef = G4Electron::ElectronDefinition(); 
 			
 		G4TrackVector* secondaries = new G4TrackVector();
 
-		//G4cout << "r value: " << r << " Is drift electron? " << driftElectron << G4endl;
-	
-
-		//calculating electron drift velocity
 
     //Spawn optical photons
     	// for (int i = 0; i < nPhotons; ++i) 
@@ -436,11 +427,22 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
     //Spawn electrons
     	for (int i = 0; i < nElectrons; ++i) 
 		{
+			// G4cout << "Drift Velocity: " << v_drift << " mm/us" << G4endl;
+        	
+			//basic random diffusion model
+			// G4double diff_x = G4RandGauss::shoot(0., 0.2); //mean 0, sigma 0.2 mm
+			// G4double diff_y = G4RandGauss::shoot(0., 0.2); //mean 0, sigma 0.2 mm
 
-        	G4ThreeVector dir = RandomUnitVector();
-        	G4double electronEnergy = 0.1*eV;
+			// G4ThreeVector dir = RandomUnitVector();
+			// G4ThreeVector dir(diff_x, 1., diff_y); //electrons drift upward in +y direction w/ diffusion
+			// dir = dir.unit();
 
-        	G4DynamicParticle* dynPart = new G4DynamicParticle(eDef, dir, electronEnergy);
+			G4double mass_e = G4Electron::ElectronDefinition()->GetPDGMass()/kg;
+
+        	// G4double electronEnergy = 0.1*eV;
+			G4double electronEnergy = 0.5 * mass_e * v_drift/m*s * v_drift/m*s * joule;
+
+        	G4DynamicParticle* dynPart = new G4DynamicParticle(eDef, v_drift_dir, electronEnergy);
         	G4Track* newTrack = new G4Track(dynPart, track->GetGlobalTime(), pos);
 			newTrack->SetUserInformation(new DriftElectronInfo(true));
         	newTrack->SetTouchableHandle(track->GetTouchableHandle());
@@ -511,11 +513,7 @@ void MySteppingAction::UserSteppingAction(const G4Step *step)
 
 	previousEnergy[id] = energy;
 
-	// if(!isPhot && volume->GetName() == "logicPMT" || volume->GetName() == "logicBottomPMT" || volume->GetName() == "logicTopCap" || volume->GetName() == "logicBottomPMTCap") {
-	// 	track->SetTrackStatus(fStopAndKill);
-	// 	G4cout << "killing particle that escaped TPC" << G4endl;
-	// }
-
+	//Kill particles that escape to make viwewer look better
 	if (pos.y() > -4.*mm)
 	{
 		// volume->GetName() == "logicWorld"

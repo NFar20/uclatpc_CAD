@@ -34,6 +34,7 @@
 #include "nestPart.hh"
 #include "G4FastSimulationManager.hh"
 #include "DynamicUserLimits.hh"
+#include "G4StepLimiter.hh"
 
 class MyDetectorConstruction : public G4VUserDetectorConstruction
 {

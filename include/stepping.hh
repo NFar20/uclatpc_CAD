@@ -26,6 +26,7 @@
 #include "DynamicUserLimits.hh"
 #include "G4VProcess.hh"
 #include "CLHEP/Random/RandGaussZiggurat.h"
+#include "Randomize.hh"
 
 #include "construction.hh"
 #include "event.hh"
@@ -42,7 +43,7 @@ extern G4ThreadLocal std::unordered_set<G4int> DriftTrackIDs;
 class MySteppingAction : public G4UserSteppingAction
 {
 public:
-	MySteppingAction(); //MyEventAction* eventAction
+	MySteppingAction(MyEventAction* eventAction); //
 	~MySteppingAction();
 	
 	virtual void UserSteppingAction(const G4Step*);
@@ -50,7 +51,7 @@ public:
 	void ClearStagnationData(G4int trackID);
 	
 private:
-	//MyEventAction *fEventAction;
+	MyEventAction *fEventAction;
 	NEST::NESTcalc* calc;
 	VDetector* det;
 

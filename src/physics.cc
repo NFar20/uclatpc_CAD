@@ -4,7 +4,7 @@ MyPhysicsList::MyPhysicsList()
 {
 	//included physics lists
 	
-	//RegisterPhysics (new G4EmStandardPhysics());
+	RegisterPhysics (new G4EmStandardPhysics());
 	RegisterPhysics (new G4OpticalPhysics());
 	RegisterPhysics (new G4DecayPhysics());
 	RegisterPhysics (new G4RadioactiveDecayPhysics());
@@ -15,7 +15,7 @@ MyPhysicsList::MyPhysicsList()
 	RegisterPhysics (new G4StoppingPhysics());
 	RegisterPhysics (new G4EmLowEPPhysics());
 	RegisterPhysics (new G4StepLimiterPhysics());
-	//RegisterPhysics (new G4EmExtraPhysics());
+	// RegisterPhysics (new G4EmExtraPhysics());
 	//RegisterPhysics (new G4HadronPhysicsQGSP_BERT());
 	//RegisterPhysics (new DarkMatterPhysics());
 
@@ -48,6 +48,8 @@ void MyPhysicsList::ConstructParticle()
 void MyPhysicsList::ConstructProcess()
 {
 	G4VModularPhysicsList::ConstructProcess();
+
+	AddTransportation();
 
 	if (!det)  det  = new MyDetector();
   	if (!calc) calc = new NEST::NESTcalc(det);
@@ -85,6 +87,9 @@ void MyPhysicsList::ConstructProcess()
 			auto* fastSimProc = new G4FastSimulationManagerProcess("fastSimProc");
             pManager->AddProcess(fastSimProc, -1, -1, 1);
             G4cout << "Added FastSim process to electron" << G4endl;
+
+      		//limit maximum step size for electrons to 10 mm
+			if (pm) pm->AddDiscreteProcess(new G4StepLimiter());
         }
 	
 		NEST::NESTProc* theNEST2ScintillationProcess = new NEST::NESTProc("S1", fElectromagnetic, det);
@@ -94,6 +99,8 @@ void MyPhysicsList::ConstructProcess()
 
 	
 	}
+
+
 }
 
 //void MyPhysicsList::SetCuts() { SetCutsWithDefault(); }

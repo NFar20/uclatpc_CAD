@@ -16,10 +16,10 @@ void MyActionInitialization::Build() const //initializing all of my custom actio
 	MyRunAction *runAction = new MyRunAction();
 	SetUserAction(runAction);
 	
-	MyEventAction *eventAction = new MyEventAction(); //runAction
+	MyEventAction *eventAction = new MyEventAction(runAction); //
 	SetUserAction(eventAction);
 	
-	MySteppingAction *steppingAction = new MySteppingAction(); //eventAction
+	MySteppingAction *steppingAction = new MySteppingAction(eventAction); //
 	SetUserAction(steppingAction);
 	
 	MyTrackingAction *trackingAction = new MyTrackingAction(steppingAction);

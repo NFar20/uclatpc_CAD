@@ -192,56 +192,12 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	logicTopCap = parser.GetVolume("LV_TopCap_PMTs");
 	logicTopCap->SetVisAttributes(PPTVisAttributes); //
 
-	// logicTopCap = parser.GetVolume("LV_Top_PMT_Cap");
-	// logicTopCap->SetVisAttributes(defaultVisAttributes);
-	// // logicTopCap->SetMaterial(HDPE);
-
-	// logicPMT0 = parser.GetVolume("LV_PMT__Small_");
-	// logicPMT0->SetVisAttributes(PPTVisAttributes);
-	// // logicPMT0->SetMaterial(HDPE);
-
-	// logicPMT1 = parser.GetVolume("LV_PMT__Small_001");
-	// logicPMT1->SetVisAttributes(PPTVisAttributes);
-	// // logicPMT1->SetMaterial(HDPE);
-	
-	// logicPMT2 = parser.GetVolume("LV_PMT__Small_002");
-	// logicPMT2->SetVisAttributes(PPTVisAttributes);
-	// // logicPMT2->SetMaterial(HDPE);
-	
-	// logicPMT3 = parser.GetVolume("LV_PMT__Small_003");
-	// logicPMT3->SetVisAttributes(PPTVisAttributes);
-	// // logicPMT3->SetMaterial(HDPE);
-	
-	// logicPMT4 = parser.GetVolume("LV_PMT__Small_004");
-	// logicPMT4->SetVisAttributes(PPTVisAttributes);
-	// // logicPMT4->SetMaterial(HDPE);
-	
-	// logicPMT5 = parser.GetVolume("LV_PMT__Small_005");
-	// logicPMT5->SetVisAttributes(PPTVisAttributes);
-	// // logicPMT5->SetMaterial(HDPE);
-	
-	// logicPMT6 = parser.GetVolume("LV_PMT__Small_006");
-	// logicPMT6->SetVisAttributes(PPTVisAttributes);
-	// logicPMT6->SetMaterial(HDPE);
-
 	G4LogicalVolume *logicTopSpacer = parser.GetVolume("LV_TopSpacer");
 	logicTopSpacer->SetVisAttributes(purpleVisAttributes); // 
 	// logicTopSpacer->SetMaterial(HDPE);
 
 	G4LogicalVolume *logicESepRing = parser.GetVolume("LV_ESepRing_SteelRings");
 	logicESepRing->SetVisAttributes(yellowVisAttributes); //
-	
-	// G4LogicalVolume *logicSteelRing3 = parser.GetVolume("LV_Steel_Ring003");
-	// logicSteelRing3->SetVisAttributes(blueVisAttributes); // blueVisAttributes
-	// logicSteelRing3->SetMaterial(StainlessSteel);
-	
-	// G4LogicalVolume *logicElectrodeSeparationRing = parser.GetVolume("LV_Electrode_Separation_Ring");
-	// logicElectrodeSeparationRing->SetVisAttributes(yellowVisAttributes); // 
-	// // logicElectrodeSeparationRing->SetMaterial(StainlessSteel);
-
-	// G4LogicalVolume *logicSteelRing2 = parser.GetVolume("LV_Steel_Ring002");
-	// logicSteelRing2->SetVisAttributes(blueVisAttributes); // 
-	// // logicSteelRing2->SetMaterial(StainlessSteel);
 
 	G4LogicalVolume *logicPESheeth = parser.GetVolume("LV_Polythelne_Sheeth");
 	logicPESheeth->SetVisAttributes(invisible); // HDPEVisAttributes
@@ -249,18 +205,6 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 
 	G4LogicalVolume *logicESepRingNoOpen = parser.GetVolume("LV_ESepRingNoOpen_SteelRings");
 	logicESepRingNoOpen->SetVisAttributes(yellowVisAttributes); //
-
-	// G4LogicalVolume *logicSteelRing1 = parser.GetVolume("LV_Steel_Ring001");
-	// logicSteelRing1->SetVisAttributes(blueVisAttributes); //
-	// // logicSteelRing1->SetMaterial(StainlessSteel);
-
-	// G4LogicalVolume *logicSteelRing0 = parser.GetVolume("LV_Steel_Ring");
-	// logicSteelRing0->SetVisAttributes(blueVisAttributes); // 
-	// // logicSteelRing0->SetMaterial(StainlessSteel);
-
-	// G4LogicalVolume *logicElectrodeSeparationRingNoOpening = parser.GetVolume("LV_Electrode_Separation_Ring_No_Opening");
-	// logicElectrodeSeparationRingNoOpening->SetVisAttributes(yellowVisAttributes); // 
-	// // logicElectrodeSeparationRingNoOpening->SetMaterial(StainlessSteel);
 
 	G4LogicalVolume *logicBottomPMTCap = parser.GetVolume("LV_Bottom_PMT_Cap");
 	logicBottomPMTCap->SetVisAttributes(defaultVisAttributes); // 
@@ -285,23 +229,6 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	G4LogicalVolume *logicElectrodeMesh3 = parser.GetVolume("LV_Electrode_Mesh003");
 	logicElectrodeMesh3->SetVisAttributes(whiteVisAttributes); // 
 	// logicElectrodeMesh3->SetMaterial(StainlessSteel);
-
-	// if (auto* importedLV = parser.GetVolume("WorldVol")) {   // <-- put your <volume name="...">
-  	// 	new G4PVPlacement(nullptr, G4ThreeVector(), importedLV, "ImportedTop", logicWorld, false, 0, true);
-	// }
-
-	//importing new CAD files
-	// auto topCap = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/ATop PMT Cap.stl");
-	// auto topPMT = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/APMT (Small).stl");
-	// auto topSpacer = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/ATopSpacer.stl");
-	// auto electrodeMesh = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/AElectrode Mesh.stl");
-	// auto steelRing = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/ASteel Ring.stl");
-	// auto electrodeSeparationRing = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/AElectrode Separation Ring.stl");
-	// auto electrodeSeparationRingNoOpening = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/AElectrode Separation Ring No Opening.stl");
-	// auto PESheeth = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/APolythelne Sheeth.stl");
-	// auto fieldShapingRing = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/AField Shaping Ring.stl");
-	// auto bottomPMT = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/AHamamatsu R11410 PMT.stl");
-	// auto bottomPMTCap = CADMesh::TessellatedMesh::FromSTL("../Updated CaliX Parts/ABottom PMT Cap.stl");	
 	
 	G4RotationMatrix *meshRot = new G4RotationMatrix();
 	meshRot->rotateX(-90.*deg);
@@ -404,26 +331,32 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	G4int nvar = 8;
 	auto pStepper = new G4DormandPrince745(equation, nvar);
 	
-	auto liquidFieldManager = new G4FieldManager(electricField);
-	liquidFieldManager->SetDetectorField(electricField);
+	// auto liquidFieldManager = new G4FieldManager(electricField);
+	// liquidFieldManager->SetDetectorField(electricField);
 	
 	G4double minStep = 0.001*mm;
 	auto pIntegrationDriver = new G4IntegrationDriver<G4DormandPrince745>(minStep, pStepper, nvar);
 
 	gasElectricField = new ElectricField(-250.); //placeholder electric field value of 250 V/cm for gXe
 	gasEquation = new G4EqMagElectricField(gasElectricField);
-	auto gasFieldManager = new G4FieldManager(gasElectricField);
-	gasFieldManager->SetDetectorField(gasElectricField);
+	// auto gasFieldManager = new G4FieldManager(gasElectricField);
+	// gasFieldManager->SetDetectorField(gasElectricField);
 	
 	chordFinder = new G4ChordFinder(pIntegrationDriver);
 
-	liquidFieldManager->SetChordFinder(chordFinder);
-	gasFieldManager->SetChordFinder(chordFinder);
+	// auto stepLimiter = new G4StepLimiter();
+	// auto ePmanager = G4Electron::Electron()->GetProcessManager();
+	// ePmanager->AddDiscreteProcess(stepLimiter);
+	logicLXe->SetUserLimits(new G4UserLimits(2.5*mm));
+
+
+	// liquidFieldManager->SetChordFinder(chordFinder);
+	// gasFieldManager->SetChordFinder(chordFinder);
 	
-	logicLXe->SetFieldManager(liquidFieldManager, true);
+	// logicLXe->SetFieldManager(liquidFieldManager, true);
 	// logicPESheeth->SetFieldManager(liquidFieldManager, true);
 
-	logicGXe->SetFieldManager(gasFieldManager, true);
+	// logicGXe->SetFieldManager(gasFieldManager, true);
 	
 	
 	return physWorld;
@@ -435,14 +368,4 @@ void MyDetectorConstruction::ConstructSDandField()
 	
 	sensPMT = new MySensitiveDetector("sensPMT");
 	sdManager->AddNewDetector(sensPMT);
-	
-	// logicPMT0->SetSensitiveDetector(sensPMT);
-	// logicPMT1->SetSensitiveDetector(sensPMT);
-	// logicPMT2->SetSensitiveDetector(sensPMT);
-	// logicPMT3->SetSensitiveDetector(sensPMT);
-	// logicPMT4->SetSensitiveDetector(sensPMT);
-	// logicPMT5->SetSensitiveDetector(sensPMT);
-	// logicPMT6->SetSensitiveDetector(sensPMT);
-	
-	// logicBottomPMT->SetSensitiveDetector(sensPMT);
 }

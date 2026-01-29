@@ -5,7 +5,7 @@
 #include "G4AnalysisManager.hh"
 #include"G4Run.hh"
 #include "G4SystemOfUnits.hh"
-#include "stepping.hh"
+// #include "stepping.hh"
 #include <fstream>
 
 extern int nS1Events;

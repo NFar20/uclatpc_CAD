@@ -36,6 +36,7 @@
 #include "G4Electron.hh"
 #include "G4OpticalParameters.hh"
 #include "G4FastSimulationManagerProcess.hh"
+#include "G4StepLimiter.hh"
 
 class VDetector;
 namespace NEST { class NESTcalc; class NESTProc; }
@@ -46,10 +47,10 @@ public:
 	MyPhysicsList();
 	~MyPhysicsList() override;
 
-	//VDetector *LXeDet;
-	//NEST::NESTcalc *calc;
-	// MyDetector*     GetNESTDetector() const { return static_cast<MyDetector*>(det); }
-  	// NEST::NESTcalc* GetNESTcalc()     const { return calc; }
+	VDetector *LXeDet;
+	// NEST::NESTcalc *calc;
+	MyDetector*     GetNESTDetector() const { return static_cast<MyDetector*>(det); }
+  	NEST::NESTcalc* GetNESTcalc()     const { return calc; }
 	
 	void ConstructParticle() override;
 	void ConstructProcess() override;
