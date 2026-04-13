@@ -49,6 +49,8 @@ public:
 	virtual void UserSteppingAction(const G4Step*);
 	
 	void ClearStagnationData(G4int trackID);
+
+    
 	
 private:
 	MyEventAction *fEventAction;
@@ -62,6 +64,9 @@ private:
 
     std::set<G4int> taggedTracksS1;
     std::set<G4int> taggedTracksS2;
+
+    G4double v_drift;
+    G4ThreeVector diffusion;
 };
 
 inline G4ThreeVector RandomUnitVector() 

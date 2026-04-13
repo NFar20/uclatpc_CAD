@@ -190,6 +190,30 @@ src/FastS2Model.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uclatpc_CAD.dir/build.make CMakeFiles/uclatpc_CAD.dir/src/FastS2Model.cc.s
 .PHONY : src/FastS2Model.cc.s
 
+src/LXeOpticalPhysics.o: src/LXeOpticalPhysics.cc.o
+.PHONY : src/LXeOpticalPhysics.o
+
+# target to build an object file
+src/LXeOpticalPhysics.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uclatpc_CAD.dir/build.make CMakeFiles/uclatpc_CAD.dir/src/LXeOpticalPhysics.cc.o
+.PHONY : src/LXeOpticalPhysics.cc.o
+
+src/LXeOpticalPhysics.i: src/LXeOpticalPhysics.cc.i
+.PHONY : src/LXeOpticalPhysics.i
+
+# target to preprocess a source file
+src/LXeOpticalPhysics.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uclatpc_CAD.dir/build.make CMakeFiles/uclatpc_CAD.dir/src/LXeOpticalPhysics.cc.i
+.PHONY : src/LXeOpticalPhysics.cc.i
+
+src/LXeOpticalPhysics.s: src/LXeOpticalPhysics.cc.s
+.PHONY : src/LXeOpticalPhysics.s
+
+# target to generate assembly for a file
+src/LXeOpticalPhysics.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uclatpc_CAD.dir/build.make CMakeFiles/uclatpc_CAD.dir/src/LXeOpticalPhysics.cc.s
+.PHONY : src/LXeOpticalPhysics.cc.s
+
 src/WIMPElasticProcess.o: src/WIMPElasticProcess.cc.o
 .PHONY : src/WIMPElasticProcess.o
 
@@ -430,6 +454,30 @@ src/run.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uclatpc_CAD.dir/build.make CMakeFiles/uclatpc_CAD.dir/src/run.cc.s
 .PHONY : src/run.cc.s
 
+src/stacking.o: src/stacking.cc.o
+.PHONY : src/stacking.o
+
+# target to build an object file
+src/stacking.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uclatpc_CAD.dir/build.make CMakeFiles/uclatpc_CAD.dir/src/stacking.cc.o
+.PHONY : src/stacking.cc.o
+
+src/stacking.i: src/stacking.cc.i
+.PHONY : src/stacking.i
+
+# target to preprocess a source file
+src/stacking.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uclatpc_CAD.dir/build.make CMakeFiles/uclatpc_CAD.dir/src/stacking.cc.i
+.PHONY : src/stacking.cc.i
+
+src/stacking.s: src/stacking.cc.s
+.PHONY : src/stacking.s
+
+# target to generate assembly for a file
+src/stacking.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/uclatpc_CAD.dir/build.make CMakeFiles/uclatpc_CAD.dir/src/stacking.cc.s
+.PHONY : src/stacking.cc.s
+
 src/stepping.o: src/stepping.cc.o
 .PHONY : src/stepping.o
 
@@ -518,6 +566,9 @@ help:
 	@echo "... src/FastS2Model.o"
 	@echo "... src/FastS2Model.i"
 	@echo "... src/FastS2Model.s"
+	@echo "... src/LXeOpticalPhysics.o"
+	@echo "... src/LXeOpticalPhysics.i"
+	@echo "... src/LXeOpticalPhysics.s"
 	@echo "... src/WIMPElasticProcess.o"
 	@echo "... src/WIMPElasticProcess.i"
 	@echo "... src/WIMPElasticProcess.s"
@@ -548,6 +599,9 @@ help:
 	@echo "... src/run.o"
 	@echo "... src/run.i"
 	@echo "... src/run.s"
+	@echo "... src/stacking.o"
+	@echo "... src/stacking.i"
+	@echo "... src/stacking.s"
 	@echo "... src/stepping.o"
 	@echo "... src/stepping.i"
 	@echo "... src/stepping.s"

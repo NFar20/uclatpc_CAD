@@ -70,7 +70,7 @@ void LXeElectronDriftModel::DoIt(const G4FastTrack& fastTrack, G4FastStep& fastS
     double D_T = 0.;
     double D_L = 0.;
 
-    if (Efield < 20000)
+    if (Efield < 250)
     {
 	    D_T = nestCalc.GetDiffTran_Liquid(Efield, highField, temp, pressure, density, 54) * pow(10,-4); // converts from cm2/s to mm2/us
 	    D_L = nestCalc.GetDiffLong_Liquid(Efield, highField, temp, pressure, density, 54, 0) * pow(10, -4); // converts from cm2/s mm2/us

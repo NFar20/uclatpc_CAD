@@ -608,6 +608,7 @@ CMakeFiles/uclatpc_CAD.dir/src/action.cc.o: \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcmdWithAString.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcmdWithADoubleAndUnit.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronPhysicsQGSP_BERT.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmStandardPhysics_option4.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StepLimiterPhysics.hh \
  /home/nickfar20/nest/include/NEST/NEST.hh \
  /home/nickfar20/nest/include/NEST/RandomGen.hh \
@@ -783,6 +784,8 @@ CMakeFiles/uclatpc_CAD.dir/src/action.cc.o: \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldTrack.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargeState.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldTrack.icc \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StepLimiter.hh \
+ /home/nickfar20/uclatpc_CAD/include/LXeOpticalPhysics.hh \
  /home/nickfar20/uclatpc_CAD/include/run.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserRunAction.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4AnalysisManager.hh \
@@ -849,12 +852,20 @@ CMakeFiles/uclatpc_CAD.dir/src/action.cc.o: \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericFileManager.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4GenericFileManager.icc \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Run.hh \
- /home/nickfar20/uclatpc_CAD/include/stepping.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserSteppingAction.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Neutron.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Gamma.hh \
- /usr/include/c++/13/unordered_set \
- /usr/include/c++/13/bits/unordered_set.h \
+ /home/nickfar20/uclatpc_CAD/include/event.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserEventAction.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Event.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/evtdefs.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HCofThisEvent.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VHitsCollection.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DCofThisEvent.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VDigiCollection.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrajectoryContainer.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTrajectory.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserEventInformation.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RunManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Event.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EventManager.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StackManager.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserStackingAction.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ClassificationOfNewTrack.hh \
@@ -863,7 +874,24 @@ CMakeFiles/uclatpc_CAD.dir/src/action.cc.o: \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SmartTrackStack.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SubEventTrackStack.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SubEvent.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/evtdefs.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PrimaryTransformer.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackingManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SteppingManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NoProcess.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessManager.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserSteppingAction.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSteppingVerbose.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/trkgdefs.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackingMessenger.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserTrackingAction.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RunManagerKernel.hh \
+ /home/nickfar20/uclatpc_CAD/include/stepping.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserSteppingAction.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Neutron.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Gamma.hh \
+ /usr/include/c++/13/unordered_set \
+ /usr/include/c++/13/bits/unordered_set.h \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StackManager.hh \
  /home/nickfar20/uclatpc_CAD/include/nestPart.hh \
  /home/nickfar20/nest/include/Detectors/VDetector.hh \
  /home/nickfar20/uclatpc_CAD/include/DriftElectronInfo.hh \
@@ -940,32 +968,10 @@ CMakeFiles/uclatpc_CAD.dir/src/action.cc.o: \
  /home/nickfar20/uclatpc_CAD/include/detector.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSensitiveDetector.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4CollectionNameVector.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HCofThisEvent.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VHitsCollection.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VHit.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VReadOutGeometry.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SensitiveVolumeList.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSDFilter.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RunManager.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Event.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4DCofThisEvent.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VDigiCollection.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrajectoryContainer.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VTrajectory.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserEventInformation.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EventManager.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StackManager.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4PrimaryTransformer.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackingManager.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SteppingManager.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4NoProcess.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ProcessManager.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserSteppingAction.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VSteppingVerbose.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/trkgdefs.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4TrackingMessenger.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserTrackingAction.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4RunManagerKernel.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SDManager.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HCtable.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4SDStructure.hh \
@@ -1193,9 +1199,6 @@ CMakeFiles/uclatpc_CAD.dir/src/action.cc.o: \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastStep.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleDefinition.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationManager.hh \
- /home/nickfar20/uclatpc_CAD/include/event.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserEventAction.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4Event.hh \
  /home/nickfar20/uclatpc_CAD/include/tracking.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UserTrackingAction.hh \
  /home/nickfar20/nest/G4integration/NESTStackingAction.hh \

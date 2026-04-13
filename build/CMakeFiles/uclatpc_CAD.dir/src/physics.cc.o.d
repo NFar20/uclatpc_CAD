@@ -592,6 +592,7 @@ CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcmdWithAString.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4UIcmdWithADoubleAndUnit.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4HadronPhysicsQGSP_BERT.hh \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4EmStandardPhysics_option4.hh \
  /home/nickfar20/uclatpc_CAD/include/generator.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4VUserPrimaryGeneratorAction.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ParticleGun.hh \
@@ -781,4 +782,6 @@ CMakeFiles/uclatpc_CAD.dir/src/physics.cc.o: \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FastSimulationProcessType.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldTrack.hh \
  /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4ChargeState.hh \
- /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldTrack.icc
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4FieldTrack.icc \
+ /home/nickfar20/g4xr/g4xr-install/include/Geant4/G4StepLimiter.hh \
+ /home/nickfar20/uclatpc_CAD/include/LXeOpticalPhysics.hh

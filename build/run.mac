@@ -1,2 +1,2 @@
 /run/initialize
-/run/beamOn 1000
+/control/loop singleRun.mac i 1 100 1

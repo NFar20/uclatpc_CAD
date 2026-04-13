@@ -43,12 +43,13 @@ public:
 
 private:
     nestPart* nestCalc;
+    G4double test;
 
     bool CheckGainRegion(double x, double y, double z, double Efield) const {
         return (y > -44.*mm && y < -26.*mm && sqrt(x*x + z*z) < 52.5*mm);
     }
 
-    double ElThreshold = 412000.; 
+    double ElThreshold = 2000.; 
     nestPart* nestDetector;  // pointer to the nestPart detector
 
 };

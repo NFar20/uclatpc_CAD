@@ -49,7 +49,7 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhis
 		// G4int evt = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
 	
 		G4AnalysisManager *man = G4AnalysisManager::Instance();
-		man->FillNtupleDColumn(2, 0, t_global);
+		// man->FillNtupleDColumn(2, 0, t_global);
 
 		// man->FillH1(0, t_global);
   		// man->FillH1(isS2 ? 2 : 1, t_global);

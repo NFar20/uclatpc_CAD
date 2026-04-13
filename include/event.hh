@@ -5,8 +5,13 @@
 #include "G4Event.hh"
 
 #include "G4AnalysisManager.hh"
+#include "G4RunManager.hh"
+
+#include <unordered_map>
 
 #include "run.hh"
+// #include "stepping.hh"
+
 
 class MyEventAction : public G4UserEventAction
 {
@@ -25,11 +30,31 @@ public:
     	const G4String& process,
     	const G4String& volume,
     	const G4String& material);
+	
+	void AddTimesLXe(G4double t);
+	void AddTimesGXe(G4double t);
+
+	void AddS1PhotonTime(G4double t) { s1PhotonTimes.push_back(t); }
+  	void AddS2PhotonTime(G4double t) { s2PhotonTimes.push_back(t); }
+
+  	const std::vector<G4double>& GetS1PhotonTimes() const { return s1PhotonTimes; }
+  	const std::vector<G4double>& GetS2PhotonTimes() const { return s2PhotonTimes; }
+
+	void RecordElectronCreate(G4int tid, G4double t) { eCreate[tid] = t; }
+  	void RecordElectronExitLXe(G4int tid, G4double t) { eExitLXe.emplace(tid, t); }
 
 private:
 	G4double fEdep;
 	G4int fEventID = -1;
 	G4int fStepCounter = 0;
+	std::vector<G4double> times_LXe;
+    std::vector<G4double> times_GXe;
+
+	std::vector<G4double> s1PhotonTimes;
+  	std::vector<G4double> s2PhotonTimes;
+
+	std::unordered_map<G4int, G4double> eCreate;   // tid -> creation time
+  	std::unordered_map<G4int, G4double> eExitLXe;  // tid -> first exit time
 };
 
 #endif

@@ -11,6 +11,7 @@
 #include "action.hh"
 #include "G4OpticalParameters.hh"
 #include "G4TrajectoryDrawByParticleID.hh"
+#include "LXeOpticalPhysics.hh"
 
 nestPart *nestDetector = new nestPart();
 
@@ -23,15 +24,22 @@ int main(int argc, char** argv)
 	runManager->SetUserInitialization(new MyActionInitialization());
 	runManager->Initialize();
 
-	G4OpticalParameters::Instance()->SetProcessActivation("Scintillation", false);
+	// G4OpticalParameters::Instance()->SetProcessActivation("Scintillation", false);
+	LXeOpticalPhysics* opticalPhysics = new LXeOpticalPhysics();
 
 	auto params = G4OpticalParameters::Instance();
 
-    params->SetScintByParticleType(false);           
-    params->SetScintTrackSecondariesFirst(false);    
-    params->SetCerenkovMaxPhotonsPerStep(0);
-    params->SetCerenkovTrackSecondariesFirst(false);
+    // params->SetScintByParticleType(false);           
+    // params->SetScintTrackSecondariesFirst(false);    
+    // params->SetCerenkovMaxPhotonsPerStep(0);
+    // params->SetCerenkovTrackSecondariesFirst(false);
 	
+	params->SetWLSTimeProfile("delta");
+ 	params->SetScintTrackSecondariesFirst(true);
+  	params->SetCerenkovMaxPhotonsPerStep(10);
+  	params->SetCerenkovMaxBetaChange(10.0);
+  	params->SetCerenkovTrackSecondariesFirst(true);
+
 	G4UIExecutive *ui = 0;
 	
 	if(argc == 1)

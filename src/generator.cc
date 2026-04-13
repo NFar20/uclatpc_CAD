@@ -24,21 +24,22 @@ MyPrimaryGenerator::MyPrimaryGenerator()
 	G4cout << "[Messenger] Bound to instance ID = " << instanceID << G4endl;
 	
 	momMagnitude = 2.45*MeV;
+	G4double gMomMagnitude = 511.*keV;
 	n = 1;
 	
 	//creating particle gun
 	fParticleGun = new G4ParticleGun(n);
 	
-	G4ParticleDefinition *particle = G4ParticleTable::GetParticleTable()->FindParticle(generic);
+	G4ParticleDefinition *particle = G4ParticleTable::GetParticleTable()->FindParticle(generic); //generic
 	
 	G4ThreeVector pos(0., -72.*mm, 55.*mm);
 	G4ThreeVector mom(0., -0., -1.);
 	fParticleGun->SetParticlePosition(pos);
 	fParticleGun->SetParticleMomentumDirection(mom);
-	fParticleGun->SetParticleMomentum(momMagnitude);
+	fParticleGun->SetParticleMomentum(momMagnitude); //momMagnitude
 	fParticleGun->SetParticleDefinition(particle);
 	
-	WIMP = new G4ParticleDefinition("WIMP", 50*GeV, 0., 0., 0, 0, 0, 0, 0, 0, "darkmatter", 0, 0, 0, true, 0., nullptr, false, "", 0, 0.);
+	// WIMP = new G4ParticleDefinition("WIMP", 50*GeV, 0., 0., 0, 0, 0, 0, 0, 0, "darkmatter", 0, 0, 0, true, 0., nullptr, false, "", 0, 0.);
 	
 	G4cout << "Constructor source value: " << source << G4endl;
 	

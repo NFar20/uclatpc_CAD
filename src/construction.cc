@@ -11,6 +11,7 @@ MyDetectorConstruction::~MyDetectorConstruction()
 G4VPhysicalVolume *MyDetectorConstruction::Construct()
 {
 	G4NistManager *nist = G4NistManager::Instance(); //initialize NIST
+	G4cout << "NIST Manager initialized." << G4endl;
 
 	//creating materials for simulation and adding properties
 
@@ -20,37 +21,28 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	PTFE->AddElement(C, 1);
 	PTFE->AddElement(F, 2);
 	
-	G4Element *Fe = nist->FindOrBuildElement("Fe");
-	G4Element *Cr = nist->FindOrBuildElement("Cr");
-	G4Element *Ni = nist->FindOrBuildElement("Ni");
-	
-	G4Material *StainlessSteel = new G4Material("StainlessSteel", 7.93*g/cm3, 3);
-	StainlessSteel->AddElement(Fe, 74*perCent);
-	StainlessSteel->AddElement(Cr, 18*perCent);
-	StainlessSteel->AddElement(Ni, 8*perCent);
-	
 	G4Material *LXe = nist->FindOrBuildMaterial("G4_lXe");
 	
 	G4MaterialPropertiesTable *LXeMPT = new G4MaterialPropertiesTable();
-	G4double LXeRIndex[2] = {1.5655, 1.5655};
+	G4double LXeRIndex[2] = {1.5, 1.5};
 	G4double photonEnergy[2] = {1.55*eV, 10.*eV};
-	LXeMPT->AddProperty("RINDEX", photonEnergy, LXeRIndex, 2);\
+	LXeMPT->AddProperty("RINDEX", photonEnergy, LXeRIndex, 2);
 
 	G4Material *GXe = nist->FindOrBuildMaterial("G4_Xe");
 
 	G4MaterialPropertiesTable *GXeMPT = new G4MaterialPropertiesTable();
 	G4double GXeRIndex[2] = {1.0007, 1.0007};
-	LXeMPT->AddProperty("RINDEX", photonEnergy, GXeRIndex, 2);
+	GXeMPT->AddProperty("RINDEX", photonEnergy, GXeRIndex, 2);
 
 	
 	G4double scintPhotonEnergy[2] = {7. * eV, 7.5 * eV};
 	G4double scintYield[2] = {1.0, 1.0};
 	
-	//LXeMPT->AddProperty("SCINTILLATIONCOMPONENT1", scintPhotonEnergy, scintYield, 2);
-	//LXeMPT->AddConstProperty("SCINTILLATIONYIELD", 0);
-	//LXeMPT->AddConstProperty("RESOLUTIONSCALE", 1.);
-	//LXeMPT->AddConstProperty("SCINTILLATIONTIMECONSTANT1", 27.*ns, true);
-	//LXeMPT->AddConstProperty("SCINTILLATIONYIELD1", 1.);
+	LXeMPT->AddProperty("SCINTILLATIONCOMPONENT1", scintPhotonEnergy, scintYield, 2);
+	LXeMPT->AddConstProperty("SCINTILLATIONYIELD", 0);
+	LXeMPT->AddConstProperty("RESOLUTIONSCALE", 1.);
+	LXeMPT->AddConstProperty("SCINTILLATIONTIMECONSTANT1", 27.*ns, true);
+	LXeMPT->AddConstProperty("SCINTILLATIONYIELD1", 1.);
 	
 	LXe->SetMaterialPropertiesTable(LXeMPT);
 	GXe->SetMaterialPropertiesTable(GXeMPT);
@@ -59,13 +51,19 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	G4double HDPERIndex[2] = {1.52, 1.52};
 	HDPEmpt->AddProperty("RINDEX", photonEnergy, HDPERIndex, 2);
 
+	G4MaterialPropertiesTable *PTFEmpt = new G4MaterialPropertiesTable();
+	G4double PTFERIndex[2] = {1.5, 1.5};
+	PTFEmpt->AddProperty("RINDEX", photonEnergy, PTFERIndex, 2);
+
 	G4MaterialPropertiesTable *steelMPT = new G4MaterialPropertiesTable();
 	G4double steelRIndex[2] = {1.3, 1.3}; //find actual values
 	steelMPT->AddProperty("RINDEX", photonEnergy, steelRIndex, 2);
 
-	StainlessSteel->SetMaterialPropertiesTable(steelMPT);
+		
+	G4Material *steel = nist->FindOrBuildMaterial("G4_STAINLESS-STEEL");
+	steel->SetMaterialPropertiesTable(steelMPT);
 	
-	
+	// G4cout << "Steel test" << G4endl;
 	G4Isotope *isoSe72 = new G4Isotope("isoSe72", 34, 72, 71.9221*g/mole);
 	G4Element *elSe72 = new G4Element("elSe72", "Se72", 1);
 	elSe72->AddIsotope(isoSe72, 100*perCent);
@@ -91,6 +89,9 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	HDPE->AddElement(C, 1);
 
 	HDPE->SetMaterialPropertiesTable(HDPEmpt);
+	
+	G4Material *polyethylene = nist->FindOrBuildMaterial("G4_POLYETHYLENE");
+	polyethylene->SetMaterialPropertiesTable(HDPEmpt);
 
 	//creating different visual attributes
 	
@@ -163,6 +164,9 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	mptWorld->AddProperty("RINDEX", energy, rindexWorld, 2);
 	
 	worldMat->SetMaterialPropertiesTable(mptWorld);
+
+	G4Material *testMat = nist->FindOrBuildMaterial("G4_A-150_TISSUE");
+	testMat->SetMaterialPropertiesTable(steelMPT);
 	
 	// G4Box *solidWorld = new G4Box("solidWorld", 0.3*m, 0.3*m, 0.3*m);
 	
@@ -181,8 +185,10 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	G4GDMLParser parser;
   	parser.SetOverlapCheck(true);
   	// parser.Read("../UpdatedCalixWorldVol.gdml");
-	parser.Read("../CaliXGDMLPleaseWork.gdml");
+	// parser.Read("../CaliXGDMLPleaseWork.gdml");
 	// parser.Read("../MergedCalixWorldVol.gdml");
+	parser.Read("../CaliXFixedMaterials4.gdml");
+	
 
 	// G4LogicalVolume *logicWorld = parser.GetVolume("GDMLBox_WorldBox");
 	G4VPhysicalVolume *physWorld = parser.GetWorldVolume("WorldVOL");
@@ -200,11 +206,11 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	logicESepRing->SetVisAttributes(yellowVisAttributes); //
 
 	G4LogicalVolume *logicPESheeth = parser.GetVolume("LV_Polythelne_Sheeth");
-	logicPESheeth->SetVisAttributes(invisible); // HDPEVisAttributes
+	logicPESheeth->SetVisAttributes(invisible); // HDPEVisAttributes 
 	logicPESheeth->SetMaterial(HDPE);
 
 	G4LogicalVolume *logicESepRingNoOpen = parser.GetVolume("LV_ESepRingNoOpen_SteelRings");
-	logicESepRingNoOpen->SetVisAttributes(yellowVisAttributes); //
+	logicESepRingNoOpen->SetVisAttributes(yellowVisAttributes); // 
 
 	G4LogicalVolume *logicBottomPMTCap = parser.GetVolume("LV_Bottom_PMT_Cap");
 	logicBottomPMTCap->SetVisAttributes(defaultVisAttributes); // 
@@ -312,7 +318,7 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	// G4VPhysicalVolume *physBottomPMT = new G4PVPlacement(meshRot, G4ThreeVector(0., 0., 151.*mm), logicBottomPMT, "physBottomPMT", logicWorld, false, 0, true);
 	
 	
-	G4Tubs *solidLXe = new G4Tubs("solidLXe", 0.*mm, 46.5*mm, 28.*mm, 0.*deg, 360.*deg);
+	G4Tubs *solidLXe = new G4Tubs("solidLXe", 0.*mm, 46.5*mm, 28.*mm, 0.*deg, 360.*deg); //4213333
 	logicLXe = new G4LogicalVolume(solidLXe, LXe, "logicLXe");
 	logicLXe->SetVisAttributes(invisible); //purpleVisAttributes
 	
@@ -326,21 +332,21 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	G4VPhysicalVolume *physGXe = new G4PVPlacement(meshRot, G4ThreeVector(0., -36.*mm, 0.), logicGXe, "physGXe", logicWorld, false, 0, true);
 	
 	//constructing electric field
-	electricField = new ElectricField(-100.); //placeholder electric field value of 100 V/cm for lXe
+	electricField = new ElectricField(-10.); //placeholder electric field value of 100 V/cm for lXe
 	equation = new G4EqMagElectricField(electricField);
 	G4int nvar = 8;
 	auto pStepper = new G4DormandPrince745(equation, nvar);
 	
-	// auto liquidFieldManager = new G4FieldManager(electricField);
-	// liquidFieldManager->SetDetectorField(electricField);
+	auto liquidFieldManager = new G4FieldManager(electricField);
+	liquidFieldManager->SetDetectorField(electricField);
 	
 	G4double minStep = 0.001*mm;
 	auto pIntegrationDriver = new G4IntegrationDriver<G4DormandPrince745>(minStep, pStepper, nvar);
 
 	gasElectricField = new ElectricField(-250.); //placeholder electric field value of 250 V/cm for gXe
 	gasEquation = new G4EqMagElectricField(gasElectricField);
-	// auto gasFieldManager = new G4FieldManager(gasElectricField);
-	// gasFieldManager->SetDetectorField(gasElectricField);
+	auto gasFieldManager = new G4FieldManager(gasElectricField);
+	gasFieldManager->SetDetectorField(gasElectricField);
 	
 	chordFinder = new G4ChordFinder(pIntegrationDriver);
 
@@ -349,14 +355,18 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
 	// ePmanager->AddDiscreteProcess(stepLimiter);
 	logicLXe->SetUserLimits(new G4UserLimits(2.5*mm));
 
+	G4Region* fastRegion = new G4Region("LXeFastRegion");
+    fastRegion->AddRootLogicalVolume(logicLXe);
+    auto* driftModel = new LXeElectronDriftModel("LXeDriftModel", fastRegion, &detector);
 
-	// liquidFieldManager->SetChordFinder(chordFinder);
-	// gasFieldManager->SetChordFinder(chordFinder);
+
+	liquidFieldManager->SetChordFinder(chordFinder);
+	gasFieldManager->SetChordFinder(chordFinder);
 	
-	// logicLXe->SetFieldManager(liquidFieldManager, true);
-	// logicPESheeth->SetFieldManager(liquidFieldManager, true);
+	logicLXe->SetFieldManager(liquidFieldManager, true);
+	logicPESheeth->SetFieldManager(liquidFieldManager, true);
 
-	// logicGXe->SetFieldManager(gasFieldManager, true);
+	logicGXe->SetFieldManager(gasFieldManager, true);
 	
 	
 	return physWorld;

@@ -14,6 +14,7 @@
 #include "G4EmLowEPPhysics.hh"
 #include "G4EmExtraPhysics.hh"
 #include "G4HadronPhysicsQGSP_BERT.hh"
+#include "G4EmStandardPhysics_option4.hh"
 //#include "DMG4/DarkMatterPhysics.hh"
 #include "generator.hh"
 //#include"WIMPElasticProcess.hh"
@@ -37,6 +38,8 @@
 #include "G4OpticalParameters.hh"
 #include "G4FastSimulationManagerProcess.hh"
 #include "G4StepLimiter.hh"
+
+#include "LXeOpticalPhysics.hh"
 
 class VDetector;
 namespace NEST { class NESTcalc; class NESTProc; }

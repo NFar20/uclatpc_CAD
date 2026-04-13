@@ -29,33 +29,33 @@ MyRunAction::MyRunAction()
 	man->CreateNtupleDColumn("fEdep");
 	man->FinishNtuple(1);
 
-	man->CreateNtuple("tS2-tS1", "global_electron_drift_time");
-	man->CreateNtupleDColumn("globalTime_us");
-	man->CreateNtupleIColumn("trackID");
-	man->FinishNtuple(2);
+	// man->CreateNtuple("tS2-tS1", "global_electron_drift_time");
+	// man->CreateNtupleDColumn("globalTime_us");
+	// man->CreateNtupleIColumn("trackID");
+	// man->FinishNtuple(2);
 
-	man->CreateNtuple("drift", "electron_drift_time");
-	man->CreateNtupleDColumn("driftTime_us");
-	man->CreateNtupleIColumn("distance_mm");
-	man->FinishNtuple(3);
+	// man->CreateNtuple("drift", "electron_drift_time");
+	// man->CreateNtupleDColumn("driftTime_us");
+	// // man->CreateNtupleIColumn("distance_mm");
+	// man->FinishNtuple(3);
 
-	man->CreateNtuple("data", "Energy deposition data for nestpy");
-	man->CreateNtupleIColumn("event_id");      // 0
-  	man->CreateNtupleIColumn("step_id");       // 1
-  	man->CreateNtupleDColumn("edep_keV");      // 2
-  	man->CreateNtupleDColumn("x_mm");          // 3
-  	man->CreateNtupleDColumn("y_mm");          // 4
-  	man->CreateNtupleDColumn("z_mm");          // 5
-  	man->CreateNtupleDColumn("t_ns");          // 6
-  	man->CreateNtupleDColumn("Efield_Vcm");    // 7
-  	man->CreateNtupleIColumn("type");          // 8  (0=ER,1=NR)
-  	man->CreateNtupleIColumn("track_id");      // 9
-  	man->CreateNtupleIColumn("parent_id");     // 10
-  	man->CreateNtupleIColumn("pdg");           // 11
-  	man->CreateNtupleSColumn("process");       // 12
-  	man->CreateNtupleSColumn("volume");        // 13
-  	man->CreateNtupleSColumn("material");      // 14
-  	man->FinishNtuple();
+	// man->CreateNtuple("data", "Energy deposition data for nestpy");
+	// man->CreateNtupleIColumn("event_id");      // 0
+  	// man->CreateNtupleIColumn("step_id");       // 1
+  	// man->CreateNtupleDColumn("edep_keV");      // 2
+  	// man->CreateNtupleDColumn("x_mm");          // 3
+  	// man->CreateNtupleDColumn("y_mm");          // 4
+  	// man->CreateNtupleDColumn("z_mm");          // 5
+  	// man->CreateNtupleDColumn("t_ns");          // 6
+  	// man->CreateNtupleDColumn("Efield_Vcm");    // 7
+  	// man->CreateNtupleIColumn("type");          // 8  (0=ER,1=NR)
+  	// man->CreateNtupleIColumn("track_id");      // 9
+  	// man->CreateNtupleIColumn("parent_id");     // 10
+  	// man->CreateNtupleIColumn("pdg");           // 11
+  	// man->CreateNtupleSColumn("process");       // 12
+  	// man->CreateNtupleSColumn("volume");        // 13
+  	// man->CreateNtupleSColumn("material");      // 14
+  	// man->FinishNtuple(4);
 
 	// const G4int bins = 1000; //2500
 
@@ -84,6 +84,9 @@ void MyRunAction::BeginOfRunAction(const G4Run* run)
 
     // DriftTrackIDs.clear();
 
+	nS2Events = 0;
+	nS1Events = 0;
+	
 	G4AnalysisManager *man = G4AnalysisManager::Instance();
 	
 	man->SetVerboseLevel(1);
@@ -92,26 +95,33 @@ void MyRunAction::BeginOfRunAction(const G4Run* run)
 	std::stringstream strRunID;
 	strRunID << runID;
 
-	if (!man->IsOpenFile()) {
-    	man->OpenFile("output.root");
-  	}
-	
-	// man->OpenFile("driftVelo"+strRunID.str()+".root");
-	// const G4int bins = 2500;
-	// const G4double tmin = 0.*ns;
-	// const G4double tmax = 50000*ns;
-
-	// man->CreateH1("hAllTime", "All photon times;time [#mu s];hits", bins, tmin, tmax);
-  	// man->CreateH1("hS1Time",  "S1 photon times;time [#mu s];hits",  bins, tmin, tmax);
-  	// man->CreateH1("hS2Time",  "S2 photon times;time [#mu s];hits",  bins, tmin, tmax);
+	// if (!man->IsOpenFile()) {
+    // 	man->OpenFile("output.root");
+  	// }
 
 	// man->OpenFile("output"+strRunID.str()+".root");
+	man->OpenFile("output.root");
+
+	man->CreateNtuple("photonTimes", "Created photon times");
+	// man->CreateNtupleIColumn("event");   // eventID
+	man->CreateNtupleIColumn("type");    // 1=S1, 2=S2
+	man->CreateNtupleDColumn("t_us");    // creation time in microseconds
+	man->FinishNtuple(2);
+
+	man->CreateNtuple("eDrift", "Drift electrons");
+	// man->CreateNtupleIColumn("event");
+	man->CreateNtupleDColumn("tid");
+	man->CreateNtupleDColumn("t_create_us");
+	man->CreateNtupleDColumn("t_exitLXe_us");
+	man->CreateNtupleDColumn("t_drift_us");
+	man->FinishNtuple(3);
 	
-	// man->CreateNtuple("Events", "Golden paramter");
-    // man->CreateNtupleDColumn("logS2");
-    // man->CreateNtupleDColumn("S1");
-    // man->CreateNtupleIColumn("recoilType"); // 0=ER, 1=NR
-    // man->FinishNtuple(4);
+	
+	man->CreateNtuple("Events", "Golden paramter");
+    man->CreateNtupleDColumn("logS2");
+    man->CreateNtupleDColumn("S1");
+    man->CreateNtupleIColumn("recoilType"); // 0=ER, 1=NR
+    man->FinishNtuple(4);
 }
 
 void MyRunAction::EndOfRunAction(const G4Run*)
